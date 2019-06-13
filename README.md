@@ -1,5 +1,5 @@
 ## Project Name
-           FAQ
+           CHAT
 
 ## Author
             [Michael Odongo]
