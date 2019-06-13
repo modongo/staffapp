@@ -1,5 +1,5 @@
-## Project Name
-           FAQ
+## Feature Name
+           Chat
 
 ## Author
             [Naomi Wariara]
