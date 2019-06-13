@@ -1,7 +1,9 @@
+<<<<<<< HEAD
 ## Feature Name
            Chat
 
-## Author
+## Authors
             [Naomi Wariara]
+            [Michael Odongo]
 
 
