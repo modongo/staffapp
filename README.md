@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Feature Name
            Chat
 
