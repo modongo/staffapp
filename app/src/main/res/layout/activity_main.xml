@@ -26,5 +26,10 @@
         android:background="@color/colorAccent"
         android:textColor="@color/colorTextIcons" />
 
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
