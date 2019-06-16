@@ -2,6 +2,8 @@ package com.staff.staffapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -10,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -34,12 +38,24 @@ import android.widget.ExpandableListView.OnGroupCollapseListener;
 import android.widget.ExpandableListView.OnGroupExpandListener;
 import android.widget.Toast;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private TextView mLocationTextView;
+    private ListView mListView;
+    private String[] restaurants = new String[]{"Plans", "Pre Pay",
+            "Safarciom 4G", "MPESA", "MPESA", "MPESA"};
 
     Button mViewProductsButton;
-
-
-
     ExpandableListAdapter listAdapter;
     ExpandableListView expListView;
     List<String> listDataHeader;
@@ -52,16 +68,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mViewProductsButton=(Button) findViewById(R.id.viewProductsButton);
         mViewProductsButton.setOnClickListener(this);
 
-        // get the listview
-        expListView = (ExpandableListView) findViewById(R.id.lvExp);
+        mListView = (ListView) findViewById(R.id.listView);
+        mLocationTextView = (TextView) findViewById(R.id.locationTextView);
 
-        // preparing list data
-        prepareListData();
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, restaurants);
+        mListView.setAdapter(adapter);
 
-        listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
-
-        // setting list adapter
-        expListView.setAdapter(listAdapter);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String restaurant = ((TextView) view).getText().toString();
+                Toast.makeText(MainActivity.this, restaurant, Toast.LENGTH_LONG).show();
+                Intent intent = getIntent();
+                String location = intent.getStringExtra("location");
+                mLocationTextView.setText("Here are all the restaurants near: " + location);
+            }
+        });
     }
 
     @Override
@@ -72,45 +94,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    /*
-     * Preparing the list data
-     */
-    private void prepareListData() {
-        listDataHeader = new ArrayList<String>();
-        listDataChild = new HashMap<String, List<String>>();
 
-        // Adding child data
-        listDataHeader.add("Top 250");
-        listDataHeader.add("Now Showing");
-        listDataHeader.add("Coming Soon..");
-
-        // Adding child data
-        List<String> top250 = new ArrayList<String>();
-        top250.add("The Shawshank Redemption");
-        top250.add("The Godfather");
-        top250.add("The Godfather: Part II");
-        top250.add("Pulp Fiction");
-        top250.add("The Good, the Bad and the Ugly");
-        top250.add("The Dark Knight");
-        top250.add("12 Angry Men");
-
-        List<String> nowShowing = new ArrayList<String>();
-        nowShowing.add("The Conjuring");
-        nowShowing.add("Despicable Me 2");
-        nowShowing.add("Turbo");
-        nowShowing.add("Grown Ups 2");
-        nowShowing.add("Red 2");
-        nowShowing.add("The Wolverine");
-
-        List<String> comingSoon = new ArrayList<String>();
-        comingSoon.add("2 Guns");
-        comingSoon.add("The Smurfs 2");
-        comingSoon.add("The Spectacular Now");
-        comingSoon.add("The Canyons");
-        comingSoon.add("Europa Report");
-
-        listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
-        listDataChild.put(listDataHeader.get(1), nowShowing);
-        listDataChild.put(listDataHeader.get(2), comingSoon);
-    }
 }
