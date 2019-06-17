@@ -51,15 +51,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView mLocationTextView;
-    private ListView mListView;
-    private String[] restaurants = new String[]{"Plans", "Pre Pay",
-            "Safarciom 4G", "MPESA", "MPESA", "MPESA"};
+
 
     Button mViewProductsButton;
-    ExpandableListAdapter listAdapter;
-    ExpandableListView expListView;
-    List<String> listDataHeader;
-    HashMap<String, List<String>> listDataChild;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,22 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mViewProductsButton=(Button) findViewById(R.id.viewProductsButton);
         mViewProductsButton.setOnClickListener(this);
 
-        mListView = (ListView) findViewById(R.id.listView);
-        mLocationTextView = (TextView) findViewById(R.id.locationTextView);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, restaurants);
-        mListView.setAdapter(adapter);
-
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String restaurant = ((TextView) view).getText().toString();
-                Toast.makeText(MainActivity.this, restaurant, Toast.LENGTH_LONG).show();
-                Intent intent = getIntent();
-                String location = intent.getStringExtra("location");
-                mLocationTextView.setText("Here are all the restaurants near: " + location);
-            }
-        });
     }
 
     @Override
