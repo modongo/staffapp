@@ -6,9 +6,12 @@
     tools:context=".BusinessFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Business Products and Services" />
+        android:layout_height="wrap_content"
+        android:id="@+id/lvData"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </FrameLayout>
