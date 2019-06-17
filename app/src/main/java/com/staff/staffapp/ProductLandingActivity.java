@@ -17,10 +17,8 @@ public class ProductLandingActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.tabLayout) TabLayout tabLayout;
-//    @BindView(R.id.tabPersonal) TabItem tabPersonal;
-//    @BindView(R.id.tabBusiness) TabItem tabBusiness;
     @BindView(R.id.viewPager) ViewPager viewPager;
-
+    PageAdapter pageAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +26,30 @@ public class ProductLandingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_product_landing);
 
         ButterKnife.bind(this);
-        PageAdapter pageAdapter=new PageAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
+
+        tabLayout.addTab(tabLayout.newTab().setText("Personal"));
+        tabLayout.addTab(tabLayout.newTab().setText("Business"));
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        pageAdapter=new PageAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(pageAdapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+            }
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
         toolbar.setTitle(getResources().getString(R.string.toolbar_title));
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
