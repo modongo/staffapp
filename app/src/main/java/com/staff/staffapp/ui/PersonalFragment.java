@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.LinearLayout;
 
 import com.staff.staffapp.R;
 import com.staff.staffapp.adapter.ExpandableListAdapterProducts;
@@ -41,6 +42,7 @@ public class PersonalFragment extends Fragment {
     private List<String> listDescription;
     private ExpandableListView listView;
     private FragmentActivity listener;
+    private LinearLayout linlaHeaderProgress;
 
     public PersonalFragment() {
         // Required empty public constructor
@@ -59,6 +61,7 @@ public class PersonalFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view= inflater.inflate(R.layout.fragment_personal, container, false);
+        linlaHeaderProgress = view.findViewById(R.id.linlaHeaderProgress);
         listView=view.findViewById(R.id.lvExpandablePersonal);
         getProducts();
         return view;
@@ -71,6 +74,7 @@ public class PersonalFragment extends Fragment {
     }
 
     private void getProducts(){
+        linlaHeaderProgress.setVisibility(View.VISIBLE);
         final ProductsService productsService=new ProductsService();
         productsService.getPersonalProducts(new Callback() {
             @Override
@@ -101,5 +105,6 @@ public class PersonalFragment extends Fragment {
                 });
             }
         });
+        linlaHeaderProgress.setVisibility(View.GONE);
     }
 }
