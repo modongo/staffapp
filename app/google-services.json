@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "326498055439",
+    "firebase_url": "https://staffapp-fb.firebaseio.com",
+    "project_id": "staffapp-fb",
+    "storage_bucket": "staffapp-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326498055439:android:97ba6dd86ca8ed74",
+        "android_client_info": {
+          "package_name": "com.staff.staffapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326498055439-sug78sq6525ihj57u8s0faaqmglsuqsf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.staff.staffapp",
+            "certificate_hash": "aea513639fbfcfb59fa2e71c97d6e406ae353411"
+          }
+        },
+        {
+          "client_id": "326498055439-5dp2hbqb7odu931qhevj9qpo59slmfme.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKxL3xJRA70qub7ZQXPPEMcS2SuIZYi3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326498055439-5dp2hbqb7odu931qhevj9qpo59slmfme.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
