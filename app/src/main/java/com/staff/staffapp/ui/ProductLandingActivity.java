@@ -27,8 +27,8 @@ public class ProductLandingActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        tabLayout.addTab(tabLayout.newTab().setText("Personal"));
-        tabLayout.addTab(tabLayout.newTab().setText("Business"));
+        tabLayout.addTab(tabLayout.newTab().setText("Consumer"));
+        tabLayout.addTab(tabLayout.newTab().setText("Enterprise"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         pageAdapter=new PageAdapter(getSupportFragmentManager(),tabLayout.getTabCount());

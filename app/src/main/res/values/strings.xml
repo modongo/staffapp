@@ -6,8 +6,8 @@
     <string name="title_register">register</string>
     <string name="card_text">demo_card_text</string>
     <string name="app_name">staffapp</string>
-    <string name="toolbar_title_business">Enterprise</string>
-    <string name="toolbar_title_personal">Consumer</string>
+    <string name="toolbar_title_business">Business</string>
+    <string name="toolbar_title_personal">Personal</string>
     <string name="toolbar_title">Products and Services</string>
 
     <!-- TODO: Remove or change this placeholder text -->
