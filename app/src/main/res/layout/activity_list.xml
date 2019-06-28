@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:onClick="onGotoListSampleClick"
-            android:text="View Chat Contacts"/>
+            android:text="Start MyChat"/>
 
         <TextView
             android:layout_width="wrap_content"
