@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.staff.staffapp.R;
+import com.staff.staffapp.adapter.ContactListAdapter;
 
 
 public class ContactListActivity extends AppCompatActivity {

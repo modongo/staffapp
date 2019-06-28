@@ -1,4 +1,4 @@
-package com.staff.staffapp.ui;
+package com.staff.staffapp.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
