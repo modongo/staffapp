@@ -3,27 +3,56 @@
 
 ## Authors
             [Naomi Wariara]
+            [Michael Odongo]
 
+           FAQ
+
+## Author
+            [Naisenya Mungai]
+            [Kimosop Chepkoit]
+
+
+## Project Name 
+            PRODUCTS & SERVICES
+            
+## Author
+        [George Mogaka]
+        [Margaret Mutungi]
+       
 
 ## Description
-The chat feature under the Staff App enables users to chat with one another. The chat feature enables the user to:
 
-- navigate to the chat text input area.
-- input message in the text-box.
-- get notified that a message has been sent through a Toast.
+This is a tabbed layout to display Safaricom Products and Services.
 
-## Setup/Installation Requirements
-The app requires one to download the Staff App in their android phones and navigate to the chat menu. Once in the menu, the user should select the person he or she wishes to chat with.
+## Specs
+The Main Activity has a button that when clicked moves to the products and services page.
+There are two tabs: Personal and Business tabs that one should be able to switch between by swiping or touching. The page contains and Up button that leads back to the Main Activity. The pages are populated from an API.
 
-## Technology used
-The application uses Android and Java.
+## Setup
+Clone the project and build it locally on Android Studio then run on Android phone or emulator
 
-## Known Bugs
-There are no known bugs at the present.
 
-## Support and contact details
-In case you'd like to improve on the app you may reach us on nashipaedigital@gmail.com. You may also fork the project from GitHub repository https://github.com/Nashipae/staffapp.git.
+## Technologies Used
 
-## License
-MIT. Copyright (c) 2019
+* _Java_
+* _Android_
 
+### Acknowledgements
+_Sam Ngigi (My instructor)_
+
+### License
+
+*This software is licensed under the MIT license.*
+
+Copyright (c) 2019 **_Margaret Mutungi_**
+    News
+
+## Authors
+    [Eric Wafula Wanyama]
+    [Robert Kagema Njiriri]
+## Project Name
+           Safaricom Business School
+
+## Author
+            [David Mwaniki Njiru]
+            [Elvis Makuthi]
