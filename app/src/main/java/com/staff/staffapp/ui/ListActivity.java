@@ -37,7 +37,7 @@ public class ListActivity extends AppCompatActivity {
 
     public void onGotoListSampleClick(View view){
         //Modified
-        Intent i = new Intent(this, ChatActivity.class);
+        Intent i = new Intent(this, ChatJoinActivity.class);
         startActivity(i);
     }
 }

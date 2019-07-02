@@ -14,10 +14,10 @@
 
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/colorTextIcons"
         >
 
         <AutoCompleteTextView
@@ -26,20 +26,20 @@
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:hint="@string/prompt_username"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/colorTextIcons"
+            android:textColorHint="@color/colorTextIcons"
             android:inputType="textNoSuggestions"
             android:imeOptions="actionNext"
             android:maxLines="1"
             android:textIsSelectable="false"
             android:textStyle="bold"/>
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/colorTextIcons"
         >
 
         <AutoCompleteTextView
@@ -47,28 +47,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/prompt_email"
-            android:textColor="@color/white"
+            android:textColor="@color/colorTextIcons"
             android:textSize="25sp"
             android:imeOptions="actionNext"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/colorTextIcons"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:textIsSelectable="false"
             android:textStyle="bold"/>
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/colorTextIcons"
         >
 
         <EditText
             android:id="@+id/register_password"
             android:textSize="25sp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/colorTextIcons"
+            android:textColorHint="@color/colorTextIcons"
             android:layout_width="match_parent"
             android:imeOptions="actionNext"
             android:layout_height="wrap_content"
@@ -77,19 +77,19 @@
             android:maxLines="1"
             android:textStyle="bold"/>
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/colorTextIcons"
         >
 
         <EditText
             android:id="@+id/register_confirm_password"
-            android:textColor="@color/white"
+            android:textColor="@color/colorTextIcons"
             android:textSize="25sp"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/colorTextIcons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/prompt_password_again"
@@ -100,12 +100,12 @@
             android:maxLines="1"
             android:textStyle="bold"/>
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/register_sign_up_button"
         style="?android:textAppearanceMedium"
-        android:background="@color/white"
+        android:background="@color/colorTextIcons"
         android:textColor="@color/green"
         android:onClick="signUp"
         android:layout_width="match_parent"
