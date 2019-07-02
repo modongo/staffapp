@@ -31,31 +31,24 @@
     <color name="colorAquaDark">#3BAFDA</color>
     <color name="colorPinkRose">#EC87C0</color>
     <color name="colorPinkRoseDark">#D770AD</color>
-
     <color name="colorJungle">#29ABB7</color>
     <color name="colorPlum">#8D4585</color>
     <color name="colorSteel">#4682B4</color>
     <color name="colorChartreuse">#B7AC44</color>
-
     <color name="colorMulberry">#C64B8C</color>
     <color name="colorFandango">#B5338A</color>
-
     <color name="colorOlympic">#00BECC</color>
     <color name="colorCornFlower">#6693F5</color>
     <color name="colorAzure">#0080FE</color>
     <color name="colorHospital">#0089CF</color>
-
     <color name="colorJade">#00A868</color>
     <color name="colorKelly">#4CBB17</color>
     <color name="colorGreengreen">#3BB143</color>
-
     <color name="colorIron">#48494B</color>
     <color name="colorFossil">#787276</color>
     <color name="colorAsh">#544C4A</color>
     <color name="colorStone">#877F7D</color>
-
     <color name="colorBlack">#000000</color>
-
     <color name="colorPrimaryLight">#FFCCBC</color>
     <color name="colorTextIcons">#FFFFFF</color>
     <color name="colorPrimaryText">#212121</color>
