@@ -22,11 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ChatActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.staff.staffapp.ui.MainActivity" />
-        </activity>
+        <activity android:name=".ui.ChatActivity"
+            android:theme="@style/NoActionBar"/>
+
+
         <activity
             android:name=".faq.Nursing"
             android:label="Home Nursing Services">
