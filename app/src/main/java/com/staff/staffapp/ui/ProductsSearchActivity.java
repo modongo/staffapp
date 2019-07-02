@@ -1,7 +1,9 @@
 package com.staff.staffapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.staff.staffapp.R;
@@ -12,19 +14,26 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
 public class ProductsSearchActivity extends AppCompatActivity {
     private List<Product> products;
+    @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products_search);
+        ButterKnife.bind(this);
 
+        Intent intent=getIntent();
+        String query = intent.getStringExtra("query");
 
+        getSearchResults(query);
     }
 
     private void getSearchResults(String query) {
