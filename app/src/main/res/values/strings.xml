@@ -19,4 +19,9 @@
     <string name="department_button">Department News</string>
     <string name="ruby">Ruby</string>
     <string name="title_activity_marketing">MarketingActivity</string>
+
+    <string name="action_share">Share</string>
+    <string name="action_explore">Read More...</string>
+    <string name="lorem_short_length">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tincidunt dui, ultrices tempor dolor maximus a.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tincidunt dui, ultrices tempor dolor maximus a.</string>
 </resources>
