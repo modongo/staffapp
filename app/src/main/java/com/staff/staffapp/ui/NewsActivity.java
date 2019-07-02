@@ -53,18 +53,6 @@ public class NewsActivity extends AppCompatActivity implements View.OnClickListe
 
         textViewGeneralNewsResults = findViewById(R.id.allGeneralNews);
 
-//        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, news);
-//        mNewsList.setAdapter(adapter);
-//
-//        mNewsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Intent intent = new Intent(NewsActivity.this, NewsDetailsActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://apisafapp.herokuapp.com/")
                 .addConverterFactory(GsonConverterFactory.create())
