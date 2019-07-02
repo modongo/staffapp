@@ -44,6 +44,17 @@ public class ProductsService {
         call.enqueue(callback);
     }
 
+    public static void searchPersonalProducts(String query, Callback callback){
+        OkHttpClient client = new OkHttpClient.Builder().build();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.PRODUCTS_SEARCH_URL+query).newBuilder();
+        String url = urlBuilder.build().toString();
+
+        Request request = new Request.Builder().url(url).build();
+
+        Call call = client.newCall(request);
+        call.enqueue(callback);
+    }
+
     public ArrayList<Product> processResaults(Response response) {
         ArrayList<Product> products = new ArrayList<>();
 
