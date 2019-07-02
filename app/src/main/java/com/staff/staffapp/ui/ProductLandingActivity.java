@@ -70,7 +70,9 @@ public class ProductLandingActivity extends AppCompatActivity {
         MenuItem menuItem=menu.findItem(R.id.knowledge_search);
         SearchView searchView=(SearchView) MenuItemCompat.getActionView(menuItem);
         searchView.setQueryHint("Search knowledge base");
-        searchView.setBackgroundColor(Color.WHITE);
+//        searchView.setBackgroundColor(Color.WHITE);
+
+
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
