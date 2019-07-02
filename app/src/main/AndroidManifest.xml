@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.ChatJoinActivity"></activity>
+        <activity android:name=".ui.ChatRegisterActivity" />
+        <activity android:name=".ui.ChatJoinActivity" />
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +25,7 @@
         <activity android:name=".ui.ChatActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.staff.staffapp.ui.MainActivity"></meta-data>
+                android:value="com.staff.staffapp.ui.MainActivity" />
         </activity>
         <activity
             android:name=".faq.Nursing"
@@ -181,7 +182,7 @@
         </activity>
         <activity
             android:name=".faq.ProductsActivity"
-            android:theme="@style/ProductsTheme"></activity>
+            android:theme="@style/ProductsTheme" />
         <activity
             android:name=".faq.BusinessProductsActivity"
             android:theme="@style/ProductsTheme">
@@ -214,10 +215,10 @@
             android:theme="@style/ProductsTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.MainActivity"></meta-data>
+                android:value=".ui.MainActivity" />
         </activity>
-        <activity android:name=".ui.ListActivity"></activity>
-        <activity android:name=".ui.ContactListActivity"></activity>
+        <activity android:name=".ui.ListActivity" />
+        <activity android:name=".ui.ContactListActivity" />
         <activity
             android:name=".ui.NewsDetailsActivity"
             android:parentActivityName=".ui.NewsActivity" />
