@@ -80,4 +80,34 @@ public class ProductsService {
         }
         return products;
     }
+
+//    public ArrayList<Product> processSearchResults(Response response) {
+//        ArrayList<Product> products = new ArrayList<>();
+//
+//
+//        try {
+////            String jsonData = response.body().string();
+////            JSONArray productsArrayJSON = new JSONArray(jsonData);
+//            String jsonData=response.body().string();
+//            JSONObject productsJSON=new JSONObject(jsonData);
+//            JSONArray productsArrayJSON = productsJSON.getJSONArray("");
+//
+//            if (response.isSuccessful()) {
+//                for (int i = 0; i < productsArrayJSON.length(); i++) {
+//                    JSONObject productJSON = productsArrayJSON.getJSONObject(i);
+//                    int id = productJSON.getInt("id");
+//                    String title = productJSON.getString("name");
+//                    String description = productJSON.getString("information");
+//                    Log.d("Serv View", title);
+//                    Product product = new Product(id, title, description);
+//                    products.add(product);
+//                }
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//        return products;
+//    }
 }

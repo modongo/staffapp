@@ -1,12 +1,15 @@
 package com.staff.staffapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.staff.staffapp.R;
+import com.staff.staffapp.adapter.ProductsListAdapter;
 import com.staff.staffapp.model.Product;
 import com.staff.staffapp.service.ProductsService;
 
@@ -21,7 +24,9 @@ import okhttp3.Callback;
 import okhttp3.Response;
 
 public class ProductsSearchActivity extends AppCompatActivity {
+    public static final String TAG = ProductsSearchActivity.class.getSimpleName();
     private List<Product> products;
+    private ProductsListAdapter mAdapter;
     @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
 
     @Override
@@ -48,14 +53,14 @@ public class ProductsSearchActivity extends AppCompatActivity {
             public void onResponse(Call call, Response response) throws IOException {
                 products=new ArrayList<>();
                 products = productsService.processResaults(response);
+                Log.d(TAG, "onResponse:" + products);
 
                 ProductsSearchActivity.this.runOnUiThread(new Runnable() {
-
                     @Override
                     public void run() {
-                        mAdapter = new RestaurantListAdapter(getApplicationContext(), mRestaurants);
+                        mAdapter = new ProductsListAdapter(getApplicationContext(), products);
                         mRecyclerView.setAdapter(mAdapter);
-                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(RestaurantListActivity.this);
+                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(ProductsSearchActivity.this);
                         mRecyclerView.setLayoutManager(layoutManager);
                         mRecyclerView.setHasFixedSize(true);
                     }
