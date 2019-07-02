@@ -1,7 +1,6 @@
 package com.staff.staffapp.service;
 
 import com.staff.staffapp.model.SubCourse;
-import com.staff.staffapp.model.SubCourseResponse;
 
 import java.util.List;
 

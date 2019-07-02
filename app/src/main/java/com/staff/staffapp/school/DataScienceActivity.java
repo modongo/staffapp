@@ -11,9 +11,8 @@ import com.staff.staffapp.R;
 import com.staff.staffapp.adapter.SubCoursesAdapter;
 import com.staff.staffapp.model.RetrofitInstance;
 import com.staff.staffapp.model.SubCourse;
-import com.staff.staffapp.model.SubCourseResponse;
 import com.staff.staffapp.service.GetSubCoursesList;
-import java.util.ArrayList;
+
 import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
