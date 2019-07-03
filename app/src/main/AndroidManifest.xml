@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.PhoneLoginActivity"></activity>
         <activity android:name=".ui.ChatRegisterActivity" />
         <activity android:name=".ui.ChatJoinActivity" />
         <activity android:name=".ui.MainActivity">
@@ -22,10 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ChatActivity"
-            android:theme="@style/NoActionBar"/>
-
-
+        <activity
+            android:name=".ui.ChatActivity"
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".faq.Nursing"
             android:label="Home Nursing Services">
