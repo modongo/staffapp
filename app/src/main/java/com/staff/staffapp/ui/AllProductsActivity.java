@@ -25,6 +25,7 @@ public class AllProductsActivity extends AppCompatActivity {
 //    @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.tabLayout) TabLayout tabLayout;
     @BindView(R.id.viewPager) ViewPager viewPager;
+    @BindView(R.id.toolbar) Toolbar toolbar;
     PageAdapter pageAdapter;
 
     @Override
@@ -37,6 +38,8 @@ public class AllProductsActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Consumer"));
         tabLayout.addTab(tabLayout.newTab().setText("Enterprise"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        toolbar.setTitle("All Products and Services");
 
         pageAdapter=new PageAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(pageAdapter);

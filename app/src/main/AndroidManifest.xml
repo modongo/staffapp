@@ -13,10 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.ServicesActivity"></activity>
-        <activity android:name=".ui.PlansActivity" />
-        <activity android:name=".ui.InternetActivity" />
-        <activity android:name=".ui.MpesaActivity" />
+        <activity android:name=".ui.ServicesActivity"
+            android:theme="@style/ProductsTheme"></activity>
+        <activity android:name=".ui.PlansActivity"
+            android:theme="@style/ProductsTheme"/>
+        <activity android:name=".ui.InternetActivity"
+            android:theme="@style/ProductsTheme"/>
+        <activity android:name=".ui.MpesaActivity"
+            android:theme="@style/ProductsTheme"/>
         <activity android:name=".ui.ProductCategoriesActivity" />
         <activity
             android:name=".ui.ProductLandingActivity"
