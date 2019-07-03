@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view == mViewProductsButton) {
-            Intent intent = new Intent(MainActivity.this, AllProductsActivity.class);
+            Intent intent = new Intent(MainActivity.this, ProductLandingActivity.class);
             startActivity(intent);
         }
     }
