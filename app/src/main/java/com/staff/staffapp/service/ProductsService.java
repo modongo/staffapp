@@ -152,7 +152,9 @@ public class ProductsService {
                     int id = productJSON.getInt("id");
                     String title = productJSON.getString("name");
                     String description = productJSON.getString("information");
-                    Product product = new Product(id, title, description);
+                    String category = productJSON.getString("category");
+                    String link = productJSON.getString("link");
+                    Product product = new Product(id, title, description, category, link);
                     products.add(product);
                 }
             }

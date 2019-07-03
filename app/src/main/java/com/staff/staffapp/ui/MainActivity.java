@@ -11,7 +11,7 @@ import com.staff.staffapp.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import com.staff.staffapp.faq.ProductsActivity;
+
 import com.staff.staffapp.school.BusinessSchool;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view == mViewProductsButton) {
-            Intent intent = new Intent(MainActivity.this, ProductLandingActivity.class);
+            Intent intent = new Intent(MainActivity.this, AllProductsActivity.class);
             startActivity(intent);
         }
     }
