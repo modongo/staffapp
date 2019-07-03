@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -13,172 +14,145 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.staff.staffapp.R;
 
 public class ChatRegisterActivity extends AppCompatActivity {
 
-    // Constants
-    static final String CHAT_PREFS = "ChatPrefs";
-    static final String DISPLAY_NAME_KEY = "username";
+    private static final String TAG = "RegisterActivity";
 
-    // TODO: Add member variables here:
-    // UI references.
-    private AutoCompleteTextView mEmailView;
-    private AutoCompleteTextView mUsernameView;
-    private EditText mPasswordView;
-    private EditText mConfirmPasswordView;
+    private Button CreateAccountButton;
+    private EditText UserEMail, UserPassword;
+    private TextView AlreadyHaveAccountLink;
 
-    // Firebase instance variables
     private FirebaseAuth mAuth;
+    private DatabaseReference RootRef;
 
+    private ProgressDialog loadingBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_register);
 
-        mEmailView = (AutoCompleteTextView) findViewById(R.id.register_email);
-        mPasswordView = (EditText) findViewById(R.id.register_password);
-        mConfirmPasswordView = (EditText) findViewById(R.id.register_confirm_password);
-        mUsernameView = (AutoCompleteTextView) findViewById(R.id.register_username);
+        mAuth = FirebaseAuth.getInstance();
+        RootRef = FirebaseDatabase.getInstance().getReference();
 
-        // Keyboard sign in action
-        mConfirmPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        initializeFields();
+
+        AlreadyHaveAccountLink.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
-                if (id == R.integer.register_form_finished || id == EditorInfo.IME_NULL) {
-                    attemptRegistration();
-                    return true;
-                }
-                return false;
+            public void onClick(View v) {
+                SendUserToLoginActivity();
+
             }
         });
 
-        // TODO: Get hold of an instance of FirebaseAuth
-        mAuth = FirebaseAuth.getInstance();
-
-
+        CreateAccountButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CreateNewAccount();
+            }
+        });
     }
 
-    // Executed when Sign Up button is pressed.
-    public void signUp(View v) {
-        attemptRegistration();
-    }
-
-    private void attemptRegistration() {
-
-        // Reset errors displayed in the form.
-        mEmailView.setError(null);
-        mPasswordView.setError(null);
-
-        // Store values at the time of the login attempt.
-        String email = mEmailView.getText().toString();
-        String password = mPasswordView.getText().toString();
-
-        boolean cancel = false;
-        View focusView = null;
-
-        Log.d("FlashChat", "TextUtils.isEmpty(password): " + TextUtils.isEmpty(password));
-        Log.d("FlashChat", "TextUtils.isEmpty(password) && !isPasswordValid(password): " + (TextUtils.isEmpty(password) && !isPasswordValid(password)));
-
-
-        // Check for a valid password, if the user entered one.
-        if (TextUtils.isEmpty(password) || !isPasswordValid(password)) {
-            Log.d("FlashChat", "Password Invalid");
-            mPasswordView.setError(getString(R.string.error_invalid_password));
-            focusView = mPasswordView;
-            cancel = true;
-        }
+    private void CreateNewAccount() {
+        String email = UserEMail.getText().toString();
+        String password = UserPassword.getText().toString();
 
         if (TextUtils.isEmpty(email)) {
-            mEmailView.setError(getString(R.string.error_field_required));
-            focusView = mEmailView;
-            cancel = true;
-        } else if (!isEmailValid(email)) {
-            mEmailView.setError(getString(R.string.error_invalid_email));
-            focusView = mEmailView;
-            cancel = true;
+            Toast.makeText(this, "Please enter email...", Toast.LENGTH_SHORT).show();
         }
-
-        if (cancel) {
-            // There was an error; don't attempt login and focus the first
-            // form field with an error.
-            focusView.requestFocus();
-        } else {
-            // TODO: Call create FirebaseUser() here
-            createFirebaseUser();
-
+        if (TextUtils.isEmpty(password)) {
+            Toast.makeText(this, "Please enter password...", Toast.LENGTH_SHORT).show();
         }
-    }
+        else {
+            loadingBar.setTitle("Creating New Account");
+            loadingBar.setMessage("Please wait, while we're creating an new account for you");
+            loadingBar.setCanceledOnTouchOutside(true);
+            loadingBar.show();
+            saveDisplayName();
 
-    private boolean isEmailValid(String email) {
-        // You can add more checking logic here.
-        return email.contains("@");
-    }
+            mAuth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful())
+                            {
+                                String currentUserID = mAuth.getCurrentUser().getUid();
+                                RootRef.child("Users").child(currentUserID).setValue("");
 
-    private boolean isPasswordValid(String password) {
-        //TODO: Add own logic to check for a valid password
-        String confirmPassword = mConfirmPasswordView.getText().toString();
-        return confirmPassword.equals(password) && password.length() > 6;
-    }
+                                SendUserToMainActivity();
+                                Toast.makeText(ChatRegisterActivity.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
+                                loadingBar.dismiss();
+                            } else {
+                                String message = task.getException().toString();
+                                Toast.makeText(ChatRegisterActivity.this, "Error : " + message, Toast.LENGTH_SHORT).show();
 
-    // TODO: Create a Firebase user
-    private void createFirebaseUser() {
-
-        String email = mEmailView.getText().toString();
-        String password = mPasswordView.getText().toString();
-
-
-
-        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this,
-                new OnCompleteListener<AuthResult>() {
-
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d("FlashChat", "createUser onComplete: " + task.isSuccessful());
-
-                        if(!task.isSuccessful()){
-                            Log.d("FlashChat", "user creation failed", task.getException());
-                            showErrorDialog("Registration attempt failed");
-                        } else {
-                            saveDisplayName();
-                            Intent intent = new Intent(ChatRegisterActivity.this, ChatJoinActivity.class);
-                            finish();
-                            startActivity(intent);
+                                Log.d(TAG, "onComplete: Error : " + message);
+                                loadingBar.dismiss();
+                            }
                         }
-                    }
-                });
+                    });
+        }
     }
 
 
-    // TODO: Save the display name to Shared Preferences
+
+    private void initializeFields() {
+        CreateAccountButton = findViewById(R.id.register_button);
+        UserEMail = findViewById(R.id.register_email);
+        UserPassword = findViewById(R.id.register_password);
+        AlreadyHaveAccountLink = findViewById(R.id.already_have_account_link);
+
+        loadingBar = new ProgressDialog(this);
+    }
+
+    private void SendUserToLoginActivity() {
+        Intent loginIntent = new Intent(ChatRegisterActivity.this, ChatJoinActivity.class);
+        startActivity(loginIntent);
+    }
+
+    private void SendUserToMainActivity() {
+        Intent mainIntent = new Intent(ChatRegisterActivity.this, ListActivity.class);
+        mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(mainIntent);
+        finish();
+    }
+
     private void saveDisplayName() {
-        String displayName = mUsernameView.getText().toString();
-        SharedPreferences prefs = getSharedPreferences(CHAT_PREFS, 0);
-        prefs.edit().putString(DISPLAY_NAME_KEY, displayName).apply();
+
+        FirebaseUser user = mAuth.getCurrentUser();
+        String displayName = UserEMail.getText().toString();
+
+        if (user !=null) {
+            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                    .setDisplayName(displayName)
+                    .build();
+
+            user.updateProfile(profileUpdates)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                Log.d("FlashChat", "User name updated.");
+                            }
+                        }
+                    });
+
+        }
+
     }
-
-
-    // TODO: Create an alert dialog to show in case registration failed
-    private void showErrorDialog(String message){
-
-        new AlertDialog.Builder(this)
-                .setTitle("Oops")
-                .setMessage(message)
-                .setPositiveButton(android.R.string.ok, null)
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .show();
-
-    }
-
-
-
-
 }

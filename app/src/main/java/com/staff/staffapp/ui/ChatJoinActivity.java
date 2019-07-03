@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,7 +23,7 @@ import com.staff.staffapp.R;
 
 public class ChatJoinActivity extends AppCompatActivity {
 
-    // TODO: Add member variables here:
+    //  Add member variables here:
     private FirebaseAuth mAuth;
     private ProgressDialog loadingBar;
 
@@ -42,6 +43,7 @@ public class ChatJoinActivity extends AppCompatActivity {
         currentUser = mAuth.getCurrentUser();
 
         initializeFields();
+        Log.d("SfcChat", "initializeFields");
 
         NeedNewAccountLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +76,9 @@ public class ChatJoinActivity extends AppCompatActivity {
 
         if (currentUser != null) {
             SendUserToMainActivity();
+
+            Log.d("SfcChat", "****SendUserToMainActivity****");
+
         }
     }
 
@@ -126,12 +131,15 @@ public class ChatJoinActivity extends AppCompatActivity {
         NeedNewAccountLink = findViewById(R.id.need_new_account_link);
         ForgetPasswordLink = findViewById(R.id.forget_password_link);
         loadingBar = new ProgressDialog(this);
+
+        Log.d("SfcChat", "initializeFields Yeah");
+
     }
 
 // send user to login main activity (its listActivity  for our case)
 
     private void SendUserToMainActivity() {
-        Intent mainIntent = new Intent(ChatJoinActivity.this, ListActivity.class);
+        Intent mainIntent = new Intent(ChatJoinActivity.this, ChatLoginActivity.class);
         mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(mainIntent);
         finish();
