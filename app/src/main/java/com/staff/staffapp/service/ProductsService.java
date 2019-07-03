@@ -44,7 +44,91 @@ public class ProductsService {
         call.enqueue(callback);
     }
 
-    public static void searchPersonalProducts(String query, Callback callback){
+    public static void getMpesaProducts(Callback callback) {
+        OkHttpClient client = new OkHttpClient.Builder().build();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.MPESA_PRODUCTS_SEARCH_URL).newBuilder();
+
+        String url = urlBuilder.build().toString();
+
+        Request request = new Request.Builder().url(url).build();
+
+        Call call = client.newCall(request);
+        call.enqueue(callback);
+    }
+
+    public static void getPlansProducts(Callback callback) {
+        OkHttpClient client = new OkHttpClient.Builder().build();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.PLANS_SEARCH_URL).newBuilder();
+
+        String url = urlBuilder.build().toString();
+
+        Request request = new Request.Builder().url(url).build();
+
+        Call call = client.newCall(request);
+        call.enqueue(callback);
+    }
+
+    public static void getServiceProducts(Callback callback) {
+        OkHttpClient client = new OkHttpClient.Builder().build();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.SERVICES_SEARCH_URL).newBuilder();
+
+        String url = urlBuilder.build().toString();
+
+        Request request = new Request.Builder().url(url).build();
+
+        Call call = client.newCall(request);
+        call.enqueue(callback);
+    }
+
+    public static void getInternetProducts(Callback callback) {
+        OkHttpClient client = new OkHttpClient.Builder().build();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.INTERNET_SEARCH_URL).newBuilder();
+
+        String url = urlBuilder.build().toString();
+
+        Request request = new Request.Builder().url(url).build();
+
+        Call call = client.newCall(request);
+        call.enqueue(callback);
+    }
+
+    public static void getSMEProducts(Callback callback) {
+        OkHttpClient client = new OkHttpClient.Builder().build();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.SME_PRODUCTS_SEARCH_URL).newBuilder();
+
+        String url = urlBuilder.build().toString();
+
+        Request request = new Request.Builder().url(url).build();
+
+        Call call = client.newCall(request);
+        call.enqueue(callback);
+    }
+
+    public static void getCorporateProducts(Callback callback) {
+        OkHttpClient client = new OkHttpClient.Builder().build();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.CORPORATE_PRODUCTS_SEARCH_URL).newBuilder();
+
+        String url = urlBuilder.build().toString();
+
+        Request request = new Request.Builder().url(url).build();
+
+        Call call = client.newCall(request);
+        call.enqueue(callback);
+    }
+
+    public static void getWholesaleProducts(Callback callback) {
+        OkHttpClient client = new OkHttpClient.Builder().build();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.WHOLESALE_PRODUCTS_SEARCH_URL).newBuilder();
+
+        String url = urlBuilder.build().toString();
+
+        Request request = new Request.Builder().url(url).build();
+
+        Call call = client.newCall(request);
+        call.enqueue(callback);
+    }
+
+    public static void searchProducts(String query, Callback callback){
         OkHttpClient client = new OkHttpClient.Builder().build();
         HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.PRODUCTS_SEARCH_URL+query).newBuilder();
         String url = urlBuilder.build().toString();
@@ -68,7 +152,6 @@ public class ProductsService {
                     int id = productJSON.getInt("id");
                     String title = productJSON.getString("name");
                     String description = productJSON.getString("information");
-                    Log.d("Serv View", title);
                     Product product = new Product(id, title, description);
                     products.add(product);
                 }
@@ -80,34 +163,4 @@ public class ProductsService {
         }
         return products;
     }
-
-//    public ArrayList<Product> processSearchResults(Response response) {
-//        ArrayList<Product> products = new ArrayList<>();
-//
-//
-//        try {
-////            String jsonData = response.body().string();
-////            JSONArray productsArrayJSON = new JSONArray(jsonData);
-//            String jsonData=response.body().string();
-//            JSONObject productsJSON=new JSONObject(jsonData);
-//            JSONArray productsArrayJSON = productsJSON.getJSONArray("");
-//
-//            if (response.isSuccessful()) {
-//                for (int i = 0; i < productsArrayJSON.length(); i++) {
-//                    JSONObject productJSON = productsArrayJSON.getJSONObject(i);
-//                    int id = productJSON.getInt("id");
-//                    String title = productJSON.getString("name");
-//                    String description = productJSON.getString("information");
-//                    Log.d("Serv View", title);
-//                    Product product = new Product(id, title, description);
-//                    products.add(product);
-//                }
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-//        return products;
-//    }
 }

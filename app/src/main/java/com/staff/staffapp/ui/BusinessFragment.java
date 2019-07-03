@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.ProgressBar;
 
 import com.staff.staffapp.R;
 import com.staff.staffapp.adapter.ExpandableListAdapterProducts;
@@ -42,6 +43,7 @@ public class BusinessFragment extends Fragment {
     private List<String> listDescription;
     private ExpandableListView listView;
     private FragmentActivity listener;
+    private ProgressBar progressBar;
 
     public BusinessFragment() {
         // Required empty public constructor
@@ -60,6 +62,7 @@ public class BusinessFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_business, container, false);
+        progressBar=view.findViewById(R.id.pBar);
         listView=view.findViewById(R.id.lvExpandableBusiness);
         getProducts();
         return view;
@@ -81,6 +84,7 @@ public class BusinessFragment extends Fragment {
 
         @Override
         public void onResponse(Call call, Response response) throws IOException {
+            progressBar.setVisibility(view.VISIBLE);
             products=new ArrayList<>();
             products = productsService.processResaults(response);
             getActivity().runOnUiThread(new Runnable() {
@@ -98,8 +102,10 @@ public class BusinessFragment extends Fragment {
                     }
                     listAdapter=new ExpandableListAdapterProducts(getContext(),listDataHeader,listHash);
                     listView.setAdapter(listAdapter);
+                    progressBar.setVisibility(view.GONE);
                 }
             });
+
         }
         });
     }
