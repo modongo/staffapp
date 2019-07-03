@@ -29,8 +29,6 @@ public class ChatTabsAccessorAdapter extends FragmentPagerAdapter {
             case 2:
                 return new ChatContactFragment();
 
-            case 3:
-                return new ChatRequestFragment();
 
             default:
                 return null;
@@ -50,8 +48,6 @@ public class ChatTabsAccessorAdapter extends FragmentPagerAdapter {
             case 2:
                 return "Contacts";
 
-            case 3:
-                return "Requests";
 
             default:
                 return null;
@@ -60,6 +56,6 @@ public class ChatTabsAccessorAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
 }

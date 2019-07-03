@@ -147,7 +147,7 @@ public class ChatListAdapter extends BaseAdapter {
     }
 
 
-    void cleanup() {
+    public void cleanup() {
 
         mDatabaseReference.removeEventListener(mListener);
     }

@@ -82,10 +82,10 @@ public class ChatJoinActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
-                Log.d("FlashChat", "signInWithEmail() onComplete: " + task.isSuccessful());
+                Log.d("staffChat", "signInWithEmail() onComplete: " + task.isSuccessful());
 
                 if (!task.isSuccessful()) {
-                    Log.d("FlashChat", "Problem signing in: " + task.getException());
+                    Log.d("staffChat", "Problem signing in: " + task.getException());
                     showErrorDialog("There was a problem signing in");
                 } else {
                     Intent intent = new Intent(ChatJoinActivity.this, ChatActivity.class);
