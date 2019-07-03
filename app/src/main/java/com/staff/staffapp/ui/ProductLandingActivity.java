@@ -49,15 +49,15 @@ public class ProductLandingActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                     if(finalI==1){
-                        Intent intent=new Intent(ProductLandingActivity.this, AllProductsActivity.class);
+                        Intent intent=new Intent(ProductLandingActivity.this, MpesaActivity.class);
                         startActivity(intent);
                     }
                     if(finalI==2){
-                        Intent intent=new Intent(ProductLandingActivity.this, AllProductsActivity.class);
+                        Intent intent=new Intent(ProductLandingActivity.this, PlansActivity.class);
                         startActivity(intent);
                     }
                     if(finalI==3){
-                        Intent intent=new Intent(ProductLandingActivity.this, AllProductsActivity.class);
+                        Intent intent=new Intent(ProductLandingActivity.this, ServicesActivity.class);
                         startActivity(intent);
                     }
                     if(finalI==4){
@@ -65,7 +65,7 @@ public class ProductLandingActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                     if(finalI==5){
-                        Intent intent=new Intent(ProductLandingActivity.this, AllProductsActivity.class);
+                        Intent intent=new Intent(ProductLandingActivity.this, InternetActivity.class);
                         startActivity(intent);
                     }
                 }

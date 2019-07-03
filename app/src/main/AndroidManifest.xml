@@ -13,7 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.ProductLandingActivity"
+        <activity android:name=".ui.ServicesActivity"></activity>
+        <activity android:name=".ui.PlansActivity" />
+        <activity android:name=".ui.InternetActivity" />
+        <activity android:name=".ui.MpesaActivity" />
+        <activity android:name=".ui.ProductCategoriesActivity" />
+        <activity
+            android:name=".ui.ProductLandingActivity"
             android:theme="@style/ProductsTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -205,8 +211,7 @@
         <activity android:name=".school.BusinessSchool" />
         <activity
             android:name=".ui.AllProductsActivity"
-            android:theme="@style/ProductsTheme">
-        </activity>
+            android:theme="@style/ProductsTheme" />
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
