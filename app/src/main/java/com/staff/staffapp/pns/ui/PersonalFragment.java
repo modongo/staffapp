@@ -1,4 +1,4 @@
-package com.staff.staffapp.ui;
+package com.staff.staffapp.pns.ui;
 
 
 import android.app.Activity;
@@ -16,9 +16,9 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import com.staff.staffapp.R;
-import com.staff.staffapp.adapter.ExpandableListAdapterProducts;
-import com.staff.staffapp.model.Product;
-import com.staff.staffapp.service.ProductsService;
+import com.staff.staffapp.pns.adapter.ExpandableListAdapterProducts;
+import com.staff.staffapp.pns.model.Product;
+import com.staff.staffapp.pns.service.ProductsService;
 
 import java.io.IOException;
 import java.util.ArrayList;

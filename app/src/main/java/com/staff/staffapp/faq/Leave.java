@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.staff.staffapp.R;
 import com.staff.staffapp.ui.FAQ;
-import com.staff.staffapp.ui.MainActivity;
+import com.staff.staffapp.MainActivity;
 
 public class Leave extends AppCompatActivity {
 

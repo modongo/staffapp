@@ -1,20 +1,13 @@
-package com.staff.staffapp.ui;
+package com.staff.staffapp.pns.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
-import androidx.core.view.MenuItemCompat;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.widget.Toolbar;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
-import com.staff.staffapp.adapter.PageAdapter;
+import com.staff.staffapp.pns.adapter.PageAdapter;
 import com.staff.staffapp.R;
 
 import butterknife.BindView;

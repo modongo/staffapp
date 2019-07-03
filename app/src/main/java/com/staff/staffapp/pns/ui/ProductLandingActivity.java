@@ -1,4 +1,4 @@
-package com.staff.staffapp.ui;
+package com.staff.staffapp.pns.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
@@ -19,8 +19,6 @@ import com.staff.staffapp.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-import com.staff.staffapp.R;
 
 public class ProductLandingActivity extends AppCompatActivity {
     @BindView(R.id.mainGrid) GridLayout gridLayout;
@@ -63,12 +61,11 @@ public class ProductLandingActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                     if(finalI==4){
-                        Intent intent=new Intent(ProductLandingActivity.this, AllProductsActivity.class);
+                        Intent intent=new Intent(ProductLandingActivity.this, InternetActivity.class);
                         startActivity(intent);
                     }
                     if(finalI==5){
-                        Intent intent=new Intent(ProductLandingActivity.this, InternetActivity.class);
-                        startActivity(intent);
+
                     }
                 }
             });

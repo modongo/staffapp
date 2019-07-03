@@ -1,4 +1,4 @@
-package com.staff.staffapp.adapter;
+package com.staff.staffapp.pns.adapter;
 
 import android.content.Context;
 import android.graphics.Typeface;

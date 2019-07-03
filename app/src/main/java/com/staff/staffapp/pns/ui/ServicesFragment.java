@@ -1,4 +1,4 @@
-package com.staff.staffapp.ui;
+package com.staff.staffapp.pns.ui;
 
 
 import android.os.Bundle;

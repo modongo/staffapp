@@ -1,9 +1,7 @@
-package com.staff.staffapp.service;
-
-import android.util.Log;
+package com.staff.staffapp.pns.service;
 
 import com.staff.staffapp.Constants;
-import com.staff.staffapp.model.Product;
+import com.staff.staffapp.pns.model.Product;
 
 import org.json.JSONArray;
 import org.json.JSONException;

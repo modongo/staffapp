@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="#1F2833"
     android:weightSum="10"
-    tools:context="com.staff.staffapp.ui.ProductLandingActivity">
+    tools:context="com.staff.staffapp.pns.ui.ProductLandingActivity">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

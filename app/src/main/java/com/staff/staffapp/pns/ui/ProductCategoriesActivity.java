@@ -1,4 +1,4 @@
-package com.staff.staffapp.ui;
+package com.staff.staffapp.pns.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -7,8 +7,7 @@ import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 import com.staff.staffapp.R;
-import com.staff.staffapp.adapter.CategoriesPageAdapter;
-import com.staff.staffapp.adapter.PageAdapter;
+import com.staff.staffapp.pns.adapter.CategoriesPageAdapter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

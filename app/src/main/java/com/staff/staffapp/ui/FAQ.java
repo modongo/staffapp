@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.staff.staffapp.MainActivity;
 import com.staff.staffapp.R;
 import com.staff.staffapp.faq.Contacts;
 import com.staff.staffapp.faq.Emergency;

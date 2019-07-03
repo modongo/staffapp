@@ -1,4 +1,4 @@
-package com.staff.staffapp.ui;
+package com.staff.staffapp.pns.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -8,12 +8,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import com.staff.staffapp.R;
-import com.staff.staffapp.adapter.ProductsListAdapter;
-import com.staff.staffapp.model.Product;
-import com.staff.staffapp.service.ProductsService;
+import com.staff.staffapp.pns.adapter.ProductsListAdapter;
+import com.staff.staffapp.pns.model.Product;
+import com.staff.staffapp.pns.service.ProductsService;
 
 import java.io.IOException;
 import java.util.ArrayList;

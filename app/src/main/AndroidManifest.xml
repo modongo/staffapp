@@ -13,23 +13,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.ServicesActivity"
+        <activity android:name=".pns.ui.ServicesActivity"
             android:theme="@style/ProductsTheme"></activity>
-        <activity android:name=".ui.PlansActivity"
+        <activity android:name=".pns.ui.PlansActivity"
             android:theme="@style/ProductsTheme"/>
-        <activity android:name=".ui.InternetActivity"
+        <activity android:name=".pns.ui.InternetActivity"
             android:theme="@style/ProductsTheme"/>
-        <activity android:name=".ui.MpesaActivity"
+        <activity android:name=".pns.ui.MpesaActivity"
             android:theme="@style/ProductsTheme"/>
-        <activity android:name=".ui.ProductCategoriesActivity" />
+        <activity android:name=".pns.ui.ProductCategoriesActivity" />
         <activity
-            android:name=".ui.ProductLandingActivity"
+            android:name=".pns.ui.ProductLandingActivity"
             android:theme="@style/ProductsTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".ui.ProductsSearchActivity" />
+        <activity android:name=".pns.ui.ProductsSearchActivity" />
         <activity
             android:name=".faq.Nursing"
             android:label="Home Nursing Services">
@@ -174,7 +174,7 @@
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.staff.staffapp.ui.MainActivity" />
+            android:value="com.staff.staffapp.MainActivity" />
 
         <activity
             android:name=".faq.PersonalProductsActivity"
@@ -195,7 +195,7 @@
         </activity>
         <activity
             android:name=".ui.NewsActivity"
-            android:parentActivityName=".ui.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ui.DepartmentNewsActivity"
             android:parentActivityName=".ui.NewsActivity" />
@@ -214,9 +214,9 @@
         <activity android:name=".school.DetailActivity" />
         <activity android:name=".school.BusinessSchool" />
         <activity
-            android:name=".ui.AllProductsActivity"
+            android:name=".pns.ui.AllProductsActivity"
             android:theme="@style/ProductsTheme" />
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,4 +1,4 @@
-package com.staff.staffapp.adapter;
+package com.staff.staffapp.pns.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.staff.staffapp.R;
-import com.staff.staffapp.model.Product;
+import com.staff.staffapp.pns.model.Product;
 import java.util.List;
 
 import butterknife.BindView;

@@ -1,15 +1,13 @@
-package com.staff.staffapp.adapter;
+package com.staff.staffapp.pns.adapter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.staff.staffapp.ui.BusinessFragment;
-import com.staff.staffapp.ui.InternetFragment;
-import com.staff.staffapp.ui.MpesaFragment;
-import com.staff.staffapp.ui.PersonalFragment;
-import com.staff.staffapp.ui.PlansFragment;
-import com.staff.staffapp.ui.ServicesFragment;
+import com.staff.staffapp.pns.ui.InternetFragment;
+import com.staff.staffapp.pns.ui.MpesaFragment;
+import com.staff.staffapp.pns.ui.PlansFragment;
+import com.staff.staffapp.pns.ui.ServicesFragment;
 
 public class CategoriesPageAdapter extends FragmentStatePagerAdapter {
 

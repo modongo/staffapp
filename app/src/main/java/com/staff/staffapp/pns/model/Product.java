@@ -1,4 +1,4 @@
-package com.staff.staffapp.model;
+package com.staff.staffapp.pns.model;
 
 public class Product {
     int id;

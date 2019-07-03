@@ -1,4 +1,4 @@
-package com.staff.staffapp.ui;
+package com.staff.staffapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.staff.staffapp.R;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import com.staff.staffapp.pns.ui.ProductLandingActivity;
 import com.staff.staffapp.school.BusinessSchool;
+import com.staff.staffapp.ui.FAQ;
+import com.staff.staffapp.ui.NewsActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button mFAQButton;

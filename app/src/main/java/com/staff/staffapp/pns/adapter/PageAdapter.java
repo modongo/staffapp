@@ -1,11 +1,11 @@
-package com.staff.staffapp.adapter;
+package com.staff.staffapp.pns.adapter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.staff.staffapp.ui.BusinessFragment;
-import com.staff.staffapp.ui.PersonalFragment;
+import com.staff.staffapp.pns.ui.BusinessFragment;
+import com.staff.staffapp.pns.ui.PersonalFragment;
 
 public class PageAdapter extends FragmentStatePagerAdapter {
 
