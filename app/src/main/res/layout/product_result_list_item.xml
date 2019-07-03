@@ -37,6 +37,11 @@
                     android:layout_height="wrap_content"
                     android:text="Product Description" />
 
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/tvLink"/>-->
+
             </LinearLayout>
 
         </LinearLayout>
