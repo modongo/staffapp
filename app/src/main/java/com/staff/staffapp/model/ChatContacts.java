@@ -1,13 +1,13 @@
 package com.staff.staffapp.model;
 
-public class Contacts {
+public class ChatContacts {
 
     public String name, status, image;
 
-    public Contacts() {
+    public ChatContacts() {
     }
 
-    public Contacts(String name, String status, String image) {
+    public ChatContacts(String name, String status, String image) {
         this.name = name;
         this.status = status;
         this.image = image;
