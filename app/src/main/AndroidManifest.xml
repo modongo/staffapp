@@ -21,7 +21,8 @@
         <activity
             android:name=".ui.FindFriendsActivity"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".ui.GroupChatActivity" />
+        <activity android:name=".ui.GroupChatActivity"
+            android:theme="@style/NoActionBar"/>
         <activity android:name=".ui.PhoneLoginActivity" />
         <activity android:name=".ui.ChatRegisterActivity" />
         <activity android:name=".ui.ChatJoinActivity" />
