@@ -27,132 +27,135 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.staff.staffapp.R;
 
 public class ChatRegisterActivity extends AppCompatActivity {
 
-    private static final String TAG = "RegisterActivity";
+        private Button CreateAccountButton;
+        private EditText UserEmail, UserPassword;
+        private TextView AlreadyHaveAccountLink;
 
-    private Button CreateAccountButton;
-    private EditText UserEMail, UserPassword;
-    private TextView AlreadyHaveAccountLink;
+        private FirebaseAuth mAuth;
+        private DatabaseReference RootRef;
 
-    private FirebaseAuth mAuth;
-    private DatabaseReference RootRef;
+        private ProgressDialog loadingBar;
 
-    private ProgressDialog loadingBar;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat_register);
+        @Override
+        protected void onCreate(Bundle savedInstanceState)
+        {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_chat_register);
 
-        mAuth = FirebaseAuth.getInstance();
-        RootRef = FirebaseDatabase.getInstance().getReference();
 
-        initializeFields();
+            mAuth = FirebaseAuth.getInstance();
+            RootRef = FirebaseDatabase.getInstance().getReference();
 
-        AlreadyHaveAccountLink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SendUserToLoginActivity();
 
-            }
-        });
+            InitializeFields();
 
-        CreateAccountButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CreateNewAccount();
-            }
-        });
-    }
 
-    private void CreateNewAccount() {
-        String email = UserEMail.getText().toString();
-        String password = UserPassword.getText().toString();
+            AlreadyHaveAccountLink.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View view)
+                {
+                    SendUserToLoginActivity();
+                }
+            });
 
-        if (TextUtils.isEmpty(email)) {
-            Toast.makeText(this, "Please enter email...", Toast.LENGTH_SHORT).show();
+
+            CreateAccountButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view)
+                {
+                    CreateNewAccount();
+                }
+            });
         }
-        if (TextUtils.isEmpty(password)) {
-            Toast.makeText(this, "Please enter password...", Toast.LENGTH_SHORT).show();
-        }
-        else {
-            loadingBar.setTitle("Creating New Account");
-            loadingBar.setMessage("Please wait, while we're creating an new account for you");
-            loadingBar.setCanceledOnTouchOutside(true);
-            loadingBar.show();
-            saveDisplayName();
 
-            mAuth.createUserWithEmailAndPassword(email, password)
-                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful())
+
+
+
+        private void CreateNewAccount()
+        {
+            String email = UserEmail.getText().toString();
+            String password = UserPassword.getText().toString();
+
+            if (TextUtils.isEmpty(email))
+            {
+                Toast.makeText(this, "Please enter email...", Toast.LENGTH_SHORT).show();
+            }
+            if (TextUtils.isEmpty(password))
+            {
+                Toast.makeText(this, "Please enter password...", Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+                loadingBar.setTitle("Creating New Account");
+                loadingBar.setMessage("Please wait, while we wre creating new account for you...");
+                loadingBar.setCanceledOnTouchOutside(true);
+                loadingBar.show();
+
+                mAuth.createUserWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task)
                             {
-                                String currentUserID = mAuth.getCurrentUser().getUid();
-                                RootRef.child("Users").child(currentUserID).setValue("");
+                                if (task.isSuccessful())
+                                {
+                                    String deviceToken = FirebaseInstanceId.getInstance().getToken();
 
-                                SendUserToMainActivity();
-                                Toast.makeText(ChatRegisterActivity.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
-                                loadingBar.dismiss();
-                            } else {
-                                String message = task.getException().toString();
-                                Toast.makeText(ChatRegisterActivity.this, "Error : " + message, Toast.LENGTH_SHORT).show();
+                                    String currentUserID = mAuth.getCurrentUser().getUid();
+                                    RootRef.child("Users").child(currentUserID).setValue("");
 
-                                Log.d(TAG, "onComplete: Error : " + message);
-                                loadingBar.dismiss();
+
+                                    RootRef.child("Users").child(currentUserID).child("device_token")
+                                            .setValue(deviceToken);
+
+                                    SendUserToMainActivity();
+                                    Toast.makeText(ChatRegisterActivity.this, "Account Created Successfully...", Toast.LENGTH_SHORT).show();
+                                    loadingBar.dismiss();
+                                }
+                                else
+                                {
+                                    String message = task.getException().toString();
+                                    Toast.makeText(ChatRegisterActivity.this, "Error : " + message, Toast.LENGTH_SHORT).show();
+                                    loadingBar.dismiss();
+                                }
                             }
-                        }
-                    });
+                        });
+            }
         }
-    }
 
 
 
-    private void initializeFields() {
-        CreateAccountButton = findViewById(R.id.register_button);
-        UserEMail = findViewById(R.id.register_email);
-        UserPassword = findViewById(R.id.register_password);
-        AlreadyHaveAccountLink = findViewById(R.id.already_have_account_link);
 
-        loadingBar = new ProgressDialog(this);
-    }
+        private void InitializeFields()
+        {
+            CreateAccountButton = (Button) findViewById(R.id.register_button);
+            UserEmail = (EditText) findViewById(R.id.register_email);
+            UserPassword = (EditText) findViewById(R.id.register_password);
+            AlreadyHaveAccountLink = (TextView) findViewById(R.id.already_have_account_link);
 
-    private void SendUserToLoginActivity() {
-        Intent loginIntent = new Intent(ChatRegisterActivity.this, ChatJoinActivity.class);
-        startActivity(loginIntent);
-    }
+            loadingBar = new ProgressDialog(this);
+        }
 
-    private void SendUserToMainActivity() {
-        Intent mainIntent = new Intent(ChatRegisterActivity.this, ListActivity.class);
-        mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(mainIntent);
-        finish();
-    }
 
-    private void saveDisplayName() {
+        private void SendUserToLoginActivity()
+        {
+            Intent loginIntent = new Intent(ChatRegisterActivity.this, ChatJoinActivity.class);
+            startActivity(loginIntent);
+        }
 
-        FirebaseUser user = mAuth.getCurrentUser();
-        String displayName = UserEMail.getText().toString();
 
-        if (user !=null) {
-            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
-                    .setDisplayName(displayName)
-                    .build();
-
-            user.updateProfile(profileUpdates)
-                    .addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            if (task.isSuccessful()) {
-                                Log.d("FlashChat", "User name updated.");
-                            }
-                        }
-                    });
-
+        private void SendUserToMainActivity()
+        {
+            Intent mainIntent = new Intent(ChatRegisterActivity.this, ChatLoginActivity.class);
+            mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(mainIntent);
+            finish();
         }
 
     }
-}
