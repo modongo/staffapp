@@ -9,13 +9,19 @@
     <include
         layout="@layout/app_bar_layout"
         android:id="@+id/settings_toolbar">
-
     </include>
-
+    <TextView
+        android:layout_below="@+id/settings_toolbar"
+        android:layout_above="@+id/set_profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:text="Edit/Enter profile info"
+        android:textAlignment="center"/>
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/set_profile_image"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
