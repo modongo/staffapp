@@ -24,10 +24,11 @@ import com.staff.staffapp.R;
 
 import java.util.concurrent.TimeUnit;
 
+
 public class PhoneLoginActivity extends AppCompatActivity
 {
-    private EditText InputUserPhoneNumber, InputUserVerificationCode;
     private Button SendVerificationCodeButton, VerifyButton;
+    private EditText InputPhoneNumber, InputVerificationCode;
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks callbacks;
     private FirebaseAuth mAuth;
@@ -36,7 +37,6 @@ public class PhoneLoginActivity extends AppCompatActivity
 
     private String mVerificationId;
     private PhoneAuthProvider.ForceResendingToken mResendToken;
-
 
 
     @Override
@@ -49,18 +49,18 @@ public class PhoneLoginActivity extends AppCompatActivity
         mAuth = FirebaseAuth.getInstance();
 
 
-        InputUserPhoneNumber = (EditText) findViewById(R.id.phone_number_input);
-        InputUserVerificationCode = (EditText) findViewById(R.id.verification_code_input);
         SendVerificationCodeButton = (Button) findViewById(R.id.send_ver_code_button);
         VerifyButton = (Button) findViewById(R.id.verify_button);
+        InputPhoneNumber = (EditText) findViewById(R.id.phone_number_input);
+        InputVerificationCode = (EditText) findViewById(R.id.verification_code_input);
         loadingBar = new ProgressDialog(this);
 
 
         SendVerificationCodeButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
+            public void onClick(View view)
             {
-                String phoneNumber = InputUserPhoneNumber.getText().toString();
+                String phoneNumber = InputPhoneNumber.getText().toString();
 
                 if (TextUtils.isEmpty(phoneNumber))
                 {
@@ -69,27 +69,29 @@ public class PhoneLoginActivity extends AppCompatActivity
                 else
                 {
                     loadingBar.setTitle("Phone Verification");
-                    loadingBar.setMessage("Please wait, while we are authenticating using your phone...");
+                    loadingBar.setMessage("please wait, while we are authenticating your phone...");
                     loadingBar.setCanceledOnTouchOutside(false);
                     loadingBar.show();
 
-
-                    PhoneAuthProvider.getInstance().verifyPhoneNumber(phoneNumber, 60, TimeUnit.SECONDS, PhoneLoginActivity.this, callbacks);
+                    PhoneAuthProvider.getInstance().verifyPhoneNumber(
+                            phoneNumber,        // Phone number to verify
+                            60,                 // Timeout duration
+                            TimeUnit.SECONDS,   // Unit of timeout
+                            PhoneLoginActivity.this,               // Activity (for callback binding)
+                            callbacks);        // OnVerificationStateChangedCallbacks
                 }
             }
         });
 
 
-
         VerifyButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
+            public void onClick(View view)
             {
-                InputUserPhoneNumber.setVisibility(View.INVISIBLE);
                 SendVerificationCodeButton.setVisibility(View.INVISIBLE);
+                InputPhoneNumber.setVisibility(View.INVISIBLE);
 
-
-                String verificationCode = InputUserVerificationCode.getText().toString();
+                String verificationCode = InputVerificationCode.getText().toString();
 
                 if (TextUtils.isEmpty(verificationCode))
                 {
@@ -98,7 +100,7 @@ public class PhoneLoginActivity extends AppCompatActivity
                 else
                 {
                     loadingBar.setTitle("Verification Code");
-                    loadingBar.setMessage("Please wait, while we are verifying verification code...");
+                    loadingBar.setMessage("please wait, while we are verifying verification code...");
                     loadingBar.setCanceledOnTouchOutside(false);
                     loadingBar.show();
 
@@ -119,18 +121,14 @@ public class PhoneLoginActivity extends AppCompatActivity
             @Override
             public void onVerificationFailed(FirebaseException e)
             {
-                String message = e.getMessage().toString();
-                Toast.makeText(PhoneLoginActivity.this, "Error: " + message, Toast.LENGTH_SHORT).show();
-                Log.d("PhoneLogin", "onVerificationFailed: " + message);
-
-                Toast.makeText(PhoneLoginActivity.this, "Invalid Phone Number, Please enter correct phone number with your country code...", Toast.LENGTH_LONG).show();
                 loadingBar.dismiss();
+                Toast.makeText(PhoneLoginActivity.this, "Invalid Phone Number, Please enter correct phone number with your country code...", Toast.LENGTH_SHORT).show();
 
-                InputUserPhoneNumber.setVisibility(View.VISIBLE);
                 SendVerificationCodeButton.setVisibility(View.VISIBLE);
+                InputPhoneNumber.setVisibility(View.VISIBLE);
 
-                InputUserVerificationCode.setVisibility(View.INVISIBLE);
                 VerifyButton.setVisibility(View.INVISIBLE);
+                InputVerificationCode.setVisibility(View.INVISIBLE);
             }
 
             public void onCodeSent(String verificationId,
@@ -140,23 +138,22 @@ public class PhoneLoginActivity extends AppCompatActivity
                 mVerificationId = verificationId;
                 mResendToken = token;
 
-
-                Toast.makeText(PhoneLoginActivity.this, "Code has been sent, please check and verify...", Toast.LENGTH_SHORT).show();
                 loadingBar.dismiss();
+                Toast.makeText(PhoneLoginActivity.this, "Code has been sent, please check and verify...", Toast.LENGTH_SHORT).show();
 
-                InputUserPhoneNumber.setVisibility(View.INVISIBLE);
                 SendVerificationCodeButton.setVisibility(View.INVISIBLE);
+                InputPhoneNumber.setVisibility(View.INVISIBLE);
 
-                InputUserVerificationCode.setVisibility(View.VISIBLE);
                 VerifyButton.setVisibility(View.VISIBLE);
+                InputVerificationCode.setVisibility(View.VISIBLE);
             }
         };
     }
 
 
 
-    private void signInWithPhoneAuthCredential(PhoneAuthCredential credential)
-    {
+
+    private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -164,14 +161,13 @@ public class PhoneLoginActivity extends AppCompatActivity
                         if (task.isSuccessful())
                         {
                             loadingBar.dismiss();
-                            Toast.makeText(PhoneLoginActivity.this, "Congratulations, you're logged in Successfully.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(PhoneLoginActivity.this, "Congratulations, you're logged in successfully...", Toast.LENGTH_SHORT).show();
                             SendUserToMainActivity();
                         }
                         else
                         {
                             String message = task.getException().toString();
-                            Toast.makeText(PhoneLoginActivity.this, "Error: " + message, Toast.LENGTH_SHORT).show();
-                            loadingBar.dismiss();
+                            Toast.makeText(PhoneLoginActivity.this, "Error : "  +  message, Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -182,7 +178,7 @@ public class PhoneLoginActivity extends AppCompatActivity
 
     private void SendUserToMainActivity()
     {
-        Intent mainIntent = new Intent(PhoneLoginActivity.this, ChatJoinActivity.class);
+        Intent mainIntent = new Intent(PhoneLoginActivity.this, ChatLoginActivity.class);
         startActivity(mainIntent);
         finish();
     }
