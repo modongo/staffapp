@@ -27,4 +27,6 @@ public class Constants {
     /* Telemetry variables */
     // Flag to turn event aggregation on/off
     public static final boolean sTelemetryAggregationIsRequired = true;
+
+    public  static  final String IMAGE_URL = "https://graph.microsoft.com/v1.0/me/photos/48x48/$value";
 }

@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".login.LoginActivity">
+        <activity android:name=".login.LoginActivity"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -185,24 +186,24 @@
         </activity>
         <activity
             android:name=".ui.NewsActivity"
-            android:parentActivityName=".ui.MainActivity" />
+            android:parentActivityName=".ui.MainActivity"/>
         <activity
             android:name=".ui.DepartmentNewsActivity"
             android:parentActivityName=".ui.NewsActivity" />
-        <activity android:name=".school.CommunicationActivity" />
-        <activity android:name=".school.FinanceActivity" />
-        <activity android:name=".school.ManagementActivity" />
+        <activity android:name=".school.ui.CommunicationActivity" />
+        <activity android:name=".school.ui.FinanceActivity" />
+        <activity android:name=".school.ui.ManagementActivity" />
         <activity
-            android:name=".school.MarketingActivity"
+            android:name=".school.ui.MarketingActivity"
             android:label="@string/title_activity_marketing"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".school.ItilActivity" />
-        <activity android:name=".school.AgileActivity" />
-        <activity android:name=".school.DevActivity" />
-        <activity android:name=".school.CyberSecActivity" />
-        <activity android:name=".school.DataScienceActivity" />
-        <activity android:name=".school.DetailActivity" />
-        <activity android:name=".school.BusinessSchool" />
+        <activity android:name=".school.ui.ItilActivity" />
+        <activity android:name=".school.ui.AgileActivity" />
+        <activity android:name=".school.ui.DevActivity" />
+        <activity android:name=".school.ui.CyberSecActivity" />
+        <activity android:name=".school.ui.DataScienceActivity" />
+        <activity android:name=".school.ui.ViewContentActivity" />
+        <activity android:name=".school.ui.BusinessSchool" />
         <activity
             android:name=".ui.ProductLandingActivity"
             android:theme="@style/ProductsTheme">
@@ -217,7 +218,8 @@
         </activity>
         <activity android:name=".ui.ContactListActivity">
         </activity>
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.MainActivity"
+            android:theme="@style/NoActionBar">
         </activity>
         <activity
             android:name=".ui.NewsDetailsActivity"

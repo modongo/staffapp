@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-226:12
-INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-226:12
-INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-226:12
-INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-226:12
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-228:12
 MERGED from [androidx.databinding:databinding-adapters:3.4.1] /home/developer/.gradle/caches/transforms-2/files-2.1/6d6d2ec6326f62a9ec51cc02188d6a94/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.4.1] /home/developer/.gradle/caches/transforms-2/files-2.1/5387afba9dcdc17043ff07ae786aee36/AndroidManifest.xml:17:1-24:12
 MERGED from [com.karumi:dexter:5.0.0] /home/developer/.gradle/caches/transforms-2/files-2.1/28710c859a2c20fc69f308a565713d3c/AndroidManifest.xml:17:1-32:12
@@ -70,22 +70,22 @@ MERGED from [androidx.print:print:1.0.0] /home/developer/.gradle/caches/transfor
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/developer/.gradle/caches/transforms-2/files-2.1/0f6ce17726172c55dc6baaba202280ba/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/developer/.gradle/caches/transforms-2/files-2.1/8e556ee3cd6b603cf7bafb84488c08db/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/developer/.gradle/caches/transforms-2/files-2.1/e82921efb2a58bd173c26af27598d36e/AndroidManifest.xml:2:1-7:12
-INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-226:12
-INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-226:12
-INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-226:12
+INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-228:12
 	package
 		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:4:5-33
 		INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml
 		INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-226:12
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-228:12
 		INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-226:12
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-228:12
 		INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:2:11-69
@@ -122,7 +122,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] /h
 	android:name
 		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:7:22-76
 application
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:9:5-225:19
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:9:5-227:19
 MERGED from [com.karumi:dexter:5.0.0] /home/developer/.gradle/caches/transforms-2/files-2.1/28710c859a2c20fc69f308a565713d3c/AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:5.0.0] /home/developer/.gradle/caches/transforms-2/files-2.1/28710c859a2c20fc69f308a565713d3c/AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.0.0] /home/developer/.gradle/caches/transforms-2/files-2.1/2696de5405c2d65c513ec3e94b7fa089/AndroidManifest.xml:22:5-20
@@ -196,259 +196,263 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/devel
 	android:theme
 		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:15:9-40
 activity#com.staff.staffapp.login.LoginActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:17:9-22:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:17:9-23:20
+	android:theme
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:18:13-47
 	android:name
 		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:17:19-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:18:13-21:29
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:19:13-22:29
 action#android.intent.action.MAIN
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:21:27-74
 activity#com.staff.staffapp.faq.Nursing
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:23:9-29:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:24:9-30:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:25:13-50
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:26:13-50
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:24:13-40
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:25:13-40
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:26:13-28:66
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:27:13-29:66
 	android:value
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:29:17-63
+	android:name
 		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:28:17-63
-	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:27:17-63
 activity#com.staff.staffapp.faq.Labs
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:30:9-36:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:31:9-37:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:32:13-33
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:33:13-33
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:31:13-37
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:32:13-37
 activity#com.staff.staffapp.faq.Radiology
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:37:9-43:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:38:9-44:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:39:13-38
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:40:13-38
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:38:13-42
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:39:13-42
 activity#com.staff.staffapp.faq.Physiotherapy
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:44:9-50:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:45:9-51:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:46:13-42
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:47:13-42
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:45:13-46
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:46:13-46
 activity#com.staff.staffapp.faq.Pharmacies
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:51:9-57:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:52:9-58:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:53:13-39
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:54:13-39
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:52:13-43
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:53:13-43
 activity#com.staff.staffapp.faq.Ambulance
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:58:9-64:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:59:9-65:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:60:13-58
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:61:13-58
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:59:13-42
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:60:13-42
 activity#com.staff.staffapp.faq.Overseas
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:65:9-71:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:66:9-72:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:67:13-47
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:68:13-47
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:66:13-41
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:67:13-41
 activity#com.staff.staffapp.faq.North
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:72:9-78:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:73:9-79:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:74:13-52
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:75:13-52
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:73:13-38
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:74:13-38
 activity#com.staff.staffapp.faq.Central
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:79:9-85:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:80:9-86:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:81:13-46
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:82:13-46
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:80:13-40
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:81:13-40
 activity#com.staff.staffapp.faq.Eastern
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:86:9-92:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:87:9-93:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:88:13-46
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:89:13-46
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:87:13-40
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:88:13-40
 activity#com.staff.staffapp.faq.Nyanza
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:93:9-99:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:94:9-100:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:95:13-59
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:96:13-59
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:94:13-39
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:95:13-39
 activity#com.staff.staffapp.faq.Coast
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:100:9-106:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:101:9-107:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:102:13-44
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:103:13-44
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:101:13-38
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:102:13-38
 activity#com.staff.staffapp.faq.Nairobi
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:107:9-113:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:108:9-114:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:109:13-46
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:110:13-46
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:108:13-40
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:109:13-40
 activity#com.staff.staffapp.faq.Panel
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:114:9-47
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:115:9-47
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:114:19-44
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:115:19-44
 activity#com.staff.staffapp.faq.Medical
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:115:9-122:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:116:9-123:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:117:13-48
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:118:13-48
 	android:theme
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:118:13-46
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:119:13-46
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:116:13-40
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:117:13-40
 activity#com.staff.staffapp.faq.Emergency
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:123:9-129:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:124:9-130:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:125:13-47
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:126:13-47
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:124:13-42
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:125:13-42
 activity#com.staff.staffapp.faq.Leave
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:130:9-137:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:131:9-138:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:132:13-39
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:133:13-39
 	android:theme
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:133:13-46
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:134:13-46
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:131:13-38
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:132:13-38
 activity#com.staff.staffapp.faq.Jobs
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:138:9-145:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:139:9-146:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:140:13-33
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:141:13-33
 	android:theme
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:141:13-46
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:142:13-46
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:139:13-37
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:140:13-37
 activity#com.staff.staffapp.faq.Ethics
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:146:9-152:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:147:9-153:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:148:13-43
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:149:13-43
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:147:13-39
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:148:13-39
 activity#com.staff.staffapp.faq.Contacts
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:153:9-159:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:154:9-160:20
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:155:13-54
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:156:13-54
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:154:13-41
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:155:13-41
 activity#com.staff.staffapp.ui.FAQ
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:160:9-163:47
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:161:9-164:47
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:162:13-55
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:163:13-55
 	android:theme
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:163:13-44
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:164:13-44
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:161:13-35
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:162:13-35
 activity#com.staff.staffapp.faq.PersonalProductsActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:169:9-175:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:170:9-176:20
 	android:theme
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:171:13-49
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:172:13-49
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:170:13-57
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:171:13-57
 activity#com.staff.staffapp.faq.ProductsActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:176:9-178:51
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:177:9-179:51
 	android:theme
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:179:13-49
+	android:name
 		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:178:13-49
-	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:177:13-49
 activity#com.staff.staffapp.faq.BusinessProductsActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:179:9-185:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:180:9-186:20
 	android:theme
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:181:13-49
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:182:13-49
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:180:13-57
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:181:13-57
 activity#com.staff.staffapp.ui.NewsActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:186:9-188:61
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:187:9-189:60
 	android:parentActivityName
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:188:13-58
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:189:13-58
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:187:13-44
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:188:13-44
 activity#com.staff.staffapp.ui.DepartmentNewsActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:189:9-191:61
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:190:9-192:61
 	android:parentActivityName
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:191:13-58
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:192:13-58
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:190:13-54
-activity#com.staff.staffapp.school.CommunicationActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:192:9-66
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:191:13-54
+activity#com.staff.staffapp.school.ui.CommunicationActivity
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:193:9-69
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:192:19-63
-activity#com.staff.staffapp.school.FinanceActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:193:9-60
-	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:193:19-57
-activity#com.staff.staffapp.school.ManagementActivity
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:193:19-66
+activity#com.staff.staffapp.school.ui.FinanceActivity
 ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:194:9-63
 	android:name
 		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:194:19-60
-activity#com.staff.staffapp.school.MarketingActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:195:9-198:50
+activity#com.staff.staffapp.school.ui.ManagementActivity
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:195:9-66
+	android:name
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:195:19-63
+activity#com.staff.staffapp.school.ui.MarketingActivity
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:196:9-199:50
 	android:label
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:197:13-61
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:198:13-61
 	android:theme
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:198:13-47
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:199:13-47
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:196:13-53
-activity#com.staff.staffapp.school.ItilActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:199:9-57
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:197:13-56
+activity#com.staff.staffapp.school.ui.ItilActivity
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:200:9-60
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:199:19-54
-activity#com.staff.staffapp.school.AgileActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:200:9-58
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:200:19-57
+activity#com.staff.staffapp.school.ui.AgileActivity
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:201:9-61
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:200:19-55
-activity#com.staff.staffapp.school.DevActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:201:9-56
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:201:19-58
+activity#com.staff.staffapp.school.ui.DevActivity
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:202:9-59
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:201:19-53
-activity#com.staff.staffapp.school.CyberSecActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:202:9-61
-	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:202:19-58
-activity#com.staff.staffapp.school.DataScienceActivity
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:202:19-56
+activity#com.staff.staffapp.school.ui.CyberSecActivity
 ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:203:9-64
 	android:name
 		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:203:19-61
-activity#com.staff.staffapp.school.DetailActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:204:9-59
+activity#com.staff.staffapp.school.ui.DataScienceActivity
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:204:9-67
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:204:19-56
-activity#com.staff.staffapp.school.BusinessSchool
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:205:9-59
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:204:19-64
+activity#com.staff.staffapp.school.ui.ViewContentActivity
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:205:9-67
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:205:19-56
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:205:19-64
+activity#com.staff.staffapp.school.ui.BusinessSchool
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:206:9-62
+	android:name
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:206:19-59
 activity#com.staff.staffapp.ui.ProductLandingActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:206:9-213:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:207:9-214:20
 	android:theme
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:208:13-49
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:209:13-49
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:207:13-54
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:208:13-54
 activity#com.staff.staffapp.ui.ListActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:215:9-217:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:216:9-218:20
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:215:19-50
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:216:19-50
 activity#com.staff.staffapp.ui.ContactListActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:218:9-219:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:219:9-220:20
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:218:19-57
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:219:19-57
 activity#com.staff.staffapp.ui.MainActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:220:9-221:20
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:221:9-223:20
+	android:theme
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:222:13-47
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:220:19-50
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:221:19-50
 activity#com.staff.staffapp.ui.NewsDetailsActivity
-ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:222:9-224:61
+ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:224:9-226:61
 	android:parentActivityName
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:224:13-58
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:226:13-58
 	android:name
-		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:223:13-51
+		ADDED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml:225:13-51
 uses-sdk
 INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/developer/Android/staffapp/app/src/main/AndroidManifest.xml

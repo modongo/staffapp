@@ -22,8 +22,10 @@
     <string name="action_explore">Read More...</string>
     <string name="lorem_short_length">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tincidunt dui, ultrices tempor dolor maximus a.
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tincidunt dui, ultrices tempor dolor maximus a.</string>
-    <string name="welcome_text">Welcome, </string>
-    <string name="call_graph">Login with Microsoft </string>
+    <string name="welcome_text">Logged as, </string>
+    <string name="call_graph">Sign In </string>
     <string name="loading">Getting data from Graph...</string>
     <string name="sign_out">Sign Out</string>
+    <string name="login">Login with Microsoft Credentials</string>
+    <string name="email">vkimosop@safaricom.co.ke</string>
 </resources>

@@ -1202,6 +1202,7 @@ drawable kim_profile
 drawable knowledge
 drawable leave1
 drawable leave2
+drawable loginbutton
 drawable machinelern
 drawable management
 drawable mba
@@ -1236,6 +1237,8 @@ drawable safaricom_revenue
 drawable safaricom_s
 drawable search
 drawable spark_java_logo
+drawable splash
+drawable staff
 drawable staffapp
 drawable support
 drawable test_newsdetails
@@ -1300,6 +1303,7 @@ id buttonPanel
 id callGraph
 id cancel_action
 id cardviewBusiness
+id cardviewContent
 id cardviewPersonal
 id center
 id center_horizontal
@@ -1347,13 +1351,13 @@ id dev_card
 id dimensions
 id direct
 id disableHome
-id displayName
 id eastern_card
 id editPassword
 id editText
 id editText6
 id editUserName
 id edit_query
+id emailAddress
 id emergency_card
 id end
 id end_padder
@@ -1376,7 +1380,6 @@ id fixed
 id forever
 id ghost_view
 id gone
-id graphData
 id group_divider
 id groups
 id home
@@ -1411,7 +1414,6 @@ id italic
 id item_touch_helper_previous_elevation
 id itil_card
 id jobDescription
-id jobTitle
 id jobs_card
 id labeled
 id labs_card
@@ -1427,11 +1429,11 @@ id listMode
 id listViewEthics
 id list_item
 id loader_newsdetails
+id login
 id lvExp
 id lvExpandable
 id lvExpandableBusiness
 id lvExpandablePersonal
-id mail
 id management_card
 id marketing_card
 id masked
@@ -1440,7 +1442,6 @@ id medical_card
 id message
 id middle
 id mini
-id mobilePhone
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1471,6 +1472,7 @@ id packed
 id parallax
 id parent
 id parentPanel
+id parent_layout
 id parent_matrix
 id pdfAgile
 id pdfAmbulance
@@ -1549,6 +1551,7 @@ id spread_inside
 id src_atop
 id src_in
 id src_over
+id staff_name
 id standard
 id start
 id status_bar_latest_event_content
@@ -1571,7 +1574,6 @@ id textWatcher
 id text_input_password_toggle
 id text_name
 id text_stat
-id text_view_course_detail
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -1600,7 +1602,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id userProfile
 id user_account
 id viewPager
 id viewProductsButton
@@ -1608,6 +1609,7 @@ id view_offset_helper
 id visible
 id webView1
 id webView_newsdetails
+id webview
 id welcome
 id wide
 id withText
@@ -1831,6 +1833,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
 string department_button
+string email
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
@@ -1847,6 +1850,7 @@ string http_auth_dialog_password
 string http_auth_dialog_title
 string http_auth_dialog_username
 string loading
+string login
 string lorem_short_length
 string ms_graph
 string mtrl_chip_close_icon_content_description

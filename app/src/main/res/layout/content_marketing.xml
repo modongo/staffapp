@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".school.MarketingActivity"
+    tools:context=".school.ui.MarketingActivity"
     tools:showIn="@layout/activity_marketing">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

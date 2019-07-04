@@ -24,7 +24,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.staff.staffapp.login.LoginActivity" >
+        <activity
+            android:name="com.staff.staffapp.login.LoginActivity"
+            android:theme="@style/NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -200,20 +202,20 @@
         <activity
             android:name="com.staff.staffapp.ui.DepartmentNewsActivity"
             android:parentActivityName="com.staff.staffapp.ui.NewsActivity" />
-        <activity android:name="com.staff.staffapp.school.CommunicationActivity" />
-        <activity android:name="com.staff.staffapp.school.FinanceActivity" />
-        <activity android:name="com.staff.staffapp.school.ManagementActivity" />
+        <activity android:name="com.staff.staffapp.school.ui.CommunicationActivity" />
+        <activity android:name="com.staff.staffapp.school.ui.FinanceActivity" />
+        <activity android:name="com.staff.staffapp.school.ui.ManagementActivity" />
         <activity
-            android:name="com.staff.staffapp.school.MarketingActivity"
+            android:name="com.staff.staffapp.school.ui.MarketingActivity"
             android:label="@string/title_activity_marketing"
             android:theme="@style/NoActionBar" />
-        <activity android:name="com.staff.staffapp.school.ItilActivity" />
-        <activity android:name="com.staff.staffapp.school.AgileActivity" />
-        <activity android:name="com.staff.staffapp.school.DevActivity" />
-        <activity android:name="com.staff.staffapp.school.CyberSecActivity" />
-        <activity android:name="com.staff.staffapp.school.DataScienceActivity" />
-        <activity android:name="com.staff.staffapp.school.DetailActivity" />
-        <activity android:name="com.staff.staffapp.school.BusinessSchool" />
+        <activity android:name="com.staff.staffapp.school.ui.ItilActivity" />
+        <activity android:name="com.staff.staffapp.school.ui.AgileActivity" />
+        <activity android:name="com.staff.staffapp.school.ui.DevActivity" />
+        <activity android:name="com.staff.staffapp.school.ui.CyberSecActivity" />
+        <activity android:name="com.staff.staffapp.school.ui.DataScienceActivity" />
+        <activity android:name="com.staff.staffapp.school.ui.ViewContentActivity" />
+        <activity android:name="com.staff.staffapp.school.ui.BusinessSchool" />
         <activity
             android:name="com.staff.staffapp.ui.ProductLandingActivity"
             android:theme="@style/ProductsTheme" >
@@ -226,7 +228,9 @@
         </activity>
         <activity android:name="com.staff.staffapp.ui.ContactListActivity" >
         </activity>
-        <activity android:name="com.staff.staffapp.ui.MainActivity" >
+        <activity
+            android:name="com.staff.staffapp.ui.MainActivity"
+            android:theme="@style/NoActionBar" >
         </activity>
         <activity
             android:name="com.staff.staffapp.ui.NewsDetailsActivity"

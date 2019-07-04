@@ -1,6 +1,4 @@
 package com.staff.staffapp.login;
-
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,7 +11,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.microsoft.aad.adal.ADALError;
 import com.microsoft.aad.adal.AuthenticationCallback;
@@ -27,27 +24,27 @@ import com.microsoft.aad.adal.Telemetry;
 import com.staff.staffapp.Constants;
 import com.staff.staffapp.R;
 import com.staff.staffapp.ui.MainActivity;
-import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+@SuppressWarnings("ALL")
 public class LoginActivity extends AppCompatActivity {
 
     /* UI & Debugging Variables */
     private static final String TAG = LoginActivity.class.getSimpleName();
     Button callGraphButton;
     Button signOutButton;
+    // ImageView profile_image;
     /* Azure AD Variables */
-    private AuthenticationContext mAuthContext;
-    private AuthenticationResult mAuthResult;
+    public AuthenticationContext mAuthContext;
+    public AuthenticationResult mAuthResult;
 
     /* Handler to do an interactive sign in and acquire token */
     private Handler mAcquireTokenHandler;
     /* Boolean variable to ensure invocation of interactive sign-in only once in case of multiple  acquireTokenSilent call failures */
     private static AtomicBoolean sIntSignInInvoked = new AtomicBoolean();
-
     /* Telemetry dispatcher registration */
     static {
         Telemetry.getInstance().registerDispatcher(new IDispatcher() {
@@ -60,7 +57,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         }, Constants.sTelemetryAggregationIsRequired);
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,12 +66,6 @@ public class LoginActivity extends AppCompatActivity {
         callGraphButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 onCallGraphClicked();
-            }
-        });
-
-        signOutButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                onSignOutClicked();
             }
         });
 
@@ -111,21 +101,11 @@ public class LoginActivity extends AppCompatActivity {
             mAuthContext.acquireTokenSilentAsync(Constants.RESOURCE_ID, Constants.CLIENT_ID, userId, getAuthSilentCallback());
         }
     }
-    //
-    // Core Auth methods used by ADAL
-    // ==================================
-    // onActivityResult() - handles redirect from System browser
-    // onCallGraphClicked() - attempts to get tokens for graph, if it succeeds calls graph & updates UI
-    // callGraphAPI() - called on successful token acquisition which makes an HTTP request to graph
-    // onSignOutClicked() - Signs user out of the app & updates UI
-    //
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         mAuthContext.onActivityResult(requestCode, resultCode, data);
     }
-
     /*
      * End user clicked call Graph API button, time for Auth
      * Use ADAL to get an Access token for the Microsoft Graph API
@@ -133,7 +113,6 @@ public class LoginActivity extends AppCompatActivity {
     private void onCallGraphClicked() {
         mAcquireTokenHandler.sendEmptyMessage(Constants.MSG_INTERACTIVE_SIGN_IN_PROMPT_AUTO);
     }
-
     private void callGraphAPI() {
 //        Log.d(TAG, "Starting volley request to graph");
         Intent activityIntent;
@@ -143,6 +122,9 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
         activityIntent = new Intent(this, MainActivity.class);
+        activityIntent.putExtra("Given Name", mAuthResult.getUserInfo().getGivenName());
+        activityIntent.putExtra("Family Name",mAuthResult.getUserInfo().getFamilyName());
+
         try {
 
             startActivity(activityIntent);
@@ -151,60 +133,7 @@ public class LoginActivity extends AppCompatActivity {
         {
             Log.d(TAG, "Failed to put parameters: " + e.toString());
         }
-
     }
-
-    private void onSignOutClicked() {
-        // End user has clicked the Sign Out button
-        // Kill the token cache
-        // Optionally call the sign-out endpoint to fully sign out the user account
-        mAuthContext.getCache().removeAll();
-        updateSignedOutUI();
-    }
-
-
-    // UI Helper methods
-    // ================================
-    // updateGraphUI() - Sets graph response in UI
-    // updateSuccessUI() - Updates UI when token acquisition succeeds
-    // updateSignedOutUI() - Updates UI when app sign out succeeds
-    //
-
-    private void updateGraphUI(JSONObject response) {
-        // Called on success from /me endpoint
-        // Writes graph data to the UI
-        TextView graphText = findViewById(R.id.graphData);
-        graphText.setText(response.toString());
-    }
-
-    @SuppressLint("SetTextI18n")
-    private void updateSuccessUI() {
-        // Called on success from /me endpoint
-        // Removed call Graph API button and paint Sign out
-        callGraphButton.setVisibility(View.INVISIBLE);
-        signOutButton.setVisibility(View.VISIBLE);
-        findViewById(R.id.welcome).setVisibility(View.VISIBLE);
-        ((TextView) findViewById(R.id.welcome)).setText("Welcome, " + mAuthResult.getUserInfo().getGivenName());
-        findViewById(R.id.graphData).setVisibility(View.VISIBLE);
-    }
-
-    @SuppressLint("SetTextI18n")
-    private void updateSignedOutUI() {
-        callGraphButton.setVisibility(View.VISIBLE);
-        signOutButton.setVisibility(View.INVISIBLE);
-        findViewById(R.id.welcome).setVisibility(View.INVISIBLE);
-        findViewById(R.id.graphData).setVisibility(View.INVISIBLE);
-        ((TextView) findViewById(R.id.graphData)).setText("No Data");
-    }
-
-    //
-    // ADAL Callbacks
-    // ======================
-    // getActivity() - returns activity so we can acquireToken within a callback
-    // getAuthSilentCallback() - callback defined to handle acquireTokenSilent() case
-    // getAuthInteractiveCallback() - callback defined to handle acquireToken() case
-    //
-
     public Activity getActivity() {
         return this;
     }
@@ -230,14 +159,6 @@ public class LoginActivity extends AppCompatActivity {
                 mAuthResult = authenticationResult;
                 /* call graph */
                 callGraphAPI();
-
-                /* update the UI to post call graph state */
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        updateSuccessUI();
-                    }
-                });
             }
 
             @Override
@@ -309,17 +230,8 @@ public class LoginActivity extends AppCompatActivity {
                 /* call graph */
                 callGraphAPI();
 
-                /* update the UI to post call graph state */
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        updateSuccessUI();
-                    }
-                });
-                /* set the sIntSignInInvoked boolean back to false  */
                 sIntSignInInvoked.set(false);
             }
-
             @Override
             public void onError(Exception exception) {
                 /* Failed to acquireToken */
@@ -344,5 +256,4 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
     }
-
 }
