@@ -23,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.staff.staffapp.R;
-import com.staff.staffapp.model.ChatContacts;
+import com.staff.staffapp.model.Contacts;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -57,7 +57,7 @@ public class ChatContactFragment extends Fragment {
         mAuth = FirebaseAuth.getInstance();
         currentUserID = mAuth.getCurrentUser().getUid();
 
-        ContactsRef = FirebaseDatabase.getInstance().getReference().child("ChatContacts").child(currentUserID);
+        ContactsRef = FirebaseDatabase.getInstance().getReference().child("Contacts").child(currentUserID);
         UsersRef = FirebaseDatabase.getInstance().getReference().child("Users");
 
 
@@ -69,14 +69,14 @@ public class ChatContactFragment extends Fragment {
         super.onStart();
 
         FirebaseRecyclerOptions options =
-                new FirebaseRecyclerOptions.Builder<ChatContacts>()
-                        .setQuery(ContactsRef, ChatContacts.class)
+                new FirebaseRecyclerOptions.Builder<Contacts>()
+                        .setQuery(ContactsRef, Contacts.class)
                         .build();
 
-        FirebaseRecyclerAdapter<ChatContacts, ContactsViewHolder> adapter
-                = new FirebaseRecyclerAdapter<ChatContacts, ContactsViewHolder>(options) {
+        FirebaseRecyclerAdapter<Contacts, ContactsViewHolder> adapter
+                = new FirebaseRecyclerAdapter<Contacts, ContactsViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull final ContactsViewHolder holder, int position, @NonNull ChatContacts model) {
+            protected void onBindViewHolder(@NonNull final ContactsViewHolder holder, int position, @NonNull Contacts model) {
                 String usersIDs = getRef(position).getKey();
 
                 UsersRef.child(usersIDs).addValueEventListener(new ValueEventListener() {

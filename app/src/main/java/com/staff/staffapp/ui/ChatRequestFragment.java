@@ -29,7 +29,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.staff.staffapp.R;
-import com.staff.staffapp.model.ChatContacts;
+import com.staff.staffapp.model.Contacts;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -75,16 +75,16 @@ public class ChatRequestFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        FirebaseRecyclerOptions<ChatContacts> options =
-                new FirebaseRecyclerOptions.Builder<ChatContacts>()
-                        .setQuery(ChatReferenceRef.child(currentUserID), ChatContacts.class)
+        FirebaseRecyclerOptions<Contacts> options =
+                new FirebaseRecyclerOptions.Builder<Contacts>()
+                        .setQuery(ChatReferenceRef.child(currentUserID), Contacts.class)
                         .build();
 
 
-        FirebaseRecyclerAdapter<ChatContacts, RequestViewHolder> adapter =
-                new FirebaseRecyclerAdapter<ChatContacts, RequestViewHolder>(options) {
+        FirebaseRecyclerAdapter<Contacts, RequestViewHolder> adapter =
+                new FirebaseRecyclerAdapter<Contacts, RequestViewHolder>(options) {
                     @Override
-                    protected void onBindViewHolder(@NonNull final RequestViewHolder holder, int position, @NonNull ChatContacts model) {
+                    protected void onBindViewHolder(@NonNull final RequestViewHolder holder, int position, @NonNull Contacts model) {
                         holder.itemView.findViewById(R.id.request_accept_btn).setVisibility(View.VISIBLE);
                         holder.itemView.findViewById(R.id.request_cancel_btn).setVisibility(View.VISIBLE);
 

@@ -19,7 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 import com.staff.staffapp.R;
-import com.staff.staffapp.model.ChatContacts;
+import com.staff.staffapp.model.Contacts;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -50,15 +50,15 @@ public class FindFriendsActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        FirebaseRecyclerOptions<ChatContacts> options =
-                new FirebaseRecyclerOptions.Builder<ChatContacts>()
-                        .setQuery(UsersRef, ChatContacts.class)
+        FirebaseRecyclerOptions<Contacts> options =
+                new FirebaseRecyclerOptions.Builder<Contacts>()
+                        .setQuery(UsersRef, Contacts.class)
                         .build();
 
-        FirebaseRecyclerAdapter<ChatContacts, FindFriendViewHolder> adapter =
-                new FirebaseRecyclerAdapter<ChatContacts, FindFriendViewHolder>(options) {
+        FirebaseRecyclerAdapter<Contacts, FindFriendViewHolder> adapter =
+                new FirebaseRecyclerAdapter<Contacts, FindFriendViewHolder>(options) {
                     @Override
-                    protected void onBindViewHolder(@NonNull FindFriendViewHolder holder, final int position, @NonNull ChatContacts model) {
+                    protected void onBindViewHolder(@NonNull FindFriendViewHolder holder, final int position, @NonNull Contacts model) {
                         holder.userName.setText(model.getName());
                         holder.userStatus.setText(model.getStatus());
                         Picasso.get().load(model.getImage()).placeholder(R.drawable.profile_image).into(holder.profileImage);

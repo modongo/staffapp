@@ -182,7 +182,7 @@ public class PhoneLoginActivity extends AppCompatActivity
 
     private void SendUserToMainActivity()
     {
-        Intent mainIntent = new Intent(PhoneLoginActivity.this, MainActivity.class);
+        Intent mainIntent = new Intent(PhoneLoginActivity.this, ChatJoinActivity.class);
         startActivity(mainIntent);
         finish();
     }

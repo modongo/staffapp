@@ -47,7 +47,7 @@ public class ChatTabsAccessorAdapter extends FragmentPagerAdapter {
                 return "Groups";
 
             case 2:
-                return "ChatContacts";
+                return "Contacts";
 
             case 3:
                 return "Requests";
