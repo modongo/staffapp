@@ -43,103 +43,170 @@ import com.staff.staffapp.adapter.MessageAdapter;
 import com.staff.staffapp.model.InstantMessage;
 import com.staff.staffapp.model.Messages;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-
-public class ChatActivity extends AppCompatActivity {
-
-    // Add member variables here:
-
-    private String messageReceiverID, messageReceiverName, MessageReceiverImage, messageSenderID;
+public class ChatActivity extends AppCompatActivity
+{
+    private String messageReceiverID, messageReceiverName, messageReceiverImage, messageSenderID;
 
     private TextView userName, userLastSeen;
     private CircleImageView userImage;
 
     private Toolbar ChatToolBar;
-
     private FirebaseAuth mAuth;
     private DatabaseReference RootRef;
 
-    private ImageButton SendMessageButton;
+    private ImageButton SendMessageButton, SendFilesButton;
     private EditText MessageInputText;
 
     private final List<Messages> messagesList = new ArrayList<>();
-    private LinearLayoutManager mLinearLayoutManager;
-    private MessageAdapter mMessageAdapter;
+    private LinearLayoutManager linearLayoutManager;
+    private MessageAdapter messageAdapter;
     private RecyclerView userMessagesList;
+
+
+    private String saveCurrentTime, saveCurrentDate;
+
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
+
 
         mAuth = FirebaseAuth.getInstance();
         messageSenderID = mAuth.getCurrentUser().getUid();
         RootRef = FirebaseDatabase.getInstance().getReference();
 
+
         messageReceiverID = getIntent().getExtras().get("visit_user_id").toString();
         messageReceiverName = getIntent().getExtras().get("visit_user_name").toString();
-        MessageReceiverImage = getIntent().getExtras().get("visit_image").toString();
+        messageReceiverImage = getIntent().getExtras().get("visit_image").toString();
 
-        intializeControllers();
+
+        IntializeControllers();
+
+
+        userName.setText(messageReceiverName);
+        Picasso.get().load(messageReceiverImage).placeholder(R.drawable.profile_image).into(userImage);
 
 
         SendMessageButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view)
+            {
                 SendMessage();
-
             }
         });
+
+
+        DisplayLastSeen();
     }
 
 
-    // Initialize controller for toolbar etc
 
-    private void intializeControllers() {
-        ChatToolBar = findViewById(R.id.chat_toolbar);
+
+    private void IntializeControllers()
+    {
+        ChatToolBar = (Toolbar) findViewById(R.id.chat_toolbar);
         setSupportActionBar(ChatToolBar);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowCustomEnabled(true);
 
-        LayoutInflater layoutInflater =  (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater layoutInflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View actionBarView = layoutInflater.inflate(R.layout.custom_chat_bar, null);
         actionBar.setCustomView(actionBarView);
 
-        userImage = findViewById(R.id.custom_profile_image);
-        userName = findViewById(R.id.custom_profile_name);
-        userLastSeen = findViewById(R.id.custom_user_last_seen);
+        userName = (TextView) findViewById(R.id.custom_profile_name);
+        userLastSeen = (TextView) findViewById(R.id.custom_user_last_seen);
+        userImage = (CircleImageView) findViewById(R.id.custom_profile_image);
 
-        SendMessageButton = findViewById(R.id.send_message_btn);
-        MessageInputText = findViewById(R.id.input_message);
+        SendMessageButton = (ImageButton) findViewById(R.id.send_message_btn);
+        SendFilesButton = (ImageButton) findViewById(R.id.send_files_btn);
+        MessageInputText = (EditText) findViewById(R.id.input_message);
 
-        mMessageAdapter = new MessageAdapter(messagesList);
-        userMessagesList = findViewById(R.id.private_messages_list_of_users);
+        messageAdapter = new MessageAdapter(messagesList);
+        userMessagesList = (RecyclerView) findViewById(R.id.private_messages_list_of_users);
+        linearLayoutManager = new LinearLayoutManager(this);
+        userMessagesList.setLayoutManager(linearLayoutManager);
+        userMessagesList.setAdapter(messageAdapter);
 
-        mLinearLayoutManager = new LinearLayoutManager(this);
-        userMessagesList.setLayoutManager(mLinearLayoutManager);
-        userMessagesList.setAdapter(mMessageAdapter);
+
+        Calendar calendar = Calendar.getInstance();
+
+        SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
+        saveCurrentDate = currentDate.format(calendar.getTime());
+
+        SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
+        saveCurrentTime = currentTime.format(calendar.getTime());
+    }
+
+
+
+    private void DisplayLastSeen()
+    {
+        RootRef.child("Users").child(messageReceiverID)
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot)
+                    {
+                        if (dataSnapshot.child("userState").hasChild("state"))
+                        {
+                            String state = dataSnapshot.child("userState").child("state").getValue().toString();
+                            String date = dataSnapshot.child("userState").child("date").getValue().toString();
+                            String time = dataSnapshot.child("userState").child("time").getValue().toString();
+
+                            if (state.equals("online"))
+                            {
+                                userLastSeen.setText("online");
+                            }
+                            else if (state.equals("offline"))
+                            {
+                                userLastSeen.setText("Last Seen: " + date + " " + time);
+                            }
+                        }
+                        else
+                        {
+                            userLastSeen.setText("offline");
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
     }
 
 
     @Override
-    protected void onStart() {
+    protected void onStart()
+    {
         super.onStart();
+
         RootRef.child("Messages").child(messageSenderID).child(messageReceiverID)
                 .addChildEventListener(new ChildEventListener() {
                     @Override
-                    public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                    public void onChildAdded(DataSnapshot dataSnapshot, String s)
+                    {
                         Messages messages = dataSnapshot.getValue(Messages.class);
 
                         messagesList.add(messages);
 
-                        mMessageAdapter.notifyDataSetChanged();
+                        messageAdapter.notifyDataSetChanged();
+
+                        userMessagesList.smoothScrollToPosition(userMessagesList.getAdapter().getItemCount());
                     }
 
                     @Override
@@ -164,13 +231,18 @@ public class ChatActivity extends AppCompatActivity {
                 });
     }
 
-    // Send message logic
-    private void SendMessage() {
+
+
+    private void SendMessage()
+    {
         String messageText = MessageInputText.getText().toString();
 
-        if (TextUtils.isEmpty(messageText)) {
-            Toast.makeText(this, "Please type a message.", Toast.LENGTH_SHORT).show();
-        } else {
+        if (TextUtils.isEmpty(messageText))
+        {
+            Toast.makeText(this, "first write your message...", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
             String messageSenderRef = "Messages/" + messageSenderID + "/" + messageReceiverID;
             String messageReceiverRef = "Messages/" + messageReceiverID + "/" + messageSenderID;
 
@@ -183,26 +255,30 @@ public class ChatActivity extends AppCompatActivity {
             messageTextBody.put("message", messageText);
             messageTextBody.put("type", "text");
             messageTextBody.put("from", messageSenderID);
+            messageTextBody.put("to", messageReceiverID);
+            messageTextBody.put("messageID", messagePushID);
+            messageTextBody.put("time", saveCurrentTime);
+            messageTextBody.put("date", saveCurrentDate);
 
             Map messageBodyDetails = new HashMap();
             messageBodyDetails.put(messageSenderRef + "/" + messagePushID, messageTextBody);
-            messageBodyDetails.put(messageReceiverRef + "/" + messagePushID, messageTextBody);
+            messageBodyDetails.put( messageReceiverRef + "/" + messagePushID, messageTextBody);
 
             RootRef.updateChildren(messageBodyDetails).addOnCompleteListener(new OnCompleteListener() {
                 @Override
-                public void onComplete(@NonNull Task task) {
-                    if (task.isSuccessful()) {
-                        Toast.makeText(ChatActivity.this, "Message Sent.", Toast.LENGTH_SHORT).show();
-                    } else {
-                        String message = task.getException().getMessage();
-                        Toast.makeText(ChatActivity.this, "Error: " + message, Toast.LENGTH_SHORT).show();
+                public void onComplete(@NonNull Task task)
+                {
+                    if (task.isSuccessful())
+                    {
+                        Toast.makeText(ChatActivity.this, "Message Sent Successfully...", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                    {
+                        Toast.makeText(ChatActivity.this, "Error", Toast.LENGTH_SHORT).show();
                     }
                     MessageInputText.setText("");
-
                 }
             });
         }
-
     }
 }
-
