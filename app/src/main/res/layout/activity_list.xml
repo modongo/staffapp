@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:onClick="onGotoListSampleClick"
-            android:text="Start MyChat"/>
+            android:text="Go To MyChat"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="12dp"
-            android:text="Circle ImageView"
+            android:text="Friends"
             android:textColor="@android:color/white"
             android:textSize="21sp"/>
 
