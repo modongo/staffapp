@@ -34,253 +34,253 @@ import java.util.HashMap;
 
 public class ChatLoginActivity extends AppCompatActivity
 {
-    private Toolbar mToolbar;
-    private ViewPager myViewPager;
-    private TabLayout myTabLayout;
-    private ChatTabsAccessorAdapter myTabsAccessorAdapter;
+        private Toolbar mToolbar;
+        private ViewPager myViewPager;
+        private TabLayout myTabLayout;
+        private ChatTabsAccessorAdapter myTabsAccessorAdapter;
 
-    private FirebaseUser currentUser;
-    private FirebaseAuth mAuth;
-    private DatabaseReference RootRef;
-    private String currentUserID;
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat_login);
+        private FirebaseUser currentUser;
+        private FirebaseAuth mAuth;
+        private DatabaseReference RootRef;
+        private String currentUserID;
 
 
-        mAuth = FirebaseAuth.getInstance();
-        currentUser = mAuth.getCurrentUser();
-        currentUserID = mAuth.getCurrentUser().getUid();
-        RootRef = FirebaseDatabase.getInstance().getReference();
-
-
-        mToolbar = (Toolbar) findViewById(R.id.main_page_toolbar);
-        setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("Chats");
-
-
-        myViewPager = (ViewPager) findViewById(R.id.main_tabs_pager);
-        myTabsAccessorAdapter = new ChatTabsAccessorAdapter(getSupportFragmentManager());
-        myViewPager.setAdapter(myTabsAccessorAdapter);
-
-
-        myTabLayout = (TabLayout) findViewById(R.id.main_tabs);
-        myTabLayout.setupWithViewPager(myViewPager);
-    }
-
-
-    @Override
-    protected void onStart()
-    {
-        super.onStart();
-
-        if (currentUser == null)
+        @Override
+        protected void onCreate(Bundle savedInstanceState)
         {
-            SendUserToLoginActivity();
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_chat_login);
+
+
+            mAuth = FirebaseAuth.getInstance();
+            currentUser = mAuth.getCurrentUser();
+            currentUserID = mAuth.getCurrentUser().getUid();
+            RootRef = FirebaseDatabase.getInstance().getReference();
+
+
+            mToolbar = findViewById(R.id.main_page_toolbar);
+            setSupportActionBar(mToolbar);
+            getSupportActionBar().setTitle("Jukwaa");
+
+
+            myViewPager =  findViewById(R.id.main_tabs_pager);
+            myTabsAccessorAdapter = new ChatTabsAccessorAdapter(getSupportFragmentManager());
+            myViewPager.setAdapter(myTabsAccessorAdapter);
+
+
+            myTabLayout = findViewById(R.id.main_tabs);
+            myTabLayout.setupWithViewPager(myViewPager);
         }
-        else
+
+
+        @Override
+        protected void onStart()
         {
-            updateUserStatus("online");
+            super.onStart();
 
-            VerifyUserExistance();
-        }
-    }
-
-
-    @Override
-    protected void onStop()
-    {
-        super.onStop();
-
-        if (currentUser != null)
-        {
-            updateUserStatus("offline");
-        }
-    }
-
-
-
-    @Override
-    protected void onDestroy()
-    {
-        super.onDestroy();
-
-        if (currentUser != null)
-        {
-            updateUserStatus("offline");
-        }
-    }
-
-
-
-    private void VerifyUserExistance()
-    {
-        String currentUserID = mAuth.getCurrentUser().getUid();
-
-        RootRef.child("Users").child(currentUserID).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot)
+            if (currentUser == null)
             {
-                if ((dataSnapshot.child("name").exists()))
-                {
-                    Toast.makeText(ChatLoginActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-                    SendUserToSettingsActivity();
-                }
+                SendUserToLoginActivity();
             }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }
-
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        super.onCreateOptionsMenu(menu);
-
-        getMenuInflater().inflate(R.menu.options_menu, menu);
-
-        return true;
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        super.onOptionsItemSelected(item);
-
-        if (item.getItemId() == R.id.main_logout_option)
-        {
-            updateUserStatus("offline");
-            mAuth.signOut();
-            SendUserToLoginActivity();
-        }
-        if (item.getItemId() == R.id.main_settings_option)
-        {
-            SendUserToSettingsActivity();
-        }
-        if (item.getItemId() == R.id.main_create_group_option)
-        {
-            RequestNewGroup();
-        }
-        if (item.getItemId() == R.id.main_find_friends_option)
-        {
-            SendUserToFindFriendsActivity();
-        }
-
-        return true;
-    }
-
-
-    private void RequestNewGroup()
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(ChatLoginActivity.this, R.style.AlertDialog);
-        builder.setTitle("Enter Group Name :");
-
-        final EditText groupNameField = new EditText(ChatLoginActivity.this);
-        groupNameField.setHint("e.g Coding Cafe");
-        builder.setView(groupNameField);
-
-        builder.setPositiveButton("Create", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
+            else
             {
-                String groupName = groupNameField.getText().toString();
+                updateUserStatus("online");
 
-                if (TextUtils.isEmpty(groupName))
-                {
-                    Toast.makeText(ChatLoginActivity.this, "Please write Group Name...", Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-                    CreateNewGroup(groupName);
-                }
+                VerifyUserExistance();
             }
-        });
+        }
 
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
+
+        @Override
+        protected void onStop()
+        {
+            super.onStop();
+
+            if (currentUser != null)
             {
-                dialogInterface.cancel();
+                updateUserStatus("offline");
             }
-        });
-
-        builder.show();
-    }
+        }
 
 
 
-    private void CreateNewGroup(final String groupName)
-    {
-        RootRef.child("Groups").child(groupName).setValue("")
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task)
+        @Override
+        protected void onDestroy()
+        {
+            super.onDestroy();
+
+            if (currentUser != null)
+            {
+                updateUserStatus("offline");
+            }
+        }
+
+
+
+        private void VerifyUserExistance()
+        {
+            String currentUserID = mAuth.getCurrentUser().getUid();
+
+            RootRef.child("Users").child(currentUserID).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot)
+                {
+                    if ((dataSnapshot.child("name").exists()))
                     {
-                        if (task.isSuccessful())
-                        {
-                            Toast.makeText(ChatLoginActivity.this, groupName + " group is Created Successfully...", Toast.LENGTH_SHORT).show();
-                        }
+                        Toast.makeText(ChatLoginActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
                     }
-                });
+                    else
+                    {
+                        SendUserToSettingsActivity();
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+        }
+
+
+
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu)
+        {
+            super.onCreateOptionsMenu(menu);
+
+            getMenuInflater().inflate(R.menu.options_menu, menu);
+
+            return true;
+        }
+
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item)
+        {
+            super.onOptionsItemSelected(item);
+
+            if (item.getItemId() == R.id.main_logout_option)
+            {
+                updateUserStatus("offline");
+                mAuth.signOut();
+                SendUserToLoginActivity();
+            }
+            if (item.getItemId() == R.id.main_settings_option)
+            {
+                SendUserToSettingsActivity();
+            }
+            if (item.getItemId() == R.id.main_create_group_option)
+            {
+                RequestNewGroup();
+            }
+            if (item.getItemId() == R.id.main_find_friends_option)
+            {
+                SendUserToFindFriendsActivity();
+            }
+
+            return true;
+        }
+
+
+        private void RequestNewGroup()
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(ChatLoginActivity.this, R.style.AlertDialog);
+            builder.setTitle("Enter Group Name :");
+
+            final EditText groupNameField = new EditText(ChatLoginActivity.this);
+            groupNameField.setHint("e.g Jambo Group");
+            builder.setView(groupNameField);
+
+            builder.setPositiveButton("Create", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    String groupName = groupNameField.getText().toString();
+
+                    if (TextUtils.isEmpty(groupName))
+                    {
+                        Toast.makeText(ChatLoginActivity.this, "Please write Group Name...", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                    {
+                        CreateNewGroup(groupName);
+                    }
+                }
+            });
+
+            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i)
+                {
+                    dialogInterface.cancel();
+                }
+            });
+
+            builder.show();
+        }
+
+
+
+        private void CreateNewGroup(final String groupName)
+        {
+            RootRef.child("Groups").child(groupName).setValue("")
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task)
+                        {
+                            if (task.isSuccessful())
+                            {
+                                Toast.makeText(ChatLoginActivity.this, groupName + " group is Created Successfully...", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+        }
+
+
+
+        private void SendUserToLoginActivity()
+        {
+            Intent loginIntent = new Intent(ChatLoginActivity.this, ChatJoinActivity.class);
+            loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(loginIntent);
+
+        }
+
+        private void SendUserToSettingsActivity()
+        {
+            Intent settingsIntent = new Intent(ChatLoginActivity.this, SettingsActivity.class);
+            startActivity(settingsIntent);
+        }
+
+
+        private void SendUserToFindFriendsActivity()
+        {
+            Intent findFriendsIntent = new Intent(ChatLoginActivity.this, FindFriendsActivity.class);
+            startActivity(findFriendsIntent);
+        }
+
+
+
+        private void updateUserStatus(String state)
+        {
+            String saveCurrentTime, saveCurrentDate;
+
+            Calendar calendar = Calendar.getInstance();
+
+            SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
+            saveCurrentDate = currentDate.format(calendar.getTime());
+
+            SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
+            saveCurrentTime = currentTime.format(calendar.getTime());
+
+            HashMap<String, Object> onlineStateMap = new HashMap<>();
+            onlineStateMap.put("time", saveCurrentTime);
+            onlineStateMap.put("date", saveCurrentDate);
+            onlineStateMap.put("state", state);
+
+            RootRef.child("Users").child(currentUserID).child("userState")
+                    .updateChildren(onlineStateMap);
+
+        }
     }
-
-
-
-    private void SendUserToLoginActivity()
-    {
-        Intent loginIntent = new Intent(ChatLoginActivity.this, ChatJoinActivity.class);
-        loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(loginIntent);
-
-    }
-
-    private void SendUserToSettingsActivity()
-    {
-        Intent settingsIntent = new Intent(ChatLoginActivity.this, SettingsActivity.class);
-        startActivity(settingsIntent);
-    }
-
-
-    private void SendUserToFindFriendsActivity()
-    {
-        Intent findFriendsIntent = new Intent(ChatLoginActivity.this, FindFriendsActivity.class);
-        startActivity(findFriendsIntent);
-    }
-
-
-
-    private void updateUserStatus(String state)
-    {
-        String saveCurrentTime, saveCurrentDate;
-
-        Calendar calendar = Calendar.getInstance();
-
-        SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
-        saveCurrentDate = currentDate.format(calendar.getTime());
-
-        SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
-        saveCurrentTime = currentTime.format(calendar.getTime());
-
-        HashMap<String, Object> onlineStateMap = new HashMap<>();
-        onlineStateMap.put("time", saveCurrentTime);
-        onlineStateMap.put("date", saveCurrentDate);
-        onlineStateMap.put("state", state);
-
-        RootRef.child("Users").child(currentUserID).child("userState")
-                .updateChildren(onlineStateMap);
-
-    }
-}
