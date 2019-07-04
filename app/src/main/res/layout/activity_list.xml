@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:text="MyChat"
+            android:text="My Friends"
             android:textColor="@android:color/white"
             android:textSize="21sp"/>
 
@@ -43,7 +43,9 @@
             <com.github.abdularis.civ.AvatarImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/figure"
+                android:src="@drawable/avatar_1"
+                app:view_state="IMAGE"
+
                 android:onClick="onAClick"
                 app:avatarBackgroundColor="@{bgColor}"
                 app:text="@{myName}"
@@ -57,7 +59,8 @@
                 android:layout_marginLeft="8dp"
                 app:highlightEnable="false"
                 app:avatarBackgroundColor="#8E24AA"
-                app:text="B"
+                app:view_state="IMAGE"
+                android:src="@drawable/avatar_2"
                 app:textSize="22sp"
                 app:strokeColor="#64B5F6"
                 app:strokeWidth="1dp"/>
@@ -67,7 +70,8 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="8dp"
                 app:avatarBackgroundColor="#FDFD00"
-                app:text="C"
+                app:view_state="IMAGE"
+                android:src="@drawable/avatar_3"
                 app:textSize="22sp"
                 app:textColor="#3d3d01"/>
 
@@ -75,7 +79,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="8dp"
-                android:src="@drawable/figure2"
+                android:src="@drawable/avatar_5"
                 app:view_state="IMAGE"
                 app:avatarBackgroundColor="#1976D2"
                 app:text="B"
@@ -91,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="12dp"
-            android:text="Friends"
+            android:text="My Groups"
             android:textColor="@android:color/white"
             android:textSize="21sp"/>
 
