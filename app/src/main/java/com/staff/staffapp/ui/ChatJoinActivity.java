@@ -2,6 +2,7 @@ package com.staff.staffapp.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -32,6 +33,7 @@ public class ChatJoinActivity extends AppCompatActivity {
         private Button LoginButton, PhoneLoginButton;
         private EditText UserEmail, UserPassword;
         private TextView NeedNewAccountLink, ForgetPasswordLink;
+
 
         private DatabaseReference UsersRef;
 
