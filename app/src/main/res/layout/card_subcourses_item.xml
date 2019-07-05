@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="6dp"
-    app:cardElevation="3dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
     app:cardUseCompatPadding="true"
-    android:background="@android:color/transparent">
+    android:background="@color/colorMintDark">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,15 +18,21 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/courseId"/>
+            android:id="@+id/courseId"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/courseTitle"/>
+            android:id="@+id/courseTitle"
+            android:textSize="15sp"
+            android:textColor="#000000"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autoLink="web"
             android:id="@+id/courseUrl"
             android:clickable="true"/>
     </LinearLayout>

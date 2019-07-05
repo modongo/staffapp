@@ -4,9 +4,9 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class SubCourse {
-    @SerializedName("coarseid")
+    @SerializedName("coarse_name")
     @Expose
-    private int courseId;
+    private String course_name;
     @SerializedName("name")
     @Expose
     private String courseTitle;
@@ -14,14 +14,14 @@ public class SubCourse {
     @Expose
     private String contentUrl;
 
-    public SubCourse(int courseId, String courseTitle, String contentUrl) {
-        this.courseId = courseId;
+    public SubCourse(String course_name, String courseTitle, String contentUrl) {
+        this.course_name = course_name;
         this.courseTitle = courseTitle;
         this.contentUrl = contentUrl;
     }
 
-    public int getCourseId() {
-        return courseId;
+    public String getCourse_name() {
+        return course_name;
     }
 
     public String getCourseTitle() {
@@ -32,8 +32,8 @@ public class SubCourse {
         return contentUrl;
     }
 
-    public void setCourseId(int courseId) {
-        this.courseId = courseId;
+    public void setCourse_name(String course_name) {
+        this.course_name = course_name;
     }
 
     public void setCourseTitle(String courseTitle) {

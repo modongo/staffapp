@@ -22,6 +22,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65acc5c1-afd9-48e7-afbd-c8f2f503e3e4" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -698,6 +699,12 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_subcourses_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_subcourses_item.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_marketing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_marketing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/ui/MainActivityFrag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -726,6 +733,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/login/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="60">
               <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               <folding>
@@ -744,11 +752,16 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#2602#2603#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="-1560">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/school/model/SubCourse.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -756,11 +769,18 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/ui/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/school/model/RetrofitInstance.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -780,6 +800,18 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_activity.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/ui/MainActivityFrag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -789,7 +821,11 @@
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
+<<<<<<< Updated upstream
               <caret line="3" column="27" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="36" />
+=======
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -799,6 +835,7 @@
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
+<<<<<<< Updated upstream
               <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
             </state>
           </provider>
@@ -818,6 +855,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="31" selection-start-line="31" selection-end-line="31" />
+=======
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -865,7 +905,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="elvis" />
       </map>
     </option>
   </component>
@@ -907,6 +947,7 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/loginbutton.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
@@ -923,6 +964,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/school/service/RecyclerViewListener.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/school/ui/DataScienceActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/school/adapter/SubCoursesAdapter.java" />
+=======
+        <option value="$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/ui/MainActivityFrag.java" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -937,7 +981,66 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
+<<<<<<< Updated upstream
       <pane id="AndroidView" />
+=======
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="staffapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="staffapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="staffapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staffapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="staffapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+>>>>>>> Stashed changes
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -1340,11 +1443,19 @@
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32749563" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.17398946" />
       <window_info anchor="bottom" id="TODO" order="2" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49772382" weight="0.1396648" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5022762" side_tool="true" weight="0.52196836" />
       <window_info anchor="bottom" id="Build" order="5" sideWeight="0.4969651" visible="true" weight="0.07205624" />
       <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" weight="0.38178635" />
       <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49772382" weight="0.32290503" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49772382" weight="0.42003515" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5022762" side_tool="true" weight="0.52196836" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.4969651" visible="true" weight="0.12302285" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.38178635" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49772382" weight="0.52724075" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Debug" order="8" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.77504396" />
       <window_info anchor="bottom" id="Thumbnails" order="10" visible="true" weight="0.17223199" />
@@ -1406,9 +1517,18 @@
     <MESSAGE value="add Login Activity" />
     <MESSAGE value="add Constants" />
     <MESSAGE value="Merge branch 'elvis' into merge-test&#10;&#10;# Conflicts:&#10;#&#9;app/build.gradle&#10;#&#9;app/src/main/AndroidManifest.xml&#10;#&#9;app/src/main/java/com/staff/staffapp/Constants.java&#10;#&#9;app/src/main/res/values/strings.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'elvis' into merge-test&#10;&#10;# Conflicts:&#10;#&#9;app/build.gradle&#10;#&#9;app/src/main/AndroidManifest.xml&#10;#&#9;app/src/main/java/com/staff/staffapp/Constants.java&#10;#&#9;app/src/main/res/values/strings.xml" />
+    <MESSAGE value="Merge branch 'elvis' into merge-test&#10;&#10;# Conflicts:&#10;updated&#10;#&#9;app/src/main/AndroidManifest.xml&#10;#&#9;app/src/main/java/com/staff/staffapp/Constants.java&#10;#&#9;app/src/main/res/values/strings.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'elvis' into merge-test&#10;&#10;# Conflicts:&#10;updated&#10;#&#9;app/src/main/AndroidManifest.xml&#10;#&#9;app/src/main/java/com/staff/staffapp/Constants.java&#10;#&#9;app/src/main/res/values/strings.xml" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/detail.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/ui/DetailActivity.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/adapter/CoarseAdaptor.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/ui/CoarseActivity.java" />
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/navigation.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -1551,8 +1671,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="222">
           <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+=======
+        <state relative-caret-position="195">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -1610,6 +1735,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1185">
           <caret line="79" column="28" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="35" />
         </state>
@@ -1626,6 +1752,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+=======
+        <state relative-caret-position="45">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -1671,6 +1801,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/school/service/RecyclerViewListener.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/login/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1683,6 +1814,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/school/model/SubCourse.java">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/model/Product.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
@@ -1735,6 +1869,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/school/ui/ViewContentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1750,6 +1885,37 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2602#2603#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1635">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/login/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1560">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/ui/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_activity.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/staff/staffapp/ui/MainActivityFrag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

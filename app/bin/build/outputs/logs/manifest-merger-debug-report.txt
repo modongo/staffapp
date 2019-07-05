@@ -265,7 +265,7 @@ ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:167:13-58
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:166:13-54
-activity#com.staff.staffapp.ui.MainActivity
+activity#com.staff.staffapp.MainActivity
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:168:9-174:20
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:168:19-50

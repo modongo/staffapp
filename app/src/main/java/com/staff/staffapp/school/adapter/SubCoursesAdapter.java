@@ -1,6 +1,7 @@
 package com.staff.staffapp.school.adapter;
 
 import android.content.Intent;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,11 +21,11 @@ import java.util.List;
 public class SubCoursesAdapter extends RecyclerView.Adapter<SubCoursesAdapter.SubCoursesViewHolder> {
 
     private List<SubCourse> dataList;
-    private OnContentListener mOnItemClickListener;
 
-    public SubCoursesAdapter(List<SubCourse> dataList, OnContentListener mOnItemClickListener){
+
+    public SubCoursesAdapter(List<SubCourse> dataList){
         this.dataList = dataList;
-        this.mOnItemClickListener= mOnItemClickListener;
+
     }
     @NonNull
     @Override
@@ -32,12 +33,13 @@ public class SubCoursesAdapter extends RecyclerView.Adapter<SubCoursesAdapter.Su
 
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.card_subcourses_item, parent,false);
-        return new SubCoursesViewHolder(view, mOnItemClickListener);
+        return new SubCoursesViewHolder(view);
     }
     @Override
     public void onBindViewHolder(@NonNull SubCoursesAdapter.SubCoursesViewHolder holder, int position) {
 
-        holder.txtCourseId.setText(String.valueOf(dataList.get(position).getCourseId() ));
+//        holder.txtCourseId.setText(String.valueOf(dataList.get(position).getCourseId() ));
+        holder.txtCourseName.setText(dataList.get(position).getCourse_name());
         holder.txtCourseTitle.setText(dataList.get(position).getCourseTitle());
         holder.txtCourseUrl.setText(dataList.get(position).getContentUrl());
     }
@@ -47,26 +49,19 @@ public class SubCoursesAdapter extends RecyclerView.Adapter<SubCoursesAdapter.Su
     }
 
 
-    public class SubCoursesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView txtCourseId, txtCourseTitle, txtCourseUrl;
-        CardView cardView; OnContentListener onContentListener;
+    public class SubCoursesViewHolder extends RecyclerView.ViewHolder{
+        TextView txtCourseName, txtCourseTitle, txtCourseUrl;
+        CardView cardView;
 
-        private SubCoursesViewHolder(View itemView, OnContentListener onContentListener ){
+        private SubCoursesViewHolder(View itemView ){
             super(itemView);
-            txtCourseId = itemView.findViewById(R.id.courseId);
+            txtCourseName = itemView.findViewById(R.id.courseId);
             txtCourseTitle = itemView.findViewById(R.id.courseTitle);
             txtCourseUrl = itemView.findViewById(R.id.courseUrl);
+            txtCourseUrl.setMovementMethod(LinkMovementMethod.getInstance());
             cardView = itemView.findViewById(R.id.cardviewContent);
-            this.onContentListener = onContentListener;
-            itemView.setOnClickListener(this);
+
         }
-        @Override
-        public void onClick(View view) {
-            onContentListener.onItemClick(getAdapterPosition());
-        }
-    }
-    public interface OnContentListener{
-        void onItemClick(int position);
     }
 
 }
