@@ -36,6 +36,10 @@
         "source": "/home/developer/.gradle/caches/transforms-2/files-2.1/91ce0fedf1d51478648f61294d55e55e/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "/home/developer/Android/staffapp/app/build/intermediates/res/merged/debug/drawable_ic_school.xml.flat",
+        "source": "/home/developer/Android/staffapp/app/src/main/res/drawable/ic_school.xml"
+    },
+    {
         "merged": "/home/developer/Android/staffapp/app/build/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat",
         "source": "/home/developer/.gradle/caches/transforms-2/files-2.1/91ce0fedf1d51478648f61294d55e55e/res/drawable/abc_text_cursor_material.xml"
     },
@@ -1042,6 +1046,10 @@
     {
         "merged": "/home/developer/Android/staffapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/home/developer/.gradle/caches/transforms-2/files-2.1/91ce0fedf1d51478648f61294d55e55e/res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/home/developer/Android/staffapp/app/build/intermediates/res/merged/debug/drawable_open_in_browser.xml.flat",
+        "source": "/home/developer/Android/staffapp/app/src/main/res/drawable/open_in_browser.xml"
     },
     {
         "merged": "/home/developer/Android/staffapp/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",

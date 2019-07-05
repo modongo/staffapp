@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/cardviewContent"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="8dp"
     app:cardElevation="5dp"
@@ -15,18 +15,23 @@
         android:layout_margin="5dp"
         android:orientation="vertical"
         android:padding="5dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/presentation_512"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/courseId"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#000000"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/courseTitle"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textColor="#000000"/>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -35,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_marginTop="3dp"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/view_content"
+                android:drawableStart="@drawable/open_in_browser"
                 android:text="@string/view_content"
                 android:textColor="@color/colorTextIcons"
                 android:background="@color/colorPrimary"
