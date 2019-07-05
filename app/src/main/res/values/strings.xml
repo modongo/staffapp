@@ -1,3 +1,43 @@
 <resources>
+    <string name="activity__business_school"> Safaricom e-Learning</string>
+    <string name="title_featured">featured</string>
+    <string name="title_search">search</string>
+    <string name="title_profile">profile</string>
+    <string name="title_register">register</string>
+    <string name="card_text">demo_card_text</string>
     <string name="app_name">staffapp</string>
+    <string name="toolbar_title_business">Business</string>
+    <string name="toolbar_title_personal">Personal</string>
+    <string name="toolbar_title">Products and Services</string>
+    <string name="staff_profile">Kim Test</string>
+    <string name="staff_description">Radio Planning Engineer</string>
+    <string name="quick_actions">My Quick Actions</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news_button">News</string>
+    <string name="department_button">Department News</string>
+    <string name="ruby">Ruby</string>
+    <string name="title_activity_marketing">MarketingActivity</string>
+
+    <!-- CHAT: values -->
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_again">Confirm Password</string>
+    <string name="prompt_msg">Type a message</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_send">Send</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Password too short or does not match</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="sample_message">Hello!</string>
 </resources>

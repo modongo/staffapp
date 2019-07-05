@@ -1,0 +1,395 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-181:12
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-181:12
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-181:12
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-181:12
+MERGED from [com.karumi:dexter:5.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2abc27460585905ba64dd9207f4c6f5a/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.material:material:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2ffa9a6c68796cf79d57a74db449a55d/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/jedi/.gradle/caches/transforms-2/files-2.1/11dc86a8e8147f3186c52d4b1fd71963/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jedi/.gradle/caches/transforms-2/files-2.1/745d01ec2fafbc01deb99a7fba147aa8/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/a203b86bbf6277f2b1efaf07a041d022/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /home/jedi/.gradle/caches/transforms-2/files-2.1/622b9633cc5009e572b6117d1452ee42/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/bf0e69dbccc2a706b6f5538d673c4c71/AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/jedi/.gradle/caches/transforms-2/files-2.1/af940b6dc2f8833a8cbd750c6fdc6d6e/AndroidManifest.xml:2:1-14:12
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/d5d01cf070858ae0a7fba7580a2be68e/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/c84adf5133a069e901a1783412d6a392/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:10.1.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/a20972e5d4d2bee3b9287497b9d76801/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/ec0a386fbfadaa2dc96e6973d8cc1471/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/cba848bf3ae55626f1f300c41de2769c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/67e0ecfbcd62026e076d189f0a7c2cc5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/60ae94b97d3eda3a4a43d6ff63f2c357/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/368983fccfa7387338241eac25afc00a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2fd9faf9ba26d9131c9a7f9258c18f02/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/71430deead604cb08fe96f318f9df677/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/4f16e39c451abd2654e864233d56785e/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.loader:loader:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/dc37db78b20d2fe5ef1d77dae377d9bc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/72d272f6c77bc731dda0748419fe4732/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/189d01f0d525f0787f0050622b270655/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/d47a2de78fa7ac5ee2d608b5d97edebc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/3c9b92a3f0f0f4e90935ff77b23ac4b1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/d61c6f25926949486d8b30368295c0cc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2db4edc4c12ce6929f9671dc70c53b2c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/25870f94e1626d4ec153182bcace480d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/0b9975fd5d28297133564018ecfdecc0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/6aa34fb4a11e508ea4ab1ebbffa2e1eb/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/f5342f0250057a2e6d3e7210f327ad4e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/7922a6b9c48ff2bae4f6bbfbefcf6d09/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/0fa129224f3b325c65fab43e0bedc62b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/52f6b5a594e3f12e86f148cf0d302658/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/17eb7bfbf2e609b40b04ec1cf7067601/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/89535e7dfce1668a1c4ce3641046b828/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/831e30047f5442d9b8641fed90ad33c9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/c9dd896bf236b8e739dfe7ba21095f99/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/50bc79cb587dac5713c179848fe13d17/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/446a897c182c3f875cfb1ef5a4f77545/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/fcdadcf9811119f75a9089b5b505ec2f/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-181:12
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-181:12
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-181:12
+	package
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:3:5-33
+		INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-181:12
+		INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:2:1-181:12
+		INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:8:5-179:19
+MERGED from [com.karumi:dexter:5.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2abc27460585905ba64dd9207f4c6f5a/AndroidManifest.xml:26:5-30:19
+MERGED from [com.karumi:dexter:5.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2abc27460585905ba64dd9207f4c6f5a/AndroidManifest.xml:26:5-30:19
+MERGED from [com.google.android.material:material:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2ffa9a6c68796cf79d57a74db449a55d/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2ffa9a6c68796cf79d57a74db449a55d/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jedi/.gradle/caches/transforms-2/files-2.1/745d01ec2fafbc01deb99a7fba147aa8/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jedi/.gradle/caches/transforms-2/files-2.1/745d01ec2fafbc01deb99a7fba147aa8/AndroidManifest.xml:9:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/jedi/.gradle/caches/transforms-2/files-2.1/af940b6dc2f8833a8cbd750c6fdc6d6e/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/jedi/.gradle/caches/transforms-2/files-2.1/af940b6dc2f8833a8cbd750c6fdc6d6e/AndroidManifest.xml:7:5-12:19
+MERGED from [androidx.core:core:1.0.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/0b9975fd5d28297133564018ecfdecc0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/0b9975fd5d28297133564018ecfdecc0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/6aa34fb4a11e508ea4ab1ebbffa2e1eb/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/6aa34fb4a11e508ea4ab1ebbffa2e1eb/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/0b9975fd5d28297133564018ecfdecc0/AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:14:9-40
+activity#com.staff.staffapp.faq.Nursing
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:15:9-20:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:16:13-50
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:15:19-46
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:17:13-19:66
+	android:value
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:19:17-63
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:18:17-63
+activity#com.staff.staffapp.faq.Labs
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:21:9-26:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:22:13-33
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:21:19-43
+activity#com.staff.staffapp.faq.Radiology
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:27:9-32:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:28:13-38
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:27:19-48
+activity#com.staff.staffapp.faq.Physiotherapy
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:33:9-38:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:34:13-42
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:33:19-52
+activity#com.staff.staffapp.faq.Pharmacies
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:39:9-44:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:40:13-39
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:39:19-49
+activity#com.staff.staffapp.faq.Ambulance
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:45:9-50:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:46:13-58
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:45:19-48
+activity#com.staff.staffapp.faq.Overseas
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:51:9-56:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:52:13-47
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:51:19-47
+activity#com.staff.staffapp.faq.North
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:57:9-62:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:58:13-52
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:57:19-44
+activity#com.staff.staffapp.faq.Central
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:63:9-68:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:64:13-46
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:63:19-46
+activity#com.staff.staffapp.faq.Eastern
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:69:9-74:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:70:13-46
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:69:19-46
+activity#com.staff.staffapp.faq.Nyanza
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:75:9-80:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:76:13-59
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:75:19-45
+activity#com.staff.staffapp.faq.Coast
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:81:9-86:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:82:13-44
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:81:19-44
+activity#com.staff.staffapp.faq.Nairobi
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:87:9-92:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:88:13-46
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:87:19-46
+activity#com.staff.staffapp.faq.Panel
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:93:9-47
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:93:19-44
+activity#com.staff.staffapp.faq.Medical
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:94:9-101:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:97:13-48
+	android:theme
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:96:13-46
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:95:13-40
+activity#com.staff.staffapp.faq.Emergency
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:102:9-108:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:104:13-47
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:103:13-42
+activity#com.staff.staffapp.faq.Leave
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:109:9-116:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:112:13-39
+	android:theme
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:111:13-46
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:110:13-38
+activity#com.staff.staffapp.faq.Jobs
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:117:9-124:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:120:13-33
+	android:theme
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:119:13-46
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:118:13-37
+activity#com.staff.staffapp.faq.Ethics
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:125:9-131:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:127:13-43
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:126:13-39
+activity#com.staff.staffapp.faq.Contacts
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:132:9-138:20
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:134:13-54
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:133:13-41
+activity#com.staff.staffapp.ui.FAQ
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:139:9-142:57
+	android:label
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:142:13-55
+	android:theme
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:141:13-44
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:140:13-35
+activity#com.staff.staffapp.faq.PersonalProductsActivity
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:146:9-151:20
+	android:theme
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:147:13-49
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:146:19-63
+activity#com.staff.staffapp.faq.ProductsActivity
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:152:9-155:20
+	android:theme
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:153:13-49
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:154:13-49
+activity#com.staff.staffapp.faq.BusinessProductsActivity
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:156:9-161:20
+	android:theme
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:157:13-49
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:156:19-63
+activity#com.staff.staffapp.ui.NewsActivity
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:162:9-164:70
+	android:parentActivityName
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:164:13-58
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:163:13-44
+activity#com.staff.staffapp.ui.DepartmentNewsActivity
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:165:9-167:61
+	android:parentActivityName
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:167:13-58
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:166:13-54
+activity#com.staff.staffapp.ui.MainActivity
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:168:9-174:20
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:168:19-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:169:13-173:29
+action#android.intent.action.MAIN
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:170:17-69
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:170:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:172:17-77
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:172:27-74
+activity#com.staff.staffapp.ui.NewsDetailsActivity
+ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:176:9-178:61
+	android:parentActivityName
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:178:13-58
+	android:name
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:177:13-51
+uses-sdk
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+MERGED from [com.karumi:dexter:5.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2abc27460585905ba64dd9207f4c6f5a/AndroidManifest.xml:22:5-24:41
+MERGED from [com.karumi:dexter:5.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2abc27460585905ba64dd9207f4c6f5a/AndroidManifest.xml:22:5-24:41
+MERGED from [com.google.android.material:material:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2ffa9a6c68796cf79d57a74db449a55d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2ffa9a6c68796cf79d57a74db449a55d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/jedi/.gradle/caches/transforms-2/files-2.1/11dc86a8e8147f3186c52d4b1fd71963/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/jedi/.gradle/caches/transforms-2/files-2.1/11dc86a8e8147f3186c52d4b1fd71963/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jedi/.gradle/caches/transforms-2/files-2.1/745d01ec2fafbc01deb99a7fba147aa8/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/jedi/.gradle/caches/transforms-2/files-2.1/745d01ec2fafbc01deb99a7fba147aa8/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/a203b86bbf6277f2b1efaf07a041d022/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/a203b86bbf6277f2b1efaf07a041d022/AndroidManifest.xml:20:5-44
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /home/jedi/.gradle/caches/transforms-2/files-2.1/622b9633cc5009e572b6117d1452ee42/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /home/jedi/.gradle/caches/transforms-2/files-2.1/622b9633cc5009e572b6117d1452ee42/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/bf0e69dbccc2a706b6f5538d673c4c71/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/bf0e69dbccc2a706b6f5538d673c4c71/AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/jedi/.gradle/caches/transforms-2/files-2.1/af940b6dc2f8833a8cbd750c6fdc6d6e/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/jedi/.gradle/caches/transforms-2/files-2.1/af940b6dc2f8833a8cbd750c6fdc6d6e/AndroidManifest.xml:5:5-44
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/d5d01cf070858ae0a7fba7580a2be68e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/d5d01cf070858ae0a7fba7580a2be68e/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/c84adf5133a069e901a1783412d6a392/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/c84adf5133a069e901a1783412d6a392/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:10.1.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/a20972e5d4d2bee3b9287497b9d76801/AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife:10.1.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/a20972e5d4d2bee3b9287497b9d76801/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/ec0a386fbfadaa2dc96e6973d8cc1471/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/ec0a386fbfadaa2dc96e6973d8cc1471/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/cba848bf3ae55626f1f300c41de2769c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/cba848bf3ae55626f1f300c41de2769c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/67e0ecfbcd62026e076d189f0a7c2cc5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/67e0ecfbcd62026e076d189f0a7c2cc5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/60ae94b97d3eda3a4a43d6ff63f2c357/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/60ae94b97d3eda3a4a43d6ff63f2c357/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/368983fccfa7387338241eac25afc00a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/368983fccfa7387338241eac25afc00a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2fd9faf9ba26d9131c9a7f9258c18f02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2fd9faf9ba26d9131c9a7f9258c18f02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/71430deead604cb08fe96f318f9df677/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/71430deead604cb08fe96f318f9df677/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/4f16e39c451abd2654e864233d56785e/AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/4f16e39c451abd2654e864233d56785e/AndroidManifest.xml:5:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/dc37db78b20d2fe5ef1d77dae377d9bc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/dc37db78b20d2fe5ef1d77dae377d9bc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/72d272f6c77bc731dda0748419fe4732/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/72d272f6c77bc731dda0748419fe4732/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/189d01f0d525f0787f0050622b270655/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/189d01f0d525f0787f0050622b270655/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/d47a2de78fa7ac5ee2d608b5d97edebc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/d47a2de78fa7ac5ee2d608b5d97edebc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/3c9b92a3f0f0f4e90935ff77b23ac4b1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/3c9b92a3f0f0f4e90935ff77b23ac4b1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/d61c6f25926949486d8b30368295c0cc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/d61c6f25926949486d8b30368295c0cc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2db4edc4c12ce6929f9671dc70c53b2c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2db4edc4c12ce6929f9671dc70c53b2c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/25870f94e1626d4ec153182bcace480d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/25870f94e1626d4ec153182bcace480d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/0b9975fd5d28297133564018ecfdecc0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /home/jedi/.gradle/caches/transforms-2/files-2.1/0b9975fd5d28297133564018ecfdecc0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/6aa34fb4a11e508ea4ab1ebbffa2e1eb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/6aa34fb4a11e508ea4ab1ebbffa2e1eb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/f5342f0250057a2e6d3e7210f327ad4e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/f5342f0250057a2e6d3e7210f327ad4e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/7922a6b9c48ff2bae4f6bbfbefcf6d09/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/7922a6b9c48ff2bae4f6bbfbefcf6d09/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/0fa129224f3b325c65fab43e0bedc62b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/0fa129224f3b325c65fab43e0bedc62b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/52f6b5a594e3f12e86f148cf0d302658/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/52f6b5a594e3f12e86f148cf0d302658/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/17eb7bfbf2e609b40b04ec1cf7067601/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/17eb7bfbf2e609b40b04ec1cf7067601/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/89535e7dfce1668a1c4ce3641046b828/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/89535e7dfce1668a1c4ce3641046b828/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/831e30047f5442d9b8641fed90ad33c9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/831e30047f5442d9b8641fed90ad33c9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/c9dd896bf236b8e739dfe7ba21095f99/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/c9dd896bf236b8e739dfe7ba21095f99/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/50bc79cb587dac5713c179848fe13d17/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/50bc79cb587dac5713c179848fe13d17/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/446a897c182c3f875cfb1ef5a4f77545/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/446a897c182c3f875cfb1ef5a4f77545/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/fcdadcf9811119f75a9089b5b505ec2f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/fcdadcf9811119f75a9089b5b505ec2f/AndroidManifest.xml:20:5-44
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml
+activity#com.karumi.dexter.DexterActivity
+ADDED from [com.karumi:dexter:5.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2abc27460585905ba64dd9207f4c6f5a/AndroidManifest.xml:27:9-29:72
+	android:theme
+		ADDED from [com.karumi:dexter:5.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2abc27460585905ba64dd9207f4c6f5a/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.karumi:dexter:5.0.0] /home/jedi/.gradle/caches/transforms-2/files-2.1/2abc27460585905ba64dd9207f4c6f5a/AndroidManifest.xml:28:13-60
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] /home/jedi/.gradle/caches/transforms-2/files-2.1/af940b6dc2f8833a8cbd750c6fdc6d6e/AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/jedi/.gradle/caches/transforms-2/files-2.1/af940b6dc2f8833a8cbd750c6fdc6d6e/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/jedi/.gradle/caches/transforms-2/files-2.1/af940b6dc2f8833a8cbd750c6fdc6d6e/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/jedi/.gradle/caches/transforms-2/files-2.1/af940b6dc2f8833a8cbd750c6fdc6d6e/AndroidManifest.xml:9:13-64
