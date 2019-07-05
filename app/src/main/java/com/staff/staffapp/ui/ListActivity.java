@@ -24,6 +24,8 @@ public class ListActivity extends AppCompatActivity {
     }
     public void onCircleImageClick(View view){
         Toast.makeText(this,"Hi Mykii",Toast.LENGTH_SHORT).show();
+        Intent group = new Intent(this, ChatActivity.class);
+        startActivity(group);
     }
     public void onAClick(View view){
         AvatarImageView a = (AvatarImageView) view;
