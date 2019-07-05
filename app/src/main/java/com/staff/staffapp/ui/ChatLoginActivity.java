@@ -60,7 +60,7 @@ public class ChatLoginActivity extends AppCompatActivity
 
             mToolbar = findViewById(R.id.main_page_toolbar);
             setSupportActionBar(mToolbar);
-            getSupportActionBar().setTitle("Jukwaa");
+            getSupportActionBar().setTitle("Tusemezane");
 
 
             myViewPager =  findViewById(R.id.main_tabs_pager);
