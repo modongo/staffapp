@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/toolbar"
         android:background="@color/colorPrimary"
-        app:titleTextColor="@color/colorTextIcons">
+        app:titleTextColor="@color/colorTextIcons"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
     </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout

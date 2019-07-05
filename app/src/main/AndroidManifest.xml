@@ -29,7 +29,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".pns.ui.ProductsSearchActivity" />
+        <activity android:name=".pns.ui.ProductsSearchActivity"
+            android:theme="@style/ProductsTheme"/>
         <activity
             android:name=".faq.Nursing"
             android:label="Home Nursing Services">

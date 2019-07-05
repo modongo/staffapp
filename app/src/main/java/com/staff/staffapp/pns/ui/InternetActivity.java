@@ -6,8 +6,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.staff.staffapp.R;
 import com.staff.staffapp.pns.adapter.ProductsListAdapter;
@@ -27,7 +30,7 @@ import okhttp3.Response;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
-public class InternetActivity extends AppCompatActivity {
+public class InternetActivity extends AppCompatActivity  {
     public static final String TAG = InternetActivity.class.getSimpleName();
     private List<Product> products;
     private ProductsListAdapter mAdapter;

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -32,7 +33,7 @@ public class ProductsSearchActivity extends AppCompatActivity {
     private List<Product> products;
     private ProductsListAdapter mAdapter;
     @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
-    @BindView(R.id.tvSorry) TextView mTvSorry;
+    @BindView(R.id.linNoResults) LinearLayout mLinNoResults;
     private ProgressBar progressBar;
 
     @Override
@@ -40,7 +41,7 @@ public class ProductsSearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products_search);
         ButterKnife.bind(this);
-        mTvSorry.setVisibility(GONE);
+        mLinNoResults.setVisibility(GONE);
 
         Intent intent=getIntent();
         String query = intent.getStringExtra("query");
@@ -68,7 +69,7 @@ public class ProductsSearchActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             mRecyclerView.setVisibility(GONE);
-                            mTvSorry.setVisibility(VISIBLE);
+                            mLinNoResults.setVisibility(VISIBLE);
                             progressBar.setVisibility(GONE);
                         }
                     });
