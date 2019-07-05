@@ -7,7 +7,6 @@ import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 import com.staff.staffapp.R;
-import com.staff.staffapp.pns.adapter.CategoriesPageAdapter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
