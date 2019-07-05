@@ -1,11 +1,13 @@
 package com.staff.staffapp.school.adapter;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -41,7 +43,7 @@ public class SubCoursesAdapter extends RecyclerView.Adapter<SubCoursesAdapter.Su
 //        holder.txtCourseId.setText(String.valueOf(dataList.get(position).getCourseId() ));
         holder.txtCourseName.setText(dataList.get(position).getCourse_name());
         holder.txtCourseTitle.setText(dataList.get(position).getCourseTitle());
-        holder.txtCourseUrl.setText(dataList.get(position).getContentUrl());
+//        holder.txtCourseUrl.setText(dataList.get(position).getContentUrl());
     }
     @Override
     public int getItemCount() {
@@ -49,7 +51,7 @@ public class SubCoursesAdapter extends RecyclerView.Adapter<SubCoursesAdapter.Su
     }
 
 
-    public class SubCoursesViewHolder extends RecyclerView.ViewHolder{
+    public class SubCoursesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView txtCourseName, txtCourseTitle, txtCourseUrl;
         CardView cardView;
 
@@ -58,8 +60,20 @@ public class SubCoursesAdapter extends RecyclerView.Adapter<SubCoursesAdapter.Su
             txtCourseName = itemView.findViewById(R.id.courseId);
             txtCourseTitle = itemView.findViewById(R.id.courseTitle);
             txtCourseUrl = itemView.findViewById(R.id.courseUrl);
-            txtCourseUrl.setMovementMethod(LinkMovementMethod.getInstance());
+//            txtCourseUrl.setMovementMethod(LinkMovementMethod.getInstance());
             cardView = itemView.findViewById(R.id.cardviewContent);
+            txtCourseUrl.setOnClickListener(this);
+
+        }
+
+        @Override
+        public void onClick(View view) {
+
+            if(view == txtCourseUrl){
+
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(dataList.get(getLayoutPosition()).getContentUrl()));
+                view.getContext().startActivity(intent);
+            }
 
         }
     }

@@ -1142,6 +1142,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable info_512
+drawable knowledge
 drawable loginbutton
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1172,6 +1173,7 @@ drawable support
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable touchpoint
+drawable view_content
 drawable whatsapp
 id ALT
 id CTRL
@@ -1640,6 +1642,7 @@ string title_search
 string toolbar_title
 string toolbar_title_business
 string toolbar_title_personal
+string view_content
 string welcome_text
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
