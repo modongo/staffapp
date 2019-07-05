@@ -20,7 +20,6 @@
             android:theme="@style/ProductsTheme"/>
         <activity android:name=".pns.ui.MpesaActivity"
             android:theme="@style/ProductsTheme"/>
-        <activity android:name=".pns.ui.ProductCategoriesActivity" />
         <activity
             android:name=".pns.ui.ProductLandingActivity"
             android:theme="@style/ProductsTheme">
