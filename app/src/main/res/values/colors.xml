@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#00C853</color>
     <color name="colorPrimaryDark">#00574B</color>
+    <color name="profileBackground">#1F2833</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yellow">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="pink">#FF4081</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="safgreen">#00C853</color>
+    <color name="colorGrapeFruit">#ED5565</color>
+    <color name="colorGrapeFruitDark">#DA4453</color>
+    <color name="colorBitterSweet">#FC6E51</color>
+    <color name="colorBitterSweetDark">#E9573F</color>
+    <color name="colorFlower">#FFCE54</color>
+    <color name="colorFlowerDark">#F68B42</color>
+    <color name="colorGrass">#A0D468</color>
+    <color name="colorGrassDark">#8CC152</color>
+    <color name="colorBlueJeans">#509CEC</color>
+    <color name="colorBlueJeansDark">#4A89DC</color>
+    <color name="colorLavander">#AC92EC</color>
+    <color name="colorLavanderDark">#967ADC</color>
+    <color name="colorMint">#48CFAD</color>
+    <color name="colorMintDark">#37BC9B</color>
+    <color name="colorAqua">#4FC1E9</color>
+    <color name="colorAquaDark">#3BAFDA</color>
+    <color name="colorPinkRose">#EC87C0</color>
+    <color name="colorPinkRoseDark">#D770AD</color>
+
+    <color name="colorJungle">#29ABB7</color>
+    <color name="colorPlum">#8D4585</color>
+    <color name="colorSteel">#4682B4</color>
+    <color name="colorChartreuse">#B7AC44</color>
+
+    <color name="colorMulberry">#C64B8C</color>
+    <color name="colorFandango">#B5338A</color>
+
+    <color name="colorOlympic">#00BECC</color>
+    <color name="colorCornFlower">#6693F5</color>
+    <color name="colorAzure">#0080FE</color>
+    <color name="colorHospital">#0089CF</color>
+
+    <color name="colorJade">#00A868</color>
+    <color name="colorKelly">#4CBB17</color>
+    <color name="colorGreengreen">#3BB143</color>
+
+    <color name="colorIron">#48494B</color>
+    <color name="colorFossil">#787276</color>
+    <color name="colorAsh">#544C4A</color>
+    <color name="colorStone">#877F7D</color>
+
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorPrimaryLight">#FFCCBC</color>
+    <color name="colorTextIcons">#FFFFFF</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="colorAppBackground">#000000</color>
+    <color name="colorThemeColor">#00C853</color>
+    <color name="backgroundColor"></color>
+    <color name="bgBottomNavigation">#fe485a</color>
+
+    <color name="colorBackground">#f9f9fa</color>
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#262626</color>
+
+
 </resources>
