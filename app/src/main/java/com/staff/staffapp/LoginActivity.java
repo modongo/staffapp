@@ -44,6 +44,7 @@ public class LoginActivity extends AppCompatActivity {
     private Handler mAcquireTokenHandler;
     /* Boolean variable to ensure invocation of interactive sign-in only once in case of multiple  acquireTokenSilent call failures */
     private static AtomicBoolean sIntSignInInvoked = new AtomicBoolean();
+
     /* Telemetry dispatcher registration */
     static {
         Telemetry.getInstance().registerDispatcher(new IDispatcher() {
@@ -122,8 +123,9 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
         activityIntent = new Intent(this, MainActivity.class);
-        activityIntent.putExtra("Given Name", mAuthResult.getUserInfo().getGivenName());
-        activityIntent.putExtra("Family Name",mAuthResult.getUserInfo().getFamilyName());
+        activityIntent.putExtra("Given Name", "logged as:"+" "+mAuthResult.getUserInfo().getGivenName()+" "
+        +mAuthResult.getUserInfo().getFamilyName());
+        activityIntent.putExtra("expiry", String.format("password expiry:" + " " + mAuthResult.getExpiresOn().toLocaleString()));
         try {
 
             startActivity(activityIntent);
@@ -254,4 +256,12 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
     }
+    public void onSignOutClicked() {
+        // End user has clicked the Sign Out button
+        // Kill the token cache
+        // Optionally call the sign-out endpoint to fully sign out the user account
+        mAuthContext.getCache().removeAll();
+    }
+
+
 }

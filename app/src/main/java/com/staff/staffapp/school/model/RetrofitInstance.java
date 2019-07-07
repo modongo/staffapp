@@ -9,6 +9,7 @@ public class RetrofitInstance {
     private static Retrofit retrofit;
 
     public static Retrofit getRetrofitInstance(){
+
         if(retrofit == null){
             retrofit = new retrofit2.Retrofit.Builder()
                     .baseUrl(Constants.BUSINESS_SCHOOL_URL)

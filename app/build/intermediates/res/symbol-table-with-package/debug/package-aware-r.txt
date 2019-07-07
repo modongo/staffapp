@@ -1266,7 +1266,6 @@ id eClassBtn
 id editPassword
 id editUserName
 id edit_query
-id emailAddress
 id end
 id end_padder
 id enterAlways
