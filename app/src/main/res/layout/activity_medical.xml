@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".faq.ui.Medical"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Medical Providers"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="#5E7A9F"/>
+            
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@drawable/doctors"-->
+                <!--android:textAlignment="center"-->
+                <!--android:text="PREFFERED MEDICAL PANEL"-->
+                <!--android:textSize="24sp"-->
+                <!--android:gravity="bottom"/>-->
+
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nairobi_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorKelly">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_call_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Nairobi"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - Nairobi"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/coast_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorOlympic">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_local_hospital_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Coast"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - Coast"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nyanza_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorMulberry">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_local_hospital_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Nyanza / Rift"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - Nyanza and Rift"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/eastern_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorGrass">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_date_range_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Eastern"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - Eastern"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/north_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorBlueJeans">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_work_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="North Eastern"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - NorthEastern Kenya"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/central_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorLavander">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_work_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Central"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - Central Kenya"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/overseas_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorMint">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_report_problem_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="OverSeas"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - Overseas"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ambulance_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorAqua">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_contacts_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Ambulance"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Ambulance and Air Evacuation"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pharmacies_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorPinkRose">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_contacts_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Pharmacies"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Pharmacies and Chemists Provider Panel"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/physiotherapy_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorChartreuse">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_report_problem_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Physiotherapy"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - Physiotherapy"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/radiology_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorJungle">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_contacts_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Radiology"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - Radiology"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/labs_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorPlum">
+                        <!--<ImageView-->
+                            <!--android:layout_width="64dp"-->
+                            <!--android:layout_height="64dp"-->
+                            <!--android:src="@drawable/ic_contacts_black_24dp"-->
+                            <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Labs"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - Labs"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nursing_card"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    style="@style/MyCardViewStyle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/colorSteel">
+                        <!--<ImageView-->
+                        <!--android:layout_width="64dp"-->
+                        <!--android:layout_height="64dp"-->
+                        <!--android:src="@drawable/ic_report_problem_black_24dp"-->
+                        <!--android:padding="10dp"/>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Nursing"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Preferred Medical provider Panel - Home Nursing"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="@android:color/darker_gray"/>-->
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="?android:attr/windowBackground">
+        <!--app:itemTextColor="@color/white"-->
+        <!--android:background="@color/safgreen"-->
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
