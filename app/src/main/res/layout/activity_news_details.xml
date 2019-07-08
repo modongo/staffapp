@@ -23,7 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:foregroundGravity="center_horizontal"
-        android:src="@drawable/test_newsdetails" />
+        android:foregroundGravity="center_horizontal" />
 
 </RelativeLayout>

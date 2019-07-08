@@ -187,11 +187,19 @@
                 android:value=".faq.ui.ProductsActivity" />
         </activity>
         <activity
+<<<<<<< HEAD
             android:name="com.staff.staffapp.news.ui.NewsActivity"
             android:parentActivityName="com.staff.staffapp.MainActivity" />
         <activity
             android:name="com.staff.staffapp.news.ui.DepartmentNewsActivity"
             android:parentActivityName="com.staff.staffapp.news.ui.NewsActivity" />
+=======
+            android:name="com.staff.staffapp.ui.NewsActivity"
+            android:parentActivityName="com.staff.staffapp.MainActivity" />
+        <activity
+            android:name="com.staff.staffapp.ui.DepartmentNewsActivity"
+            android:parentActivityName="com.staff.staffapp.ui.NewsActivity" />
+>>>>>>> temp
         <activity android:name="com.staff.staffapp.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/featured"
-        android:icon="@drawable/featured"
-        android:title="@string/title_featured" />
+    <!--<item-->
+        <!--android:id="@+id/featured"-->
+        <!--android:icon="@drawable/featured"-->
+        <!--android:title="@string/title_featured" />-->
 
     <item
         android:id="@+id/search"
@@ -16,9 +16,9 @@
         android:icon="@drawable/profile"
         android:title="@string/title_profile" />
 
-    <item
-        android:id="@+id/navigation_profile"
-        android:icon="@drawable/register"
-        android:title="@string/title_register" />
+    <!--<item-->
+        <!--android:id="@+id/navigation_profile"-->
+        <!--android:icon="@drawable/register"-->
+        <!--android:title="@string/title_register" />-->
 
 </menu>

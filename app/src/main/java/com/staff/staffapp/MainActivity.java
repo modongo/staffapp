@@ -11,7 +11,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import com.staff.staffapp.faq.ui.FAQ;
-import com.staff.staffapp.school.BusinessSchool;
+import com.staff.staffapp.school.ui.BusinessSchoolActivity;
 import com.staff.staffapp.chat.ui.ListActivity;
 import com.staff.staffapp.news.ui.NewsActivity;
 import com.staff.staffapp.pns.ui.ProductLandingActivity;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, BusinessSchool.class));
+                startActivity(new Intent(MainActivity.this, BusinessSchoolActivity.class));
             }
         });
 

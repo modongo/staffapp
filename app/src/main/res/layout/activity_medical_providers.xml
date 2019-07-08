@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_above="@id/bottomNav"
+    tools:context=".faq.ui.MedicalProviders">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Medical Providers"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/safgreen"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                        <TextView
+                            android:paddingTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Hospitals per Region"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000"/>
+
+
+                        <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                            android:id="@+id/hospitals_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal"
+                            app:msrv_snap_count="1"/>
+
+                        <TextView
+                            android:paddingTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Medical Specialists"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000"/>
+
+                        <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                            android:id="@+id/specialists_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal"
+                            app:msrv_snap_count="2"
+                          />
+
+
+                        <TextView
+                            android:paddingTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Support Services"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            />
+
+                        <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                            android:id="@+id/support_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal"
+                            app:msrv_snap_count="2"
+                            />
+
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="?android:attr/windowBackground">
+                        <!--app:itemTextColor="@color/white"-->
+                        <!--android:background="@color/safgreen"-->
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

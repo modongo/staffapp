@@ -50,10 +50,10 @@ public class Ethics extends AppCompatActivity {
 
     public ArrayList<Integer> getImageIds(){
         imageIds = new ArrayList<>();
-        imageIds.add(R.drawable.baseline_call_white_24dp);
-        imageIds.add(R.drawable.baseline_alternate_email_white_24dp);
-        imageIds.add(R.drawable.baseline_local_post_office_white_24dp);
-        imageIds.add(R.drawable.baseline_access_time_white_24dp);
+        imageIds.add(R.drawable.ic_customer_service);
+        imageIds.add(R.drawable.ic_email);
+        imageIds.add(R.drawable.ic_letter);
+        imageIds.add(R.drawable.ic_stopwatch);
 
       return imageIds;
     }

@@ -86,8 +86,8 @@
                             <!--android:padding="5dp"-->
                             <!--android:textColor="@android:color/darker_gray"/>-->
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/coast_card"
                     android:layout_width="100dp"
