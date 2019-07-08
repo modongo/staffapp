@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mNewsActivityButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NewsActivity.class);
                 startActivity(intent);
             }
@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mChatButton = (CardView) findViewById(R.id.chatButton);
         mChatButton.setOnClickListener(new View.OnClickListener() {
 
-
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListActivity.class);
@@ -69,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
 
         });
-  
 
         mViewProductsButton = (CardView) findViewById(R.id.viewProductsButton);
         mViewProductsButton.setOnClickListener(this);
@@ -83,5 +81,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    
 }

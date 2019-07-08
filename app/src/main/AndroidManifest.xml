@@ -25,6 +25,11 @@
         <activity android:name=".chat.ui.PhoneLoginActivity" />
         <activity android:name=".chat.ui.ChatRegisterActivity" />
         <activity android:name=".chat.ui.ChatJoinActivity" />
+        <activity android:name=".news.ui.NewsDetailActivity"></activity>
+        <activity
+            android:name=".news.ui.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -369,9 +374,6 @@
         </activity>
         <activity android:name=".pns.ui.ProductsSearchActivity"
             android:theme="@style/ProductsTheme"/>
-        <activity
-            android:name=".news.ui.NewsActivity"
-            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".news.ui.DepartmentNewsActivity"
             android:parentActivityName=".news.ui.NewsActivity" />
