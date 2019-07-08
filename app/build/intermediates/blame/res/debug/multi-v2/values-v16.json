@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/developer/Android/staffapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/jedi/Desktop/Android/test/staffapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/developer/.gradle/caches/transforms-2/files-2.1/f601fabb9f6d550aaa5a34b51d155051/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/developer/.gradle/caches/transforms-2/files-2.1/91ce0fedf1d51478648f61294d55e55e/res/values-v16/values-v16.xml",
+                    "source": "/home/jedi/.gradle/caches/transforms-2/files-2.1/be3984b8a852f41aa97e7b505da3c8c6/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/jedi/.gradle/caches/transforms-2/files-2.1/aaf3b4a0b17c16bca53c8ae1b5706544/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

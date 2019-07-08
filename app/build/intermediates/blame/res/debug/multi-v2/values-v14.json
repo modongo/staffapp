@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/developer/Android/staffapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "outputFile": "/home/jedi/Desktop/Android/test/staffapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "/home/developer/.gradle/caches/transforms-2/files-2.1/d17ac26936037d23fcc71e084045fb91/res/values-v14/values-v14.xml",
+                    "source": "/home/jedi/.gradle/caches/transforms-2/files-2.1/141cec1e6219a8a2f703e3bac7db273f/res/values-v14/values-v14.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
