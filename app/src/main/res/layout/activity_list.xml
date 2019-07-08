@@ -12,111 +12,116 @@
             name="bgColor"
             type="int"/>
     </data>
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:background="@color/colorPrimaryDark"
-        tools:context=".ui.ListActivity">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:onClick="onGotoListSampleClick"
-            android:text="Start MyChat"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:text="MyChat"
-            android:textColor="@android:color/white"
-            android:textSize="21sp"/>
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".chat.ui.ListActivity">
 
-            <com.github.abdularis.civ.AvatarImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/figure"
-                android:onClick="onAClick"
-                app:avatarBackgroundColor="@{bgColor}"
-                app:text="@{myName}"
-                app:textSize="22sp"
-                app:strokeWidth="1dp"
-                app:strokeColor="@android:color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:onClick="onGotoListSampleClick"
 
-            <com.github.abdularis.civ.AvatarImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="8dp"
-                app:highlightEnable="false"
-                app:avatarBackgroundColor="#8E24AA"
-                app:text="B"
-                app:textSize="22sp"
-                app:strokeColor="#64B5F6"
-                app:strokeWidth="1dp"/>
+                android:text="Check MyChat"
+                android:textAllCaps="false"/>
 
-            <com.github.abdularis.civ.AvatarImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="8dp"
-                app:avatarBackgroundColor="#FDFD00"
-                app:text="C"
-                app:textSize="22sp"
-                app:textColor="#3d3d01"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="My Friends"
+                android:textColor="@android:color/white"
+                android:textSize="21sp" />
 
-            <com.github.abdularis.civ.AvatarImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="8dp"
-                android:src="@drawable/figure2"
-                app:view_state="IMAGE"
-                app:avatarBackgroundColor="#1976D2"
-                app:text="B"
-                app:textSize="22sp"
-                app:strokeColor="#1976D2"
-                app:strokeWidth="1dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:orientation="horizontal">
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:onClick="onAClick"
+                    android:src="@drawable/avatar_1"
+
+                    app:avatarBackgroundColor="@{bgColor}"
+                    app:strokeColor="@android:color/white"
+                    app:strokeWidth="1dp"
+                    app:text="@{myName}"
+                    app:textSize="22sp"
+                    app:view_state="IMAGE" />
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/avatar_2"
+                    app:avatarBackgroundColor="#8E24AA"
+                    app:highlightEnable="false"
+                    app:strokeColor="#64B5F6"
+                    app:strokeWidth="1dp"
+                    app:textSize="22sp"
+                    app:view_state="IMAGE" />
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/avatar_3"
+                    app:avatarBackgroundColor="#FDFD00"
+                    app:textColor="#3d3d01"
+                    app:textSize="22sp"
+                    app:view_state="IMAGE" />
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/avatar_5"
+                    app:avatarBackgroundColor="#1976D2"
+                    app:strokeColor="#1976D2"
+                    app:strokeWidth="1dp"
+                    app:text="B"
+                    app:textSize="22sp"
+                    app:view_state="IMAGE" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:text="My Groups"
+                android:textColor="@android:color/white"
+                android:textSize="21sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.github.abdularis.civ.CircleImageView
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:onClick="onCircleImageClick"
+                    android:src="@drawable/avatar_7"
+                    app:strokeColor="@color/colorAccent" />
+            </LinearLayout>
+
 
         </LinearLayout>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="12dp"
-            android:text="Circle ImageView"
-            android:textColor="@android:color/white"
-            android:textSize="21sp"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <com.github.abdularis.civ.CircleImageView
-                android:layout_width="100dp"
-                android:layout_height="170dp"
-                android:layout_marginRight="8dp"
-                android:src="@drawable/figure"
-                app:highlightColor="#80fb1743"
-                app:strokeColor="@color/colorAccent"
-                app:strokeWidth="2px"/>
-
-            <com.github.abdularis.civ.CircleImageView
-                android:layout_width="160dp"
-                android:layout_height="160dp"
-                android:src="@drawable/figure2"
-                android:onClick="onCircleImageClick"
-                app:strokeColor="@color/colorAccent"/>
-        </LinearLayout>
-
-
-    </LinearLayout>
-
+    </ScrollView>
 </layout>

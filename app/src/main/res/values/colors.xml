@@ -53,9 +53,7 @@
     <color name="colorFossil">#787276</color>
     <color name="colorAsh">#544C4A</color>
     <color name="colorStone">#877F7D</color>
-
     <color name="colorBlack">#000000</color>
-
     <color name="colorPrimaryLight">#FFCCBC</color>
     <color name="colorTextIcons">#FFFFFF</color>
     <color name="colorPrimaryText">#212121</color>
@@ -65,5 +63,10 @@
     <color name="colorThemeColor">#00C853</color>
     <color name="backgroundColor"></color>
     <color name="bgBottomNavigation">#fe485a</color>
+    <color name="light_purple">#E8E1E7</color>
+    <color name="light_green">#50d050</color>
+    <color name="dark_green">#008000</color>
+    <color name="black">#000000</color>
+    <color name="login_text">#BFB5B9</color>
 </resources>
 

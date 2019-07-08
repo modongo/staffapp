@@ -97,7 +97,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jedi/
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:14:9-40
-activity#com.staff.staffapp.faq.Nursing
+activity#com.staff.staffapp.faq.ui.Nursing
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:15:9-20:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:16:13-50
@@ -109,83 +109,83 @@ ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:19:17-63
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:18:17-63
-activity#com.staff.staffapp.faq.Labs
+activity#com.staff.staffapp.faq.ui.Labs
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:21:9-26:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:22:13-33
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:21:19-43
-activity#com.staff.staffapp.faq.Radiology
+activity#com.staff.staffapp.faq.ui.Radiology
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:27:9-32:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:28:13-38
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:27:19-48
-activity#com.staff.staffapp.faq.Physiotherapy
+activity#com.staff.staffapp.faq.ui.Physiotherapy
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:33:9-38:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:34:13-42
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:33:19-52
-activity#com.staff.staffapp.faq.Pharmacies
+activity#com.staff.staffapp.faq.ui.Pharmacies
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:39:9-44:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:40:13-39
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:39:19-49
-activity#com.staff.staffapp.faq.Ambulance
+activity#com.staff.staffapp.faq.ui.Ambulance
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:45:9-50:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:46:13-58
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:45:19-48
-activity#com.staff.staffapp.faq.Overseas
+activity#com.staff.staffapp.faq.ui.Overseas
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:51:9-56:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:52:13-47
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:51:19-47
-activity#com.staff.staffapp.faq.North
+activity#com.staff.staffapp.faq.ui.North
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:57:9-62:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:58:13-52
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:57:19-44
-activity#com.staff.staffapp.faq.Central
+activity#com.staff.staffapp.faq.ui.Central
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:63:9-68:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:64:13-46
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:63:19-46
-activity#com.staff.staffapp.faq.Eastern
+activity#com.staff.staffapp.faq.ui.Eastern
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:69:9-74:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:70:13-46
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:69:19-46
-activity#com.staff.staffapp.faq.Nyanza
+activity#com.staff.staffapp.faq.ui.Nyanza
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:75:9-80:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:76:13-59
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:75:19-45
-activity#com.staff.staffapp.faq.Coast
+activity#com.staff.staffapp.faq.ui.Coast
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:81:9-86:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:82:13-44
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:81:19-44
-activity#com.staff.staffapp.faq.Nairobi
+activity#com.staff.staffapp.faq.ui.Nairobi
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:87:9-92:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:88:13-46
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:87:19-46
-activity#com.staff.staffapp.faq.Panel
+activity#com.staff.staffapp.faq.ui.Panel
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:93:9-47
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:93:19-44
-activity#com.staff.staffapp.faq.Medical
+activity#com.staff.staffapp.faq.ui.Medical
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:94:9-101:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:97:13-48
@@ -193,13 +193,13 @@ ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:96:13-46
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:95:13-40
-activity#com.staff.staffapp.faq.Emergency
+activity#com.staff.staffapp.faq.ui.Emergency
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:102:9-108:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:104:13-47
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:103:13-42
-activity#com.staff.staffapp.faq.Leave
+activity#com.staff.staffapp.faq.ui.Leave
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:109:9-116:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:112:13-39
@@ -207,7 +207,7 @@ ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:111:13-46
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:110:13-38
-activity#com.staff.staffapp.faq.Jobs
+activity#com.staff.staffapp.faq.ui.Jobs
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:117:9-124:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:120:13-33
@@ -215,19 +215,19 @@ ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:119:13-46
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:118:13-37
-activity#com.staff.staffapp.faq.Ethics
+activity#com.staff.staffapp.faq.ui.Ethics
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:125:9-131:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:127:13-43
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:126:13-39
-activity#com.staff.staffapp.faq.Contacts
+activity#com.staff.staffapp.faq.ui.Contacts
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:132:9-138:20
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:134:13-54
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:133:13-41
-activity#com.staff.staffapp.ui.FAQ
+activity#com.staff.staffapp.faq.ui.FAQ
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:139:9-142:57
 	android:label
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:142:13-55
@@ -235,37 +235,37 @@ ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:141:13-44
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:140:13-35
-activity#com.staff.staffapp.faq.PersonalProductsActivity
+activity#com.staff.staffapp.faq.ui.PersonalProductsActivity
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:146:9-151:20
 	android:theme
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:147:13-49
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:146:19-63
-activity#com.staff.staffapp.faq.ProductsActivity
+activity#com.staff.staffapp.faq.ui.ProductsActivity
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:152:9-155:20
 	android:theme
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:153:13-49
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:154:13-49
-activity#com.staff.staffapp.faq.BusinessProductsActivity
+activity#com.staff.staffapp.faq.ui.BusinessProductsActivity
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:156:9-161:20
 	android:theme
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:157:13-49
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:156:19-63
-activity#com.staff.staffapp.ui.NewsActivity
+activity#com.staff.staffapp.news.ui.NewsActivity
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:162:9-164:70
 	android:parentActivityName
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:164:13-58
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:163:13-44
-activity#com.staff.staffapp.ui.DepartmentNewsActivity
+activity#com.staff.staffapp.news.ui.DepartmentNewsActivity
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:165:9-167:61
 	android:parentActivityName
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:167:13-58
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:166:13-54
-activity#com.staff.staffapp.ui.MainActivity
+activity#com.staff.staffapp.MainActivity
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:168:9-174:20
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:168:19-50
@@ -279,7 +279,7 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:172:17-77
 	android:name
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:172:27-74
-activity#com.staff.staffapp.ui.NewsDetailsActivity
+activity#com.staff.staffapp.news.ui.NewsDetailsActivity
 ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:176:9-178:61
 	android:parentActivityName
 		ADDED from /home/jedi/Desktop/Android/staffapp/app/src/main/AndroidManifest.xml:178:13-58

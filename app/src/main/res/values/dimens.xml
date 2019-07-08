@@ -12,4 +12,7 @@
     <dimen name="height_medium_thumbnail_cardview">170dp</dimen>
     <dimen name="padding_16dp_cardview">16dp</dimen>
     <dimen name="margin_16dp_cardview">16dp</dimen>
+
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
 </resources>
