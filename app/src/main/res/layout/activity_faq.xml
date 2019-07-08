@@ -8,6 +8,7 @@
     android:gravity="center"
     android:background="#DADFE5"
     >
+    <!--android:background="#DADFE5"-->
     <!--android:background="@drawable/rectanglebackgroundwhite"-->
 
 
@@ -20,18 +21,21 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#FFFFFF">
             <!--android:padding="10dp"-->
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:background="@drawable/faq2"
+                android:background="@drawable/info"
+
                 android:textSize="40dp"
                 android:gravity="center"
                 android:textColor="@color/colorBlack"/>
             <!--android:text="FAQ"-->
+
 
         <LinearLayout
             android:clipToPadding="false"
@@ -57,14 +61,16 @@
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/ic_call_black_24dp"
-                        android:background="@drawable/circlebackgroundred"
+                        android:src="@drawable/ic_warning"
                         android:paddingTop="10dp" />
+                    <!--android:src="@drawable/ic_call_black_24dp"-->
+                    <!--android:background="@drawable/circlebackgroundred"-->
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
+                        android:textColor="#000000"
                         android:layout_marginTop="10dp"
                         android:text="Emergency Contacts"/>
                     <View
@@ -78,12 +84,12 @@
                         android:gravity="center"
                         android:text="For security and Medical Emergencies"
                         android:padding="5dp"
-                        android:textColor="@android:color/darker_gray"/>
+                        android:textColor="#000000"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:id="@+id/medical_card"
+                android:id="@+id/specialist_card"
                 android:layout_width="150dp"
                 android:layout_height="190dp"
                 android:layout_margin="10dp"
@@ -97,15 +103,17 @@
                     <ImageView
                         android:layout_width="72dp"
                         android:layout_height="72dp"
-                        android:src="@drawable/baseline_local_hospital_white_24dp"
-                        android:background="@drawable/circlebackgroundblue"
+                        android:src="@drawable/ic_hospital"
                         android:padding="10dp"/>
+                    <!--android:src="@drawable/baseline_local_hospital_white_24dp"-->
+                    <!--android:background="@drawable/circlebackgroundblue"-->
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
+                        android:textColor="#000000"
                         android:text="Medical Providers"/>
                     <View
                         android:layout_width="match_parent"
@@ -118,7 +126,8 @@
                         android:gravity="center"
                         android:text="A list of medical Specialists"
                         android:padding="5dp"
-                        android:textColor="@android:color/darker_gray"/>
+                        android:textColor="#000000"
+                        />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -145,14 +154,17 @@
                         <ImageView
                             android:layout_width="75dp"
                             android:layout_height="75dp"
-                            android:background="@drawable/circlebackgroundyellow"
-                            android:src="@drawable/ic_date_range_black_24dp"
+                            android:src="@drawable/ic_calendars"
                             android:padding="10dp"/>
+                        <!--android:background="@drawable/circlebackgroundyellow"-->
+                        <!--android:src="@drawable/ic_date_range_black_24dp"-->
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:layout_marginTop="10dp"
+                            android:textColor="#000000"
                             android:text="Leave Days"/>
                         <View
                             android:layout_width="match_parent"
@@ -165,7 +177,7 @@
                             android:gravity="center"
                             android:text="Check and Apply for Leave Days"
                             android:padding="5dp"
-                            android:textColor="@android:color/darker_gray"/>
+                            android:textColor="#000000" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -185,14 +197,18 @@
                         <ImageView
                             android:layout_width="75dp"
                             android:layout_height="75dp"
-                            android:background="@drawable/circlebackgroundgreen"
-                            android:src="@drawable/ic_work_black_24dp"
+                            android:src="@drawable/ic_hiring"
                             android:padding="10dp"/>
+
+                        <!--android:background="@drawable/circlebackgroundgreen"-->
+                        <!--android:src="@drawable/ic_work_black_24dp"-->
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:layout_marginTop="10dp"
+                            android:textColor="#000000"
                             android:text="Jobs"/>
                         <View
                             android:layout_width="match_parent"
@@ -205,7 +221,7 @@
                             android:gravity="center"
                             android:text="Career Growth corner"
                             android:padding="5dp"
-                            android:textColor="@android:color/darker_gray"/>
+                            android:textColor="#000000" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -233,15 +249,19 @@
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/circlebackgroundpink"
-                            android:src="@drawable/ic_report_problem_black_24dp"
+                            android:src="@drawable/ic_scales"
                             android:padding="10dp"/>
+                        <!--android:background="@drawable/circlebackgroundpink"-->
+                        <!--android:src="@drawable/ic_report_problem_black_24dp"-->
+
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:layout_marginTop="10dp"
-                            android:text="Ethics Hotline"/>
+                            android:text="Ethics Hotline"
+                            android:textColor="#000000"/>
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
@@ -253,7 +273,7 @@
                             android:gravity="center"
                             android:text="Talk to us Anonymously"
                             android:padding="5dp"
-                            android:textColor="@android:color/darker_gray"/>
+                            android:textColor="#000000"/>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -273,15 +293,18 @@
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/circlebackgroundpurple"
-                            android:src="@drawable/ic_contacts_black_24dp"
+                            android:src="@drawable/ic_contacts"
                             android:padding="10dp"/>
+                        <!--android:background="@drawable/circlebackgroundpurple"-->
+                        <!--android:src="@drawable/ic_contacts_black_24dp"-->
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:layout_marginTop="10dp"
-                            android:text="Staff Contacts"/>
+                            android:text="Staff Contacts"
+                            android:textColor="#000000"/>
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
@@ -293,10 +316,61 @@
                             android:gravity="center"
                             android:text="Check Staff Information"
                             android:padding="5dp"
-                            android:textColor="@android:color/darker_gray"/>
+                            android:textColor="#000000"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:clipToPadding="false"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<androidx.cardview.widget.CardView-->
+                    <!--android:id="@+id/medical_card"-->
+                    <!--android:layout_width="150dp"-->
+                    <!--android:layout_height="190dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--style="@style/MyCardViewStyle">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:gravity="center">-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="70dp"-->
+                            <!--android:layout_height="70dp"-->
+                            <!--android:src="@drawable/ic_placeholder"-->
+                            <!--android:padding="10dp"/>-->
+                        <!--&lt;!&ndash;android:background="@drawable/circlebackgroundpurple"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:src="@drawable/ic_contacts_black_24dp"&ndash;&gt;-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:layout_marginTop="10dp"-->
+                            <!--android:text="Specialist Card"-->
+                            <!--android:textColor="#000000"/>-->
+                        <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="@color/lightgray"-->
+                            <!--android:layout_margin="10dp"/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Check Staff Information"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:textColor="#000000"/>-->
+                    <!--</LinearLayout>-->
+                <!--</androidx.cardview.widget.CardView>-->
+            <!--</LinearLayout>-->
+
         </LinearLayout>
     </ScrollView>
 
