@@ -198,7 +198,10 @@
         <activity
             android:name="com.staff.staffapp.ui.DepartmentNewsActivity"
             android:parentActivityName="com.staff.staffapp.ui.NewsActivity" />
+<<<<<<< HEAD
 >>>>>>> temp
+=======
+>>>>>>> pns
         <activity android:name="com.staff.staffapp.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

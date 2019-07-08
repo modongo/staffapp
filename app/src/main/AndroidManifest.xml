@@ -352,6 +352,23 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".faq.ui.ProductsActivity" />
         </activity>
+        <activity android:name=".pns.ui.ServicesActivity"
+            android:theme="@style/ProductsTheme"></activity>
+        <activity android:name=".pns.ui.PlansActivity"
+            android:theme="@style/ProductsTheme"/>
+        <activity android:name=".pns.ui.InternetActivity"
+            android:theme="@style/ProductsTheme"/>
+        <activity android:name=".pns.ui.MpesaActivity"
+            android:theme="@style/ProductsTheme"/>
+        <activity
+            android:name=".pns.ui.ProductLandingActivity"
+            android:theme="@style/ProductsTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".pns.ui.ProductsSearchActivity"
+            android:theme="@style/ProductsTheme"/>
         <activity
             android:name=".news.ui.NewsActivity"
             android:parentActivityName=".MainActivity" />
@@ -372,18 +389,14 @@
         <activity android:name=".school.DataScienceActivity" />
         <activity android:name=".school.DetailActivity" />
         <activity android:name=".school.BusinessSchool" />
-        <activity
-            android:name=".pns.ui.ProductLandingActivity"
-            android:theme="@style/ProductsTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
         <activity android:name=".chat.ui.ListActivity" />
         <activity android:name=".chat.ui.ContactListActivity" />
         <activity
             android:name=".news.ui.NewsDetailsActivity"
             android:parentActivityName=".news.ui.NewsActivity" />
+        <activity
+             android:name=".pns.ui.AllProductsActivity"
+            android:theme="@style/ProductsTheme" />
     </application>
 
 </manifest>
