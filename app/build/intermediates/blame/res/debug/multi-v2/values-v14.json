@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/jedi/Desktop/Android/test/staffapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/home/jedi/.gradle/caches/transforms-2/files-2.1/141cec1e6219a8a2f703e3bac7db273f/res/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                }
+            ]
+        }
+    ]
+}
