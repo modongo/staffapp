@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jul 09 11:31:19 EAT 2019
+#Tue Jul 09 11:53:23 EAT 2019
 56.path=medical-coast.pdf
 5.base=/home/jedi/Desktop/Android/test/staffapp/app/build/intermediates/merged_assets/debug/out
 42.base=/home/jedi/Desktop/Android/test/staffapp/app/build/intermediates/transforms/stripDebugSymbol/debug/0

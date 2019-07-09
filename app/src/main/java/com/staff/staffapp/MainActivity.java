@@ -6,6 +6,8 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -17,12 +19,20 @@ import com.staff.staffapp.news.ui.NewsActivity;
 import com.staff.staffapp.pns.ui.ProductLandingActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private CardView mFAQButton;
-    CardView mViewProductsButton;
-    CardView btn;
+
+    @BindView(R.id.profile_image)
+    ImageView imageView;
+    @BindView(R.id.staff_name)
+    TextView staffName;
+    @BindView(R.id.jobDescription)
+    TextView jobdescription;
+    @BindView(R.id.eClassBtn)
+    CardView eClass;
     @BindView(R.id.newsActivityButton)
     CardView mNewsActivityButton;
     private CardView mChatButton;
+    private CardView mFAQButton;
+    CardView mViewProductsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +41,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
-        btn = findViewById(R.id.eClassBtn);
-        btn.setOnClickListener(new View.OnClickListener() {
+
+        imageView = findViewById(R.id.profile_image);
+        staffName.setText(getIntent().getStringExtra("Given Name"));
+        jobdescription.setText(getIntent().getStringExtra("expiry"));
+        eClass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, BusinessSchoolActivity.class));
