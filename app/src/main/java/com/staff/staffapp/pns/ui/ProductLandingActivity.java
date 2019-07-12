@@ -82,7 +82,7 @@ public class ProductLandingActivity extends AppCompatActivity {
 
         MenuItem menuItem = menu.findItem(R.id.knowledge_search);
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(menuItem);
-        searchView.setQueryHint("Search prosucts");
+        searchView.setQueryHint("Search products");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
