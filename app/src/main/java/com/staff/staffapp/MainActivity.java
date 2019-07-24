@@ -12,6 +12,8 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import com.staff.staffapp.chat.ui.ChatJoinActivity;
+import com.staff.staffapp.faq.ui.Emergency;
 import com.staff.staffapp.faq.ui.FAQ;
 import com.staff.staffapp.school.ui.BusinessSchoolActivity;
 import com.staff.staffapp.chat.ui.ListActivity;
@@ -30,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     CardView eClass;
     @BindView(R.id.newsActivityButton)
     CardView mNewsActivityButton;
+    @BindView(R.id.support_card)
+    CardView supportButton;
     private CardView mChatButton;
     private CardView mFAQButton;
     CardView mViewProductsButton;
@@ -49,6 +53,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, BusinessSchoolActivity.class));
+            }
+        });
+
+        supportButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Emergency.class));
             }
         });
 
@@ -76,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                Intent intent = new Intent(MainActivity.this, ChatJoinActivity.class);
                 startActivity(intent);
             }
 

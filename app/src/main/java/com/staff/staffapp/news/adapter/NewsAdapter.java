@@ -1,6 +1,7 @@
 package com.staff.staffapp.news.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +24,8 @@ import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
 import com.staff.staffapp.R;
 import com.staff.staffapp.news.model.Article;
+import com.staff.staffapp.news.ui.NewsActivity;
+import com.staff.staffapp.news.ui.NewsDetailActivity;
 import com.staff.staffapp.news.utils.Utils;
 
 import java.util.List;
@@ -121,6 +124,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
             imageView = itemView.findViewById(R.id.img);
             progressBar = itemView.findViewById(R.id.progress_load_photo);
 
+
             this.onItemClickListener = onItemClickListener;
 
 
@@ -129,6 +133,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
         @Override
         public void onClick(View view) {
             onItemClickListener.onItemClick(view, getAdapterPosition());
+
         }
     }
 }

@@ -35,8 +35,15 @@
     <string name="title_activity_marketing">MarketingActivity</string>
     <string name="action_share">Share</string>
     <string name="action_explore">Read More...</string>
-    <string name="lorem_short_length">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tincidunt dui, ultrices tempor dolor maximus a.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales tincidunt dui, ultrices tempor dolor maximus a.</string>
+    <string name="safaricom_home">
+        With the rising need for continuous communication and instant gratification, we keep seeking products and services that will gratify this ‘need’ instantaneously.
+
+        Thanks to Safaricom home fibre, anyone at home can have unlimited internet access as long as you live within the coverage area.
+
+        Safaricom Home Fibre is a service that allows you to have fast, reliable and unlimited internet access from the comfort of your home.
+
+        All one has to do is register and then you are given a WiFi router that will enable you to have wireless and LAN internet access
+    </string>
     <!-- CHAT: values -->
 
     <string name="prompt_email">Email</string>
@@ -64,4 +71,16 @@
     <string name="login">Login with Microsoft Credentials</string>
     <string name="email">vkimosop@safaricom.co.ke</string>
     <string name="view_content">View Content</string>
+    <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="safaricom_revenue">
+        These three growth drivers contributed 95% of total service revenue growth. During the
+        first six months of the year, M-PESA was the main driver of growth, contributing 64% of
+        service revenue growth, further accelerating displacement of traditional voice and
+        messaging services.
+        Mobile data and fixed data contributed 30% of total service revenue growth.
+    </string>
+    <string name="under_development">UNDER DEVELOPMENT</string>
+    <string name="info_hub">Info Hub</string>
 </resources>

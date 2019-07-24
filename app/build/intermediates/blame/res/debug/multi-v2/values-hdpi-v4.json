@@ -4,7 +4,7 @@
             "outputFile": "/home/jedi/Desktop/Android/test/staffapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/home/jedi/.gradle/caches/transforms-2/files-2.1/be3984b8a852f41aa97e7b505da3c8c6/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/home/jedi/.gradle/caches/transforms-2/files-2.1/09672e05b3a0e3d1901cf39f837707da/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

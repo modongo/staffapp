@@ -23,11 +23,11 @@ public class ListActivity extends AppCompatActivity {
         binding.setMyName("Mikey");
         binding.setBgColor(Color.BLUE);
     }
-    public void onCircleImageClick(View view){
+   /* public void onCircleImageClick(View view){
 //        Toast.makeText(this,"Hi Mykii",Toast.LENGTH_SHORT).show();
         Intent groupIntent = new Intent(this, ChatLoginActivity.class);
         startActivity(groupIntent);
-    }
+    }*/
     public void onAClick(View view){
         AvatarImageView a = (AvatarImageView) view;
         if(a.getState() == AvatarImageView.SHOW_INITIAL){

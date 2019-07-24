@@ -4,7 +4,7 @@
             "outputFile": "/home/jedi/Desktop/Android/test/staffapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/home/jedi/.gradle/caches/transforms-2/files-2.1/3f967643319c37def86673cd1cbed580/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/jedi/.gradle/caches/transforms-2/files-2.1/a42245838c2825e03cc6fd01eb1567dd/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/jedi/.gradle/caches/transforms-2/files-2.1/be3984b8a852f41aa97e7b505da3c8c6/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/jedi/.gradle/caches/transforms-2/files-2.1/09672e05b3a0e3d1901cf39f837707da/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

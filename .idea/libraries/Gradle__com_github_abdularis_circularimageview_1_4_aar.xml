@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.abdularis:circularimageview:1.4@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b38af961ac2e36b22db0df4becf17394/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b080b41fa2c4a17f77c06ea56296947f/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b38af961ac2e36b22db0df4becf17394/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b38af961ac2e36b22db0df4becf17394/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b080b41fa2c4a17f77c06ea56296947f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b080b41fa2c4a17f77c06ea56296947f/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

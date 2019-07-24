@@ -416,9 +416,6 @@
         <activity
             android:name="com.staff.staffapp.pns.ui.ProductsSearchActivity"
             android:theme="@style/ProductsTheme" />
-        <activity
-            android:name="com.staff.staffapp.news.ui.DepartmentNewsActivity"
-            android:parentActivityName="com.staff.staffapp.news.ui.NewsActivity" />
         <activity android:name="com.staff.staffapp.school.CommunicationActivity" />
         <activity android:name="com.staff.staffapp.school.FinanceActivity" />
         <activity android:name="com.staff.staffapp.school.ManagementActivity" />

@@ -1208,6 +1208,7 @@ drawable ic_chemotherapy
 drawable ic_contact
 drawable ic_contacts
 drawable ic_content_search
+drawable ic_conversation
 drawable ic_customer_service
 drawable ic_date
 drawable ic_dermatology
@@ -1216,6 +1217,7 @@ drawable ic_email
 drawable ic_exit_to_app_white_24dp
 drawable ic_heart
 drawable ic_hiring
+drawable ic_home_black_24dp
 drawable ic_hospital
 drawable ic_intelligence
 drawable ic_justice_scale
@@ -1358,12 +1360,14 @@ id already_have_account_link
 id always
 id ambulance_card
 id appBarLayout
+id appbar
 id appbarId
 id async
 id author
 id auto
 id avatar
 id back
+id backdrop
 id barrier
 id beginning
 id blocking
@@ -1383,6 +1387,7 @@ id center_vertical
 id central_card
 id chains
 id chatButton
+id chat_banner
 id chat_linear_layout
 id chat_list_view
 id chat_requests_list
@@ -1395,6 +1400,7 @@ id clip_horizontal
 id clip_vertical
 id coast_card
 id collapseActionView
+id collapsing_toolbar
 id com_microsoft_aad_adal_editDummyText
 id com_microsoft_aad_adal_progressBar
 id com_microsoft_aad_adal_webView1
@@ -1428,6 +1434,8 @@ id cvPlans
 id cvServices
 id dark
 id dataBinding
+id date
+id date_behavior
 id decline_message_request_button
 id decor_content_parent
 id default_activity_button
@@ -1457,8 +1465,6 @@ id ethics_card
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id explore_action
-id explore_action1
 id fab
 id faq_button
 id fill
@@ -1478,6 +1484,8 @@ id group_chat_bar_layout
 id group_chat_text_display
 id group_divider
 id groups
+id header
+id headerContent
 id home
 id homeAsUp
 id hospitalLinearLayout
@@ -1491,6 +1499,7 @@ id image
 id imageGrid
 id imageView
 id img
+id img2
 id info
 id input_group_message
 id input_message
@@ -1635,6 +1644,7 @@ id pin
 id private_messages_list_of_users
 id profile_image
 id progressBarLeave
+id progress_bar
 id progress_circular
 id progress_horizontal
 id progress_load_photo
@@ -1689,8 +1699,6 @@ id set_profile_status
 id set_user_name
 id settings_toolbar
 id shadow_bottom
-id share_action
-id share_action1
 id shortcut
 id showCustom
 id showHome
@@ -1721,8 +1729,10 @@ id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
+id subtitle_on_appbar
 id supportImage
 id supportLinearLayout
+id support_card
 id support_card_view
 id support_recycler_view
 id tabLayout
@@ -1749,10 +1759,11 @@ id thumbnail_cardview1
 id time
 id title
 id titleDividerNoCustom
+id title_appbar
 id title_cardview
 id title_cardview1
+id title_on_appbar
 id title_template
-id todo_card
 id toolbar
 id top
 id topPanel
@@ -1787,6 +1798,7 @@ id visible
 id visit_profile_image
 id visit_profile_status
 id visit_user_name
+id webView
 id webView1
 id webView_newsdetails
 id welcome
@@ -2047,6 +2059,7 @@ string activity__business_school
 string app_loading
 string app_name
 string appbar_scrolling_view_behavior
+string back
 string bottom_sheet_behavior
 string broker_processing
 string call_graph
@@ -2097,14 +2110,15 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string home
 string http_auth_dialog_cancel
 string http_auth_dialog_login
 string http_auth_dialog_password
 string http_auth_dialog_title
 string http_auth_dialog_username
+string info_hub
 string loading
 string login
-string lorem_short_length
 string menu_company_news
 string menu_entertainment
 string menu_home
@@ -2134,7 +2148,10 @@ string prompt_password_again
 string prompt_username
 string quick_actions
 string ruby
+string safaricom_home
+string safaricom_revenue
 string sample_message
+string search
 string search_menu_title
 string sign_out
 string staff_description
@@ -2149,6 +2166,7 @@ string title_search
 string toolbar_title
 string toolbar_title_business
 string toolbar_title_personal
+string under_development
 string view_content
 string welcome_text
 style AlertDialog
@@ -2358,6 +2376,7 @@ style CardView_Light
 style Dexter_Internal_Theme_Transparent
 style FaqTheme
 style LeaveTheme
+style MyAppBarNewsDetailLayoutTheme
 style MyCardViewStyle
 style MySwipeCardStyle
 style NoActionBar

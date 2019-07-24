@@ -1,5 +1,6 @@
 package com.staff.staffapp.news.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -42,14 +43,11 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
     private NewsAdapter adapter;
     private String TAG = NewsActivity.class.getSimpleName();
 
-    @BindView(R.id.drawer_layout)
-    DrawerLayout drawer;
-    @BindView(R.id.nav_view)
-    NavigationView navigationView;
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
-    @BindView(R.id.fab)
-    FloatingActionButton fab;
+
+    @BindView(R.id.drawer_layout) DrawerLayout drawer;
+    @BindView(R.id.nav_view) NavigationView navigationView;
+    @BindView(R.id.toolbar) Toolbar toolbar;
+    @BindView(R.id.fab) FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +58,7 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setItemIconTintList(null);
         setSupportActionBar(toolbar);
 
+
         recyclerView = findViewById(R.id.recyclerView);
         layoutManager = new LinearLayoutManager(NewsActivity.this);
         recyclerView.setLayoutManager(layoutManager);
@@ -69,16 +68,18 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
         String query_saf = "Safaricom";
         LoadJson(query_saf);
 
+
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null)
-                        .show();
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open,
-                R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
@@ -107,7 +108,7 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        // noinspection SimplifiableIfStatement
+        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
@@ -149,7 +150,8 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    public void LoadJson(String query) {
+
+    public void LoadJson(String query){
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
 
         Call<News> call;
@@ -159,9 +161,9 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onResponse(Call<News> call, Response<News> response) {
 
-                if (response.isSuccessful() && response.body().getArticles() != null) {
+                if(response.isSuccessful() && response.body().getArticles() != null){
 
-                    if (!articles.isEmpty()) {
+                    if(!articles.isEmpty()){
                         articles.clear();
                     }
 
@@ -169,7 +171,10 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
                     adapter = new NewsAdapter(articles, NewsActivity.this);
                     recyclerView.setAdapter(adapter);
                     adapter.notifyDataSetChanged();
-                } else {
+
+                    initListener();
+                }
+                else {
                     Toast.makeText(NewsActivity.this, "No Result!", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -181,7 +186,7 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
         });
     }
 
-    public void LoadJson_TopHeadlines(String query) {
+    public void LoadJson_TopHeadlines(String query){
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
 
         Call<News> call;
@@ -191,9 +196,9 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onResponse(Call<News> call, Response<News> response) {
 
-                if (response.isSuccessful() && response.body().getArticles() != null) {
+                if(response.isSuccessful() && response.body().getArticles() != null){
 
-                    if (!articles.isEmpty()) {
+                    if(!articles.isEmpty()){
                         articles.clear();
                     }
 
@@ -201,7 +206,10 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
                     adapter = new NewsAdapter(articles, NewsActivity.this);
                     recyclerView.setAdapter(adapter);
                     adapter.notifyDataSetChanged();
-                } else {
+
+                    initListener();
+                }
+                else {
                     Toast.makeText(NewsActivity.this, "No Result!", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -213,4 +221,24 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
         });
     }
 
+
+    private void initListener(){
+
+        adapter.setOnItemClickListener(new NewsAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent = new Intent(NewsActivity.this, NewsDetailActivity.class);
+
+                Article article = articles.get(position);
+                intent.putExtra("url", article.getUrl());
+                intent.putExtra("title", article.getTitle());
+                intent.putExtra("img",article.getUrlToImage());
+                intent.putExtra("date", article.getPublishedAt());
+                intent.putExtra("source", article.getSource().getName());
+                intent.putExtra("author", article.getAuthor());
+
+                startActivity(intent);
+            }
+        });
+    }
 }
