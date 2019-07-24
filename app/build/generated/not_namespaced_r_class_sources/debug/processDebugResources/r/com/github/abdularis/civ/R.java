@@ -12,15 +12,15 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int avatarBackgroundColor = 0x7f030031;
-        public static final int highlightColor = 0x7f030115;
-        public static final int highlightEnable = 0x7f030116;
-        public static final int strokeColor = 0x7f0301dc;
-        public static final int strokeWidth = 0x7f0301dd;
-        public static final int text = 0x7f030203;
-        public static final int textColor = 0x7f03021a;
-        public static final int textSize = 0x7f03021f;
-        public static final int view_state = 0x7f030242;
+        public static final int avatarBackgroundColor = 0x7f03003a;
+        public static final int highlightColor = 0x7f030191;
+        public static final int highlightEnable = 0x7f030192;
+        public static final int strokeColor = 0x7f0302bf;
+        public static final int strokeWidth = 0x7f0302c0;
+        public static final int text = 0x7f0302ea;
+        public static final int textColor = 0x7f030302;
+        public static final int textSize = 0x7f030308;
+        public static final int view_state = 0x7f030336;
     }
     public static final class id {
         private id() {}
@@ -31,18 +31,18 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int app_name = 0x7f0e0031;
+        public static final int app_name = 0x7f0f0025;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] AvatarImageView = { 0x7f030031, 0x7f030203, 0x7f03021a, 0x7f03021f, 0x7f030242 };
+        public static final int[] AvatarImageView = { 0x7f03003a, 0x7f0302ea, 0x7f030302, 0x7f030308, 0x7f030336 };
         public static final int AvatarImageView_avatarBackgroundColor = 0;
         public static final int AvatarImageView_text = 1;
         public static final int AvatarImageView_textColor = 2;
         public static final int AvatarImageView_textSize = 3;
         public static final int AvatarImageView_view_state = 4;
-        public static final int[] CircleImageView = { 0x7f03007d, 0x7f03007e, 0x7f03007f, 0x7f030080, 0x7f030115, 0x7f030116, 0x7f0301dc, 0x7f0301dd };
+        public static final int[] CircleImageView = { 0x7f03009b, 0x7f03009c, 0x7f03009d, 0x7f03009e, 0x7f030191, 0x7f030192, 0x7f0302bf, 0x7f0302c0 };
         public static final int CircleImageView_civ_border_color = 0;
         public static final int CircleImageView_civ_border_overlay = 1;
         public static final int CircleImageView_civ_border_width = 2;

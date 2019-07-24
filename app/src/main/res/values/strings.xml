@@ -83,4 +83,6 @@
     </string>
     <string name="under_development">UNDER DEVELOPMENT</string>
     <string name="info_hub">Info Hub</string>
+    <string name="title_activity_support">Support</string>
+    <string name="todo">Todo</string>
 </resources>

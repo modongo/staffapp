@@ -15,6 +15,7 @@ import butterknife.ButterKnife;
 import com.staff.staffapp.chat.ui.ChatJoinActivity;
 import com.staff.staffapp.faq.ui.Emergency;
 import com.staff.staffapp.faq.ui.FAQ;
+import com.staff.staffapp.faq.ui.Support;
 import com.staff.staffapp.school.ui.BusinessSchoolActivity;
 import com.staff.staffapp.chat.ui.ListActivity;
 import com.staff.staffapp.news.ui.NewsActivity;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         supportButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Emergency.class));
+                startActivity(new Intent(MainActivity.this, Support.class));
             }
         });
 

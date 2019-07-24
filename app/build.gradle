@@ -133,6 +133,12 @@ android {
         testImplementation 'junit:junit:4.12'
 
     }
-    
+
     apply plugin: 'com.google.gms.google-services'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+    implementation 'com.google.android.material:material:+'
 }

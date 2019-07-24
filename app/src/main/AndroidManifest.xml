@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.staff.staffapp">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
 
     <application
         android:allowBackup="true"
@@ -12,18 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".LoginActivity"
+        <activity
+            android:name=".faq.ui.Support"
+            android:label="@string/title_activity_support"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".LoginActivity"
             android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity"/>
-
-        <activity android:name=".chat.ui.ChatMainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".chat.ui.ChatMainActivity" />
         <activity
             android:name=".chat.ui.SettingsActivity"
             android:theme="@style/NoActionBar" />
@@ -31,158 +34,180 @@
         <activity
             android:name=".chat.ui.FindFriendsActivity"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".chat.ui.GroupChatActivity"
-            android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".chat.ui.GroupChatActivity"
+            android:theme="@style/NoActionBar" />
         <activity android:name=".chat.ui.PhoneLoginActivity" />
         <activity android:name=".chat.ui.ChatRegisterActivity" />
         <activity android:name=".chat.ui.ChatJoinActivity" />
-        <activity android:name=".news.ui.NewsDetailActivity"></activity>
+        <activity android:name=".news.ui.NewsDetailActivity" />
         <activity
             android:name=".news.ui.NewsActivity"
             android:label="@string/title_activity_news"
             android:theme="@style/AppTheme.NoActionBar" />
-        
-       
         <activity
             android:name=".chat.ui.ChatActivity"
-            android:theme="@style/NoActionBar"
-            android:parentActivityName=".chat.ui.ChatMainActivity"/>
+            android:parentActivityName=".chat.ui.ChatMainActivity"
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".chat.ui.ChatLoginActivity"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".faq.ui.Radiotherapist"
+        <activity
+            android:name=".faq.ui.Radiotherapist"
             android:label="RadioTherapists">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Rhematology"
+        <activity
+            android:name=".faq.ui.Rhematology"
             android:label="Rhematologist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Urology"
+        <activity
+            android:name=".faq.ui.Urology"
             android:label="Urologist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Psychiatrist"
+        <activity
+            android:name=".faq.ui.Psychiatrist"
             android:label="Psychiatrist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Paeditrician"
+        <activity
+            android:name=".faq.ui.Paeditrician"
             android:label="Paeditrician">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Orthopedic"
+        <activity
+            android:name=".faq.ui.Orthopedic"
             android:label="Orthopedic">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Opthalmologist"
+        <activity
+            android:name=".faq.ui.Opthalmologist"
             android:label="Opthalmologist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Oncology"
+        <activity
+            android:name=".faq.ui.Oncology"
             android:label="Oncology">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Nephrology"
+        <activity
+            android:name=".faq.ui.Nephrology"
             android:label="Nephrology">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Neurologist"
+        <activity
+            android:name=".faq.ui.Neurologist"
             android:label="Neurologist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Haematologist"
+        <activity
+            android:name=".faq.ui.Haematologist"
             android:label="Haematologist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.GP"
+        <activity
+            android:name=".faq.ui.GP"
             android:label="GP Direct">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.GeneralSurgeon"
+        <activity
+            android:name=".faq.ui.GeneralSurgeon"
             android:label="General Surgeon">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Gastro"
+        <activity
+            android:name=".faq.ui.Gastro"
             android:label="GastroEnterologist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Gaenacologist"
+        <activity
+            android:name=".faq.ui.Gaenacologist"
             android:label="Gaenacologist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Facial"
+        <activity
+            android:name=".faq.ui.Facial"
             android:label="Facial Surgeon">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.ENT"
+        <activity
+            android:name=".faq.ui.ENT"
             android:label="ENT Specialist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Endocrinology"
+        <activity
+            android:name=".faq.ui.Endocrinology"
             android:label="Endocrinology">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Dermatologist"
+        <activity
+            android:name=".faq.ui.Dermatologist"
             android:label="Dermatologist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Dentist"
+        <activity
+            android:name=".faq.ui.Dentist"
             android:label="Dentists">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Counselling"
+        <activity
+            android:name=".faq.ui.Counselling"
             android:label="Counselling">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Chest"
+        <activity
+            android:name=".faq.ui.Chest"
             android:label="Chest Specialist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.staff.staffapp.faq.ui.MedicalProviders" />
         </activity>
-        <activity android:name=".faq.ui.Cardiologist"
+        <activity
+            android:name=".faq.ui.Cardiologist"
             android:label="Cardiologist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -220,8 +245,7 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-
-         <activity
+        <activity
             android:name=".faq.ui.Physiotherapy"
             android:label="Physiotherapy">
             <meta-data
@@ -363,14 +387,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".faq.ui.ProductsActivity" />
         </activity>
-        <activity android:name=".pns.ui.ServicesActivity"
-            android:theme="@style/ProductsTheme"></activity>
-        <activity android:name=".pns.ui.PlansActivity"
-            android:theme="@style/ProductsTheme"/>
-        <activity android:name=".pns.ui.InternetActivity"
-            android:theme="@style/ProductsTheme"/>
-        <activity android:name=".pns.ui.MpesaActivity"
-            android:theme="@style/ProductsTheme"/>
+        <activity
+            android:name=".pns.ui.ServicesActivity"
+            android:theme="@style/ProductsTheme" />
+        <activity
+            android:name=".pns.ui.PlansActivity"
+            android:theme="@style/ProductsTheme" />
+        <activity
+            android:name=".pns.ui.InternetActivity"
+            android:theme="@style/ProductsTheme" />
+        <activity
+            android:name=".pns.ui.MpesaActivity"
+            android:theme="@style/ProductsTheme" />
         <activity
             android:name=".pns.ui.ProductLandingActivity"
             android:theme="@style/ProductsTheme">
@@ -378,8 +406,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".pns.ui.ProductsSearchActivity"
-            android:theme="@style/ProductsTheme"/>
+        <activity
+            android:name=".pns.ui.ProductsSearchActivity"
+            android:theme="@style/ProductsTheme" />
         <activity android:name=".school.CommunicationActivity" />
         <activity android:name=".school.FinanceActivity" />
         <activity android:name=".school.ManagementActivity" />
@@ -395,15 +424,16 @@
         <activity android:name=".school.DetailActivity" />
         <activity
             android:name=".school.ui.BusinessSchoolActivity"
-            android:theme="@style/NoActionBar"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/NoActionBar" />
         <activity android:name=".chat.ui.ListActivity" />
         <activity android:name=".chat.ui.ContactListActivity" />
         <activity
             android:name=".news.ui.NewsDetailsActivity"
             android:parentActivityName=".news.ui.NewsActivity" />
         <activity
-             android:name=".pns.ui.AllProductsActivity"
+            android:name=".pns.ui.AllProductsActivity"
             android:theme="@style/ProductsTheme" />
     </application>
+
 </manifest>
